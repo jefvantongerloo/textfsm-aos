@@ -1,0 +1,4 @@
+   /flash/working
+   Package           Release                 Size     Description
+-----------------+-------------------------+---------+-----------------------------------
+Nos.img           8.6.289.R01               241574488 Alcatel-Lucent OS
