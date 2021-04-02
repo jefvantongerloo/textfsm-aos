@@ -1,0 +1,15 @@
+System:
+  Description:  Alcatel-Lucent Enterprise OS6450-P48 6.7.2.89.R06 GA, April 09, 2019.,
+  Object ID:    1.3.6.1.4.1.6486.800.1.1.2.1.12.1.9,
+  Up Time:      520 days 7 hours 16 minutes and 38 seconds,
+  Contact:      Alcatel-Lucent Enterprise, https://www.al-enterprise.com,
+  Name:         NET-SWI-001,
+  Location:     BEL,
+  Services:     72,
+  Date & Time:  THU APR 01 2021  18:45:27 (CEST)
+
+Flash Space:
+    Primary CMM:
+      Available (bytes):  52967424,
+      Comments         :  None
+
