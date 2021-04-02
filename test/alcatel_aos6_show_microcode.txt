@@ -1,0 +1,7 @@
+   Package           Release       Size     Description
+-----------------+---------------+--------+-----------------------------------
+KFbase.img        6.7.2.89.R06    18059551 Alcatel-Lucent Enterprise Base Softw
+KFos.img          6.7.2.89.R06     3566798 Alcatel-Lucent Enterprise OS
+KFeni.img         6.7.2.89.R06     6123991 Alcatel-Lucent Enterprise NI softwar
+KFsecu.img        6.7.2.89.R06      649383 Alcatel-Lucent Enterprise Security M
+
