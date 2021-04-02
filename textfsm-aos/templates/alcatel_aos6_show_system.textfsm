@@ -1,0 +1,30 @@
+Value Description (.+)
+Value ObjectID (.+)
+Value UpTime (.+)
+Value Contact (.+)
+Value Name (.+)
+Value Location (.+)
+Value Services (.+)
+Value DateTime (.+)
+Value Available (\d*)
+Value Comments (\w+)
+
+Start
+  ^System: -> System
+
+System
+  ^\s+Description:\s+${Description},$$
+  ^\s+Object\sID:\s+${ObjectID},$$
+  ^\s+Up\sTime:\s+${UpTime},$$
+  ^\s+Contact:\s+${Contact},$$
+  ^\s+Name:\s+${Name},$$
+  ^\s+Location:\s+${Location},$$
+  ^\s+Services:\s+${Services},$$
+  ^\s+Date & Time:\s+${DateTime}$$
+  ^Flash Space: -> FlashSpace
+
+FlashSpace
+  ^\s+Available \(bytes\):\s+${Available},$$
+  ^\s+Comments\s+:\s+${Comments}$$
+  ^\s+Primary CMM:$$
+  ^. -> Error
