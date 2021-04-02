@@ -1,30 +1,30 @@
-Value Description (.+)
-Value ObjectID (.+)
-Value UpTime (.+)
-Value Contact (.+)
-Value Name (.+)
-Value Location (.+)
-Value Services (.+)
-Value DateTime (.+)
-Value Available (\d*)
-Value Comments (\w+)
+Value description (.+)
+Value object_id (.+)
+Value up_time (.+)
+Value contact (.+)
+Value name (.+)
+Value location (.+)
+Value services (.+)
+Value date_time (.+)
+Value available (\d*)
+Value comments (\w+)
 
 Start
   ^System: -> System
 
 System
-  ^\s+Description:\s+${Description},$$
-  ^\s+Object\sID:\s+${ObjectID},$$
-  ^\s+Up\sTime:\s+${UpTime},$$
-  ^\s+Contact:\s+${Contact},$$
-  ^\s+Name:\s+${Name},$$
-  ^\s+Location:\s+${Location},$$
-  ^\s+Services:\s+${Services},$$
-  ^\s+Date & Time:\s+${DateTime}$$
+  ^\s+Description:\s+${description},$$
+  ^\s+Object\sID:\s+${object_id},$$
+  ^\s+Up\sTime:\s+${up_time},$$
+  ^\s+Contact:\s+${contact},$$
+  ^\s+Name:\s+${name},$$
+  ^\s+Location:\s+${location},$$
+  ^\s+Services:\s+${services},$$
+  ^\s+Date & Time:\s+${date_time}$$
   ^Flash Space: -> FlashSpace
 
 FlashSpace
-  ^\s+Available \(bytes\):\s+${Available},$$
-  ^\s+Comments\s+:\s+${Comments}$$
+  ^\s+Available \(bytes\):\s+${available},$$
+  ^\s+Comments\s+:\s+${comments}$$
   ^\s+Primary CMM:$$
   ^. -> Error
