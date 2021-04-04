@@ -1,0 +1,8 @@
+                              stree                 mble   src        
+ vlan  type  admin   oper   1x1   flat   auth   ip   tag   lrn   name
+-----+-----+------+------+------+------+----+-----+-----+------+----------
+   1    std  off    off     on    on     off   off   off     on   vlan-1                   
+  10    std   on     on     on    on     off   off   off     on   vlan-10                         
+ 100    std   on     on     on    on     off   off   off     on   vlan-100                     
+1000    std   on     on     on    on     off   off   off     on   vlan-1000                                        
+
