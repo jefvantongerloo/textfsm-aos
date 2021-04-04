@@ -4,9 +4,9 @@ Value size (\d{5,})
 Value description (\w+-\w+.\w+.\w+)
 
 Start
-  ^\s+Package\s+Release\s+Size\s+Description$$ -> Microcode
+  ^\s+Package\s+Release\s+Size\s+Description$$
+  ^-----------------\+---------------\+--------\+-----------------------------------$$ -> Microcode
 
 Microcode
   ^${package}\s*${release}\s*${size}\s${description} -> Record
-  ^-----------------\+---------------\+--------\+-----------------------------------$$
   ^. -> Error
