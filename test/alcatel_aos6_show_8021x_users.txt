@@ -1,0 +1,8 @@
+
+Slot         MAC             Port        Classification                   Auth                        Auth         Last Successful              User
+Port       Address           State           Policy                   Failure Reason               Retry Count        Auth Time                 Name
+-----+-----------------+---------------+--------------------+-------------------------------------+-----------+-------------------------+------------------
+01/01 a0:d3:c1:15:7f:d2 Authenticated   Basic-UNP-Auth Svr                    -                    0           MON FEB 15 22:16:36 2021  user1
+01/10 80:e8:2c:1b:b6:c2 Authenticated   Basic-UNP-Auth Svr                    -                    0           WED DEC 09 20:03:42 2020  user2.domain.com
+02/01 80:e8:2c:1a:d8:ea Authenticated   Basic-UNP-Auth Svr                    -                    0           WED DEC 09 20:03:45 2020  domain\user3
+02/10 10:e7:c6:37:7b:82 Authenticated   Basic-UNP-Auth Svr                    -                    0           MON MAR 08 13:57:28 2021  host/pc-01.domain.com
