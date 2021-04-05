@@ -1,4 +1,4 @@
-Value ip_address ((\d+.*))
+Value Required ip_address ((\d+.*))
 Value host_mode (\w+)
 Value peer_mode (\w+)
 Value prefer (\w+)
@@ -29,9 +29,6 @@ Value bad_dispersion (\d)
 # Value last_event (\w+)
 
 Start
-  ^.* -> NTP
-
-NTP
   ^IP address\s+=\s${ip_address}$$
   ^Host mode\s+=\s${host_mode},$$
   ^Peer mode\s+=\s${peer_mode},$$
