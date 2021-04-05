@@ -1,0 +1,17 @@
+Value slot_port (\d+\/\d+)
+Value mac_address (([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]){2})
+Value port_state (Initialize|Disconnected|Connecting|Authenticating|Authenticated|Authenticated-L|Authenticated-T|Aborting|Held|Force-Authenticated|Force-Unauthenticated)
+Value classification_policy (-|(\S+\s{0,1})+\S+)
+Value auth_failure_reason (-|(\S+\s{0,1})+\S+)
+Value auth_retry_count (\d+)
+Value last_succesful_auth_time ((\w{3}\s){2}\d+\s(\d{2}:){2}\d{2}\s\d{4})
+Value user_name (\S+)
+
+Start
+  ^Slot\s+MAC\s+Port\s+Classification\s+Auth\s+Auth\s+Last Successful\s+User$$
+  ^Port\s+Address\s+State\s+Policy\s+Failure Reason\s+Retry Count\s+Auth Time\s+Name$$
+  ^-----\+-----------------\+---------------\+--------------------\+-------------------------------------\+-----------\+-------------------------\+------------------\s*$$ -> Users
+
+Users
+  ^${slot_port}\s+${mac_address}\s+${port_state}\s+${classification_policy}\s+${auth_failure_reason}\s+${auth_retry_count}\s+${last_succesful_auth_time}\s+${user_name}$$ -> Record
+  ^. -> Error
