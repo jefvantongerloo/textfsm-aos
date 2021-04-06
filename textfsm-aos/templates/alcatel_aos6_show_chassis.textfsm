@@ -1,4 +1,4 @@
-Value chassis ([1-8])
+Value Key,Required chassis ([1-8])
 Value model_name (.+)
 Value description (.+)
 Value part_number (\d+-\d+)
