@@ -1,4 +1,4 @@
-Value Required ip_address ((\d+.*))
+Value Key,Required ip_address ((\d+.*))
 Value host_mode (\w+)
 Value peer_mode (\w+)
 Value prefer (\w+)
