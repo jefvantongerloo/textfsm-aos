@@ -17,4 +17,4 @@ Start
 
 VLAN
   ^\s*${vlan}\s+${type}\s+${admin}\s+${oper}\s+${stp_1x1}\s+${flat}\s+${auth}\s+${ip}\s+${tag}\s+${lrn}\s+${name}\s*$$ -> Record
-  # ^. -> Error
+  ^. -> Error
