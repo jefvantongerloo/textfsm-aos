@@ -7,3 +7,4 @@ alcatel_aos6_show_microcode.textfsm, .*, aos6, show microcode
 alcatel_aos6_show_ntp_server_status.textfsm, .*, aos6, show ntp server status
 alcatel_aos6_show_system.textfsm, .*, aos6, show system
 alcatel_aos6_show_vlan.textfsm, .*, aos6, show vlan
+alcatel_aos6_show_lldp_remote_system.textfsm, .*, aos6, show lldp remote-system
