@@ -1,0 +1,50 @@
+Remote LLDP Agents on Local Slot/Port 1/6:
+
+    Chassis 7c:57:3c:ca:40:9a, Port 7c:57:3c:ca:40:9a:
+      Remote ID                   = 15,
+      Chassis Subtype             = 4 (MAC Address),
+      Port Subtype                = 3 (MAC address),
+      Port Description            = bond0,
+      System Name                 = NET-UK-APT-335-2,
+      System Description          = ArubaOS (MODEL: 315), Version Aruba AP,
+      Capabilities Supported      = Bridge WLAN AP,
+      Capabilities Enabled        = WLAN AP,
+      Management IP Address       = 10.0.0.10,
+      Vlan ID                     = 0,
+      Vlan Name                   = Unknown,
+      Remote port MAC/PHY AutoNeg = Supported Enabled Capability 0x8036,
+      Mau Type                    = 1000BaseTFD - Four-pair Category 5 UTP full duplex mode
+
+Remote LLDP Agents on Local Slot/Port 1/7:
+
+    Chassis 00:80:9f:75:9c:c3, Port 00:80:9f:75:9c:c3:
+      Remote ID                   = 139,
+      Chassis Subtype             = 4 (MAC Address),
+      Port Subtype                = 3 (MAC address),
+      Port Description            = (null),
+      System Name                 = (null),
+      System Description          = (null),
+      Capabilities Supported      = Telephone,
+      Capabilities Enabled        = Telephone,
+      MED Device Type             = Endpoint Class III,
+      MED Capabilities            = Capabilities | Power via MDI-PD(33),
+      MED Extension TLVs Present  = Network Policy| Inventory,
+      MED Power Type              = PD Device,
+      MED Power Source            = PSE,
+      MED Power Priority          = Low,
+      MED Power Value             = 4.1 W,
+      Remote port MAC/PHY AutoNeg = Supported Enabled Capability 0x0036,
+      Mau Type                    = 100BaseTXFD - 2 pair category 5 UTP full duplex mode
+
+Remote LLDP Agents on Local Slot/Port 1/47:
+
+    Chassis 2c:fa:a2:93:a2:03, Port 1023:
+      Remote ID                   = 1,
+      Chassis Subtype             = 4 (MAC Address),
+      Port Subtype                = 7 (Locally assigned),
+      Port Description            = Alcatel-Lucent OS6860 GNI 1/1/23,
+      System Name                 = NET-UK-SWI-DIST,
+      System Description          = Alcatel-Lucent Enterprise OS6860E-24 8.6.203.R02 GA, March 10, 2020.,
+      Capabilities Supported      = Bridge Router,
+      Capabilities Enabled        = Bridge Router,
+      Management IP Address       = 10.0.0.11
