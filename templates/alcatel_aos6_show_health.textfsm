@@ -1,0 +1,16 @@
+Value Key resource (\S+)
+Value limit (\d{2,3})
+Value current (\d{2,3})
+Value min_avg (\d{2,3})
+Value hr_avg (\d{2,3})
+Value hr_max (\d{2,3})
+
+Start
+  ^\* - current value exceeds threshold$$
+  ^Device                          1 Min  1 Hr  1 Hr$$
+  ^Resources          Limit   Curr   Avg    Avg   Max\s*$$
+  ^-----------------\+-------\+------\+------\+-----\+----\s*$$ -> Health
+
+Health
+  ^${resource}\s+${limit}\s+${current}\s+${min_avg}\s+${hr_avg}\s+${hr_max}\s*$$ -> Record
+  ^. -> Error
