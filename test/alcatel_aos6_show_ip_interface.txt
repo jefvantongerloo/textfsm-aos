@@ -1,0 +1,5 @@
+Total 2 interfaces
+             Name                   IP Address     Subnet Mask   Status Forward  Device
+--------------------------------+---------------+---------------+------+-------+--------
+Loopback                         127.0.0.1       255.0.0.0           UP      NO Loopback
+vlan10ip                         10.10.10.11     255.255.255.0       UP     YES vlan 2299
