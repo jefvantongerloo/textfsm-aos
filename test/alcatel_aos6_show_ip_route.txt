@@ -1,0 +1,9 @@
+ + = Equal cost multipath routes
+ Total 3 routes
+
+  Dest Address      Subnet Mask       Gateway Addr      Age       Protocol 
+------------------+-----------------+-----------------+---------+-----------
+  0.0.0.0           0.0.0.0           10.0.0.1           240d 7h  NETMGMT
+  10.10.10.0        255.255.255.0     10.10.10.1         240d 7h  LOCAL
+  127.0.0.1         255.255.255.255   127.0.0.1          240d 7h  LOCAL
+
