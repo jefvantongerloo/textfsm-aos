@@ -1,0 +1,15 @@
+Value dest_address ((?:[0-9]{1,3}\.){3}[0-9]{1,3})
+Value subnet_mask ((?:[0-9]{1,3}\.){3}[0-9]{1,3})
+Value gateway_address ((?:[0-9]{1,3}\.){3}[0-9]{1,3})
+Value age ((\d+:\d+:\d+)|(\d+d\s\d+h))
+Value protocol (\w+)
+
+Start
+  ^\+ = Equal cost multipath routes$$
+  ^Total 3 routes$$
+  ^  Dest Address      Subnet Mask       Gateway Addr      Age       Protocol $$
+  ^------------------\+-----------------\+-----------------\+---------\+-----------$$ -> Routes
+
+Routes
+  ^\s+${dest_address}\s+${subnet_mask}\s+${gateway_address}\s+${age}\s+${protocol}$$ -> Record
+  ^. -> Error
