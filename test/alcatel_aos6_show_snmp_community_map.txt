@@ -1,0 +1,7 @@
+Community mode : enabled
+
+status   community string                 user name
+--------+--------------------------------+--------------------------------
+enabled  private                          snmpuser_01
+enabled  public                           snmpuser_02
+
