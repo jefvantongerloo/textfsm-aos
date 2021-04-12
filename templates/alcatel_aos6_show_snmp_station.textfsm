@@ -1,0 +1,13 @@
+Value ip_address ((?:[0-9]{1,3}\.){3}[0-9]{1,3}|(?:[a-f0-9]{1,4}:){7}[a-f0-9]{1,4})
+Value udp_port (\d{1,5})
+Value status (enable|disable)
+Value protocol (v1|v2|v3)
+Value user (.*)
+
+Start
+  ^ipAddress/udpPort                                   status    protocol user$$
+  ^---------------------------------------------------\+---------\+--------\+-------$$ -> Station
+
+Station
+  ^${ip_address}\/${udp_port}\s+${status}\s+${protocol}\s+${user}$$ -> Record
+  ^. -> Error
