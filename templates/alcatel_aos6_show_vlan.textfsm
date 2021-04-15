@@ -1,4 +1,4 @@
-Value Required vlan (\d+)
+Value Required Key vlan (\d+)
 Value type (std|vstk|gvrp|ipmv)
 Value admin (on|off)
 Value oper (on|off)
