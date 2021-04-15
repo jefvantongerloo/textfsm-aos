@@ -6,6 +6,7 @@ alcatel_aos6_show_interface_status.textfsm, .*, aos6, show interface status
 alcatel_aos6_show_ip_interface.textfsm, .*, aos6, show ip interface
 alcatel_aos6_show_ip_route.textfsm, .*, aos6, show ip route
 alcatel_aos6_show_lldp_remote_system.textfsm, .*, aos6, show lldp remote-system
+alcatel_aos6_show_mac_address_table.textfsm, .*, aos6, show mac-address-table
 alcatel_aos6_show_microcode.textfsm, .*, aos6, show microcode
 alcatel_aos6_show_ntp_server_status.textfsm, .*, aos6, show ntp server status
 alcatel_aos6_show_snmp_community_map.textfsm, .*, aos6, show snmp community map
