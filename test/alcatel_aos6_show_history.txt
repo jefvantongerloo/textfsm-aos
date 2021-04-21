@@ -1,0 +1,6 @@
+1 show vlan
+2 show system
+3 show microcode
+4 show interfaces status
+5 show log swlog
+6 show history
