@@ -3,6 +3,7 @@ Template, Hostname, Platform, Command
 alcatel_aos6_show_8021x_users.textfsm, .*, aos6, show 802.1x users
 alcatel_aos6_show_chassis.textfsm, .*, aos6, show chassis
 alcatel_aos6_show_interface_status.textfsm, .*, aos6, show interface status
+alcatel_aos6_show_history.textfsm, .*, aos6, show history
 alcatel_aos6_show_ip_interface.textfsm, .*, aos6, show ip interface
 alcatel_aos6_show_ip_route.textfsm, .*, aos6, show ip route
 alcatel_aos6_show_lldp_remote_system.textfsm, .*, aos6, show lldp remote-system
