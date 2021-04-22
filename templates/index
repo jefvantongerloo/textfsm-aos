@@ -2,6 +2,7 @@ Template, Hostname, Platform, Command
 
 alcatel_aos6_show_8021x_users.textfsm, .*, aos6, show 802.1x users
 alcatel_aos6_show_chassis.textfsm, .*, aos6, show chassis
+alcatel_aos6_show_health.textfsm, .*, aos6, show health
 alcatel_aos6_show_interface_status.textfsm, .*, aos6, show interface status
 alcatel_aos6_show_history.textfsm, .*, aos6, show history
 alcatel_aos6_show_ip_interface.textfsm, .*, aos6, show ip interface
@@ -14,4 +15,4 @@ alcatel_aos6_show_snmp_community_map.textfsm, .*, aos6, show snmp community map
 alcatel_aos6_show_snmp_station.textfsm, .*, aos6, show snmp station
 alcatel_aos6_show_system.textfsm, .*, aos6, show system
 alcatel_aos6_show_vlan.textfsm, .*, aos6, show vlan
-alcatel_aos6_show_health.textfsm, .*, aos6, show health
+alcatel_aos6_show_user.textfsm, .*, aos6, show vlan
