@@ -1,0 +1,28 @@
+Value user_name (.+)
+Value password_expiration (.+)
+Value password_modified_date (.+)
+Value account_locked (.+)
+Value password_bad_attempts (\d+)
+Value read_only_domains (None|All|.+)
+Value read_write_domains (None|All|.+)
+Value read_only_view (None|All|.+)
+Value read_write_view (None|All|.+)
+Value snmp_allowed (YES|NO)
+Value snmp_authentication (.+)
+Value snmp_encryption (.+)
+Value console_only (Enabled|Disabled)
+
+Start
+  ^User name\s+=\s${user_name},
+  ^\s{2}Password expiration\s+=\s${password_expiration},
+  ^\s{2}Password allow to be modified date\s+= ${password_modified_date},
+  ^\s{2}Account lockout\s+=\s${account_locked},
+  ^\s{2}Password bad attempts\s+=\s${password_bad_attempts},
+  ^\s{2}Read Only for domains\s+=\s${read_only_domains},
+  ^\s{2}Read/Write for domains\s+=\s${read_write_domains}\s*,
+  ^\s{2}Read Only for view\s+=\s${read_only_view},
+  ^\s{2}Read/Write for view\s+=\s${read_write_view},
+  ^\s{2}Snmp allowed\s+=\s${snmp_allowed},
+  ^\s{2}Snmp authentication\s+=\s${snmp_authentication},
+  ^\s{2}Snmp encryption\s+=\s${snmp_encryption},
+  ^\s{2}Console-Only\s+\s+=\s${console_only} -> Record Start
