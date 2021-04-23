@@ -1,0 +1,17 @@
+Value slot (\d+\/\d+)
+Value mac_address (([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]){2})
+Value mac_auth_status (\w+)
+Value classification_policy (\S+)
+Value vlan_learned (\d{1,4})
+Value user_name (\S+)
+
+Start
+  ^Slot  MAC               MAC Authent                  Classification      Vlan      User$$
+  ^Port  Address           Status                       Policy              Learned   Name$$
+  ^-----\+-----------------\+----------------------------\+-------------------\+--------\+-------------$$ -> Nonsupplicant
+
+Nonsupplicant
+  ^${slot}\s${mac_address}\s${mac_auth_status}\s+${classification_policy}\s\w*\s*${vlan_learned}\s+${user_name}$$ -> Record
+  ^Slot \d Port \d{1,2}  - has no non-supplicant to show.$$
+  ^. -> Error
+  
