@@ -1,0 +1,264 @@
+
+Slot  MAC               MAC Authent                  Classification      Vlan      User
+Port  Address           Status                       Policy              Learned   Name
+-----+-----------------+----------------------------+-------------------+--------+-------------
+
+Slot 1 Port 1  - has no non-supplicant to show.
+
+
+Slot 1 Port 2  - has no non-supplicant to show.
+
+
+Slot 1 Port 3  - has no non-supplicant to show.
+
+
+Slot 1 Port 4  - has no non-supplicant to show.
+
+01/05 00:26:73:a7:88:33 Authenticated                 Basic-UNP-Auth Svr 10        002673A78833
+
+Slot 1 Port 6  - has no non-supplicant to show.
+
+
+Slot 1 Port 7  - has no non-supplicant to show.
+
+
+Slot 1 Port 8  - has no non-supplicant to show.
+
+
+Slot 1 Port 9  - has no non-supplicant to show.
+
+
+Slot 1 Port 10  - has no non-supplicant to show.
+
+
+Slot 1 Port 11  - has no non-supplicant to show.
+
+
+Slot 1 Port 12  - has no non-supplicant to show.
+
+
+Slot 1 Port 13  - has no non-supplicant to show.
+
+01/14 00:80:9f:e0:11:6d Authenticated                 Basic-UNP-Auth Svr 10        00809FE0116D
+
+Slot 1 Port 15  - has no non-supplicant to show.
+
+
+Slot 1 Port 16  - has no non-supplicant to show.
+
+
+Slot 1 Port 17  - has no non-supplicant to show.
+
+01/18 00:80:9f:e0:11:c0 Authenticated                 Basic-UNP-Auth Svr 10        00809FE011C0
+
+Slot 1 Port 19  - has no non-supplicant to show.
+
+
+Slot 1 Port 20  - has no non-supplicant to show.
+
+
+Slot 1 Port 21  - has no non-supplicant to show.
+
+
+Slot 1 Port 22  - has no non-supplicant to show.
+
+
+Slot 1 Port 23  - has no non-supplicant to show.
+
+
+Slot 1 Port 24  - has no non-supplicant to show.
+
+
+Slot 1 Port 25  - has no non-supplicant to show.
+
+
+Slot 1 Port 26  - has no non-supplicant to show.
+
+
+Slot 1 Port 27  - has no non-supplicant to show.
+
+
+Slot 1 Port 28  - has no non-supplicant to show.
+
+
+Slot 1 Port 29  - has no non-supplicant to show.
+
+
+Slot 1 Port 30  - has no non-supplicant to show.
+
+
+Slot 1 Port 31  - has no non-supplicant to show.
+
+
+Slot 1 Port 32  - has no non-supplicant to show.
+
+01/33 00:80:9f:dc:f7:a0 Authenticated                 Basic-UNP-Auth Svr 10        00809FDCF7A0
+
+Slot 1 Port 34  - has no non-supplicant to show.
+
+
+Slot 1 Port 35  - has no non-supplicant to show.
+
+
+Slot 1 Port 36  - has no non-supplicant to show.
+
+
+Slot 1 Port 37  - has no non-supplicant to show.
+
+
+Slot 1 Port 38  - has no non-supplicant to show.
+
+
+Slot 1 Port 39  - has no non-supplicant to show.
+
+
+Slot 1 Port 40  - has no non-supplicant to show.
+
+
+Slot 1 Port 41  - has no non-supplicant to show.
+
+01/42 00:80:9f:e0:19:9b Authenticated                 Basic-UNP-Auth Svr 10        00809FE0199B
+
+Slot 1 Port 43  - has no non-supplicant to show.
+
+
+Slot 1 Port 44  - has no non-supplicant to show.
+
+
+Slot 1 Port 45  - has no non-supplicant to show.
+
+01/46 00:80:9f:e0:11:5f Authenticated                 Basic-UNP-Auth Svr 10        00809FE0115F
+
+Slot 1 Port 47  - has no non-supplicant to show.
+
+
+Slot 1 Port 48  - has no non-supplicant to show.
+
+02/01 00:80:9f:e0:10:c8 Authenticated                 Basic-UNP-Auth Svr 10        00809FE010C8
+02/02 00:80:9f:e0:11:cc Authenticated                 Basic-UNP-Auth Svr 10        00809FE011CC
+
+Slot 2 Port 3  - has no non-supplicant to show.
+
+
+Slot 2 Port 4  - has no non-supplicant to show.
+
+
+Slot 2 Port 5  - has no non-supplicant to show.
+
+
+Slot 2 Port 6  - has no non-supplicant to show.
+
+
+Slot 2 Port 7  - has no non-supplicant to show.
+
+
+Slot 2 Port 8  - has no non-supplicant to show.
+
+
+Slot 2 Port 9  - has no non-supplicant to show.
+
+
+Slot 2 Port 10  - has no non-supplicant to show.
+
+
+Slot 2 Port 11  - has no non-supplicant to show.
+
+
+Slot 2 Port 12  - has no non-supplicant to show.
+
+
+Slot 2 Port 13  - has no non-supplicant to show.
+
+
+Slot 2 Port 14  - has no non-supplicant to show.
+
+
+Slot 2 Port 15  - has no non-supplicant to show.
+
+02/16 00:80:9f:e0:11:ca Authenticated                 Basic-UNP-Auth Svr 10        00809FE011CA
+
+Slot 2 Port 17  - has no non-supplicant to show.
+
+02/18 00:80:9f:e0:11:c8 Authenticated                 Basic-UNP-Auth Svr 10        00809FE011C8
+
+Slot 2 Port 19  - has no non-supplicant to show.
+
+
+Slot 2 Port 20  - has no non-supplicant to show.
+
+
+Slot 2 Port 21  - has no non-supplicant to show.
+
+
+Slot 2 Port 22  - has no non-supplicant to show.
+
+
+Slot 2 Port 23  - has no non-supplicant to show.
+
+
+Slot 2 Port 24  - has no non-supplicant to show.
+
+
+Slot 2 Port 25  - has no non-supplicant to show.
+
+02/26 00:80:9f:e0:11:89 Authenticated                 Basic-UNP-Auth Svr 10        00809FE01189
+
+Slot 2 Port 27  - has no non-supplicant to show.
+
+
+Slot 2 Port 28  - has no non-supplicant to show.
+
+
+Slot 2 Port 29  - has no non-supplicant to show.
+
+
+Slot 2 Port 30  - has no non-supplicant to show.
+
+
+Slot 2 Port 31  - has no non-supplicant to show.
+
+
+Slot 2 Port 32  - has no non-supplicant to show.
+
+
+Slot 2 Port 33  - has no non-supplicant to show.
+
+
+Slot 2 Port 34  - has no non-supplicant to show.
+
+02/35 00:80:9f:e0:11:a8 Authenticated                 Basic-UNP-Auth Svr 10        00809FE011A8
+
+Slot 2 Port 36  - has no non-supplicant to show.
+
+
+Slot 2 Port 37  - has no non-supplicant to show.
+
+
+Slot 2 Port 38  - has no non-supplicant to show.
+
+
+Slot 2 Port 39  - has no non-supplicant to show.
+
+
+Slot 2 Port 40  - has no non-supplicant to show.
+
+
+Slot 2 Port 41  - has no non-supplicant to show.
+
+
+Slot 2 Port 42  - has no non-supplicant to show.
+
+
+Slot 2 Port 43  - has no non-supplicant to show.
+
+
+Slot 2 Port 44  - has no non-supplicant to show.
+
+02/45 00:26:73:c1:db:69 Authenticated                 Basic-UNP-Auth Svr 20        002673C1DB69
+02/46 ac:a3:1e:c3:ac:aa Authenticated                 Basic-UNP-Auth Svr 20        ACA31EC3ACAA
+
+Slot 2 Port 47  - has no non-supplicant to show.
+
+
+Slot 2 Port 48  - has no non-supplicant to show.
+
