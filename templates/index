@@ -1,5 +1,6 @@
 Template, Hostname, Platform, Command
 
+alcatel_aos6_show_8021x_non-supplicant_unp.textfsm, .*, aos6, show 802.1x non-supplicant unp
 alcatel_aos6_show_8021x_users.textfsm, .*, aos6, show 802.1x users
 alcatel_aos6_show_chassis.textfsm, .*, aos6, show chassis
 alcatel_aos6_show_health.textfsm, .*, aos6, show health
