@@ -1,14 +1,14 @@
-Value Required Key vlan (\d+)
-Value type (std|vstk|gvrp|ipmv)
-Value admin (on|off)
-Value oper (on|off)
+Value vlanNumber (\d+)
+Value vlanType (std|vstk|gvrp|ipmv)
+Value vlanAdmStatus (on|off)
+Value vlanOperStatus (on|off)
 Value stp_1x1 (on|off)
 Value flat (on|off)
 Value auth (on|off)
-Value ip (on|off)
+Value vlanRouterStatus (on|off)
 Value tag (on|off)
-Value lrn (on|off)
-Value name ((\S+\s*)+\S+)
+Value vlanSrcLearningStatus (on|off)
+Value vlanDescription ((\S+\s*)+\S+)
 
 Start
   ^\s*stree\s+mble\s+src\s*$$
@@ -16,5 +16,5 @@ Start
   ^-----\+-----\+------\+------\+------\+------\+----\+-----\+-----\+------\+----------$$ -> VLAN
 
 VLAN
-  ^\s*${vlan}\s+${type}\s+${admin}\s+${oper}\s+${stp_1x1}\s+${flat}\s+${auth}\s+${ip}\s+${tag}\s+${lrn}\s+${name}\s*$$ -> Record
+  ^\s*${vlanNumber}\s+${vlanType}\s+${vlanAdmStatus}\s+${vlanOperStatus}\s+${stp_1x1}\s+${flat}\s+${auth}\s+${vlanRouterStatus}\s+${tag}\s+${vlanSrcLearningStatus}\s+${vlanDescription}\s*$$ -> Record
   ^. -> Error
