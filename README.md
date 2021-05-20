@@ -25,7 +25,7 @@ print(output)
 
 **Output**
 
-```json
+```python
 [
     {'resource': 'Receive', 'limit': '80', 'current': '01', 'min_avg': '01', 'hr_avg': '01', 'hr_max': '01'},
     {'resource': 'Transmit/Receive', 'limit': '80', 'current': '01', 'min_avg': '01', 'hr_avg': '01', 'hr_max': '01'},
