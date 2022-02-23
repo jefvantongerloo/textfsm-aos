@@ -33,9 +33,6 @@ jobs:
             provider: pypi
             username: __token__
             password: $TOKEN_PYPITEST
-            server: https://test.pypi.org/legacy
             on:
-              all_branches: true
-              # tags: true
-              # branch: main
-
+              tags: true
+              branch: main
