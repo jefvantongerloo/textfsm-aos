@@ -2,7 +2,6 @@
 import textfsm_aos
 import yaml
 import pytest
-from rich import print
 
 
 def _get_raw(platform: str, command: str) -> str:
