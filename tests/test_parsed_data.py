@@ -1,6 +1,7 @@
 """Pytests for TextFSM_aos project."""
 import textfsm_aos
-import pytest, yaml
+import yaml
+import pytest
 from rich import print
 
 
