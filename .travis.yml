@@ -2,6 +2,9 @@
 stages:
     - name: "lint"
     - name: "pytest"
+    - name: "deploy-pypi"
+      # if: tag IS present
+      # if: tag IS present AND branch = main
 
 language: python
 
@@ -12,7 +15,7 @@ before_install:
     - pip install -r requirements.txt
 
 # --------------------------------------------------------------------------
-# Linting
+# Linting & tests
 # --------------------------------------------------------------------------
 
 jobs:
@@ -25,3 +28,13 @@ jobs:
         - stage: "pytest"
           script:
             - pytest
+        - stage: "deploy-pypi"
+          deploy:
+            provider: pypi
+            username: __token__
+            password: $TOKEN_PYPITEST
+            server: https://test.pypi.org
+            # on:
+              # tags: true
+              # branch: main
+
