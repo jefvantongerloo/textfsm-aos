@@ -6,3 +6,4 @@ scrapli[ssh2]
 tox-travis
 rich
 pyyaml
+pytest
