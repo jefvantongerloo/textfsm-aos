@@ -3,7 +3,7 @@ stages:
     - name: "lint"
     - name: "test"
 
-language: generic
+language: python
 
 python:
     - "3.6"
@@ -18,7 +18,7 @@ before_install:
 jobs:
     include:
         - stage: "lint"
-          install: 
+          install:
             - pip install tox-travis
           script:
             - tox -e ALL
