@@ -21,7 +21,7 @@ jobs:
           install: 
             - pip install tox-travis
           script:
-            - tox
+            - tox -e ALL
         - stage: "pytest"
           script:
             - pytest
