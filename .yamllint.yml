@@ -1,3 +1,4 @@
 ---
 rules:
+  # Line-length managed by Black
   line-length: disable
