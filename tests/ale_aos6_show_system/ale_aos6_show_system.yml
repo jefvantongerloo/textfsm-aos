@@ -1,0 +1,11 @@
+---
+- description: 'Alcatel-Lucent Enterprise OS6450-P48 6.7.2.89.R06 GA, April 09, 2019.'  # yamllint disable-line rule:line-length
+  object_id: '1.3.6.1.4.1.6486.800.1.1.2.1.12.1.9'
+  up_time: '520 days 7 hours 16 minutes and 38 seconds'
+  contact: 'Alcatel-Lucent Enterprise, https://www.al-enterprise.com'
+  name: 'NET-SWI-001'
+  location: 'BEL'
+  services: '72'
+  date_time: 'THU APR 01 2021  18:45:27 (CEST)'
+  available: '52967424'
+  comments: 'None'

@@ -1,0 +1,13 @@
+---
+- name: 'Loopback'
+  ip_address: '127.0.0.1'
+  subnet_mask: '255.0.0.0'
+  status: 'UP'
+  forward: 'NO'
+  device: 'Loopback'
+- name: 'vlan10ip'
+  ip_address: '10.10.10.11'
+  subnet_mask: '255.255.255.0'
+  status: 'UP'
+  forward: 'YES'
+  device: 'vlan 2299'

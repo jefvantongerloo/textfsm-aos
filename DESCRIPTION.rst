@@ -1,0 +1,1 @@
+Python package for Alcatel-Lucent Enterprise aos6 and aos8 parsing based on TextFSM templates. Parse semi-structured cli data to structured data ready for your network automation pipeline. Autmatically transform gathered output from screen-scraping tools like Netmiko, Scrapli and Paramiko.

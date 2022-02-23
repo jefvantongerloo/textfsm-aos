@@ -1,12 +1,74 @@
-# textfsm-aos
+# TEXTFSM-AOS
 
-Alcatel-Lucent Enterprise AOS6 TextFSM templates
+> Alcatel-Lucent Enterprise AOS CLI parsing
 
-## Example usage
+Python package for Alcatel-Lucent Enterprise aos6 and aos8 parsing based on TextFSM templates. Parse semi-structured cli data to structured data ready for your network automation pipeline. Autmatically transform gathered output from screen-scraping tools like Netmiko, Scrapli and Paramiko.
+
+## Installing / Getting started
+
+Python package available through PyPi
+
+```bash
+pip install textfsm-aos
+```
+
+Provide screen-scraped data to parser
+
+```python
+from textfsm_aos.parser import parse
+
+sample_data = """
+   Package           Release       Size     Description
+-----------------+---------------+--------+-----------------------------------
+KFbase.img        6.7.2.89.R06    18059551 Alcatel-Lucent Enterprise Base Softw
+KFos.img          6.7.2.89.R06     3566798 Alcatel-Lucent Enterprise OS
+KFeni.img         6.7.2.89.R06     6123991 Alcatel-Lucent Enterprise NI softwar
+KFsecu.img        6.7.2.89.R06      649383 Alcatel-Lucent Enterprise Security M
+"""
+
+parse("ale_aos6", "show microcode", sample_data)
+```
+
+parse result
+
+```python
+[
+    {'package': 'KFbase.img', 'release': '6.7.2.89.R06', 'size': '18059551', 'description': 'Alcatel-Lucent Enterprise Base Softw'},
+    {'package': 'KFos.img', 'release': '6.7.2.89.R06', 'size': '3566798', 'description': 'Alcatel-Lucent Enterprise OS'},
+    {'package': 'KFeni.img', 'release': '6.7.2.89.R06', 'size': '6123991', 'description': 'Alcatel-Lucent Enterprise NI softwar'},
+    {'package': 'KFsecu.img', 'release': '6.7.2.89.R06', 'size': '649383', 'description': 'Alcatel-Lucent Enterprise Security M'}
+]
+```
+
+## Supported commands
+
+| command                        |        aos6        |        aos8        |
+|--------------------------------|:------------------:|:------------------:|
+| show 802.1x users              | :heavy_check_mark: |        :x:         |
+| show 802.1x non-supplicant     | :heavy_check_mark: |        :x:         |
+| show 802.1x non-supplicant unp | :heavy_check_mark: |        :x:         |
+| show chassis                   | :heavy_check_mark: |        :x:         |
+| show health                    | :heavy_check_mark: |        :x:         |
+| show history                   | :heavy_check_mark: |        :x:         |
+| show interface status          | :heavy_check_mark: |        :x:         |
+| show ip interface              | :heavy_check_mark: |        :x:         |
+| show ip route                  | :heavy_check_mark: |        :x:         |
+| show lld remote system         | :heavy_check_mark: |        :x:         |
+| show mac-address-table         | :heavy_check_mark: |        :x:         |
+| show microcode                 | :heavy_check_mark: |        :x:         |
+| show ntp server status         | :heavy_check_mark: |        :x:         |
+| show user                      | :heavy_check_mark: |        :x:         |
+| show snmp station              | :heavy_check_mark: |        :x:         |
+| show snmp community map        | :heavy_check_mark: |        :x:         |
+| show system                    | :heavy_check_mark: |        :x:         |
+| show vlan                      | :heavy_check_mark: |        :x:         |
+| show vlan port mobile          | :heavy_check_mark: |        :x:         |
+
+## Direct TextFSM example usage
 
 ### Netmiko
 
-**Python script**
+Python script
 
 ```python
 from netmiko import ConnectHandler
@@ -20,12 +82,12 @@ alcatel = {
 
 net_connect = ConnectHandler(**alcatel)
 prompt = net_connect.find_prompt()
-output = net_connect.send_command("show health", use_textfsm=True, textfsm_template="textfsm-aos/templates/alcatel_aos6_show_health.textfsm")
+output = net_connect.send_command("show health", use_textfsm=True, textfsm_template="textfsm-aos/templates/ale_aos6_show_health.textfsm")
 
 print(output)
 ```
 
-**Example Output**
+Example Output
 
 ```python
 [
@@ -38,15 +100,15 @@ print(output)
 
 ### Ansible
 
-**Ansible task**
+Ansible task
 
 ```yaml
 - name: AOS6 >> parsed with textfsm
   set_fact:
-    vlans: "{{ vlans-aos6 | ansible.netcommon.parse_cli_textfsm('textfsm/alcatel_aos6_show_vlan.textfsm') }}"
+    vlans: "{{ vlans-aos6 | ansible.netcommon.parse_cli_textfsm('textfsm/templates/ale_aos6_show_vlan.textfsm') }}"
 ```
 
-**Example Output**
+Example Output
 
 ```yaml
     health:
@@ -72,3 +134,10 @@ print(output)
       healthModuleRxTxRxLimit: '80'
       healthModuleSlot: '1'
 ```
+
+## How to contribute
+
+## Related projects
+
+- Google TextFSM: https://github.com/google/textfsm
+- Scrapli: https://github.com/carlmontanari/scrapli

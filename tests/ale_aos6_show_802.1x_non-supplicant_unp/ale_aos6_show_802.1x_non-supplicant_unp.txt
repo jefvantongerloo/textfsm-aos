@@ -1,0 +1,20 @@
+
+Slot  MAC               Vlan  HIC             Dynamic            User
+Port  Address                 Status          UNP                Name
+-----+-----------------+-----+---------------+------------------+-------------
+
+Slot 1 Port 1  - has no non-supplicant unp to show.
+
+
+Slot  MAC               Vlan  HIC             Dynamic            User
+Port  Address                 Status          UNP                Name
+-----+-----------------+-----+---------------+------------------+-------------
+01/2 00:80:9f:e0:11:6d  10   Not Started     zone-tel           00809FE0116D
+
+Slot  MAC               Vlan  HIC             Dynamic            User
+Port  Address                 Status          UNP                Name
+-----+-----------------+-----+---------------+------------------+-------------
+
+Slot 1 Port 3  - has no non-supplicant unp to show.
+
+

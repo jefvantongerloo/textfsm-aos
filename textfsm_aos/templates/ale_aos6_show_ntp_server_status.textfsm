@@ -1,0 +1,60 @@
+Value Key,Required ip_address ((\d+.*))
+Value host_mode (\w+)
+Value peer_mode (\w+)
+Value prefer (\w+)
+Value version (\d+)
+Value key (\d+)
+Value stratum (\d+)
+Value minpoll (.+)
+Value maxpoll (.+)
+Value poll (\d+)
+Value when (\d+)
+Value delay (.+)
+Value offset (.+)
+Value dispersion (.+)
+Value root_distance (.+)
+Value precision (-*\d+)
+Value reference_ip ((\d+.*))
+Value status (.+)
+Value uptime_count (.+)
+Value reachability (\d)
+Value unreachable_count (\d)
+Value stats_reset_count (.+)
+Value packets_sent (\d+)
+Value packets_received (\d+)
+Value duplicate_packets (\d)
+Value bogus_origin (\d)
+Value bad_authentication (\d)
+Value bad_dispersion (\d)
+# Value last_event (\w+)
+
+Start
+  ^IP address\s+=\s${ip_address},$$
+  ^Host mode\s+=\s${host_mode},$$
+  ^Peer mode\s+=\s${peer_mode},$$
+  ^Prefer\s+=\s${prefer},$$
+  ^Version\s+=\s${version},$$
+  ^Key\s+=\s${key},$$
+  ^Stratum\s+=\s${stratum},$$
+  ^Minpoll\s+=\s${minpoll},$$
+  ^Maxpoll\s+=\s${maxpoll},$$
+  ^Poll\s+=\s${poll},$$
+  ^when\s+=\s${when},$$
+  ^Delay\s+=\s${delay},$$
+  ^Offset\s+=\s${offset},$$
+  ^Dispersion\s+=\s${dispersion}$$
+  ^Root distance\s+=\s${root_distance},$$
+  ^Precision\s+=\s${precision},$$
+  ^Reference IP\s+=\s${reference_ip},$$
+  ^Status\s+=\s${status},$$
+  ^Uptime count\s+=\s${uptime_count},$$
+  ^Reachability\s+=\s${reachability},$$
+  ^Unreachable count\s+=\s${unreachable_count},$$
+  ^Stats reset count\s+=\s${stats_reset_count},$$
+  ^Packets sent\s+=\s${packets_sent},$$
+  ^Packets received\s+=\s${packets_received},$$
+  ^Duplicate packets\s+=\s${duplicate_packets},$$
+  ^Bogus origin\s+=\s${bogus_origin},$$
+  ^Bad authentication\s+=\s${bad_authentication},$$
+  ^Bad dispersion\s+=\s${bad_dispersion}, -> Record Start
+  # ^Last Event\s+=\s${last_event}, -> Record Start

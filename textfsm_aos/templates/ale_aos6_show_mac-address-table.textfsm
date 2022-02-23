@@ -1,0 +1,16 @@
+Value vlan (\d+)
+Value mac_address (([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]){2})
+Value type (learned|permanent)
+Value protocol (\S+)
+Value operation (bridging|filtering)
+Value interface (\d/\d+)
+
+Start
+  ^Legend: Mac Address: \* = address not valid$$
+  ^   Vlan      Mac Address          Type       Protocol    Operation    Interface$$ 
+  ^\s+------\+-------------------\+--------------\+-----------\+------------\+-----------$$ -> Mac
+
+Mac
+  ^\s+${vlan}\s+${mac_address}\s+${type}\s+${protocol}\s+${operation}\s+${interface}$$ -> Record
+  ^Total number of Valid MAC addresses above = \d+
+  ^. -> Error

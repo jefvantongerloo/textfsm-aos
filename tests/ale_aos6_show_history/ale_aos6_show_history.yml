@@ -1,0 +1,9 @@
+---
+- id: '1'
+  command: 'show vlan'
+- id: '2'
+  command: 'show system'
+- id: '3'
+  command: 'show microcode'
+- id: '4'
+  command: 'show history'

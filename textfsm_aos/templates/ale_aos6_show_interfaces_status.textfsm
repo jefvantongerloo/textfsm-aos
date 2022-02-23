@@ -1,0 +1,21 @@
+Value Key,Required slot (\d/\d+)
+Value autoneg (-|Enable|Disable)
+Value detected_speed (-|Auto|10|100|1000|10000)
+Value detected_duplex (-|Half|Full|Auto)
+Value detected_hybrid_type (-|NA|FF|PF|FC|PC|F|C)
+Value configured_speed (-|Auto|10|100|1000|10000)
+Value configured_duplex (-|Half|Full|Auto)
+Value configured_hybrid_mode (-|NA|FF|PF|FC|PC|F|C)
+Value trap_linkupdown (-|up|down)
+
+Start
+  ^\s+DETECTED\s+CONFIGURED$$
+  ^Slot/\s+AutoNego \s+Speed\s+Duplex\s+Hybrid\s+Speed\s+Duplex\s+Hybrid\s+Trap$$
+  ^Port\s+(Mbps)\s+Type\s+(Mbps)\s+Mode\s+LinkUpDown$$
+  ^-----\+--------\+------\+------\+------\+--------\+------\+------\+------$$ -> Interfaces
+
+Interfaces
+  ^ ${slot}\s+${autoneg}\s+${detected_speed}\s+${detected_duplex}\s+${detected_hybrid_type}\s+${configured_speed}\s+${configured_duplex}\s+${configured_hybrid_mode}\s+${trap_linkupdown}\s*$$ -> Record
+  ^FF - ForcedFiber PF - PreferredFiber  F - Fiber$$
+  ^FC - ForcedCopper PC - PreferredCopper C - Copper$$
+  ^. -> Error

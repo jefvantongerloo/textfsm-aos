@@ -1,0 +1,7 @@
+---
+- slot: '01/2'
+  mac_address: '00:80:9f:e0:11:6d'
+  vlan: '10'
+  hic_status: 'Not Started'
+  unp: 'zone-tel'
+  user_name: '00809FE0116D'

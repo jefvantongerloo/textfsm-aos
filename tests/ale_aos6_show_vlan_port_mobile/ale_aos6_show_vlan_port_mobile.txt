@@ -1,0 +1,7 @@
+                 cfg                               ignore   ingress
+  port   mobile  def  authent   enabled   restore   bpdu   filtering
+-------+--------+----+--------+---------+---------+-------+----------
+  1/1      on    2701 on-8021x       on         on      on        on
+  1/2      on    2701 on-8021x       off       off     off       off
+  1/3     off                                                     on
+  1/4     off                                                    off
