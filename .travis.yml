@@ -3,8 +3,7 @@ stages:
     - name: "lint"
     - name: "pytest"
     - name: "deploy-pypi"
-      # if: tag IS present
-      # if: tag IS present AND branch = main
+      if: tag IS present AND branch = main
 
 language: python
 
