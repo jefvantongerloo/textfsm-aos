@@ -1,4 +1,3 @@
-importlib.resources
 pytest
 pyyaml
 scrapli
