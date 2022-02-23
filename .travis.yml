@@ -3,15 +3,10 @@ stages:
     - name: "lint"
     - name: "test"
 
-language: python
+language: generic
 
 python:
     - "3.6"
-    - "3.8"
-
-before_install:
-  - pip install -r requirements.txt
-  - pip install .
 
 # --------------------------------------------------------------------------
 # Linting
@@ -20,8 +15,10 @@ before_install:
 jobs:
     include:
         - stage: "lint"
+          install: 
+            - pip install tox-travis
           script:
             - tox
-        - stage: "test"
+        - stage: "pytest"
           script:
             - pytest
