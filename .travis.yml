@@ -1,7 +1,7 @@
 ---
 stages:
     - name: "lint"
-    - name: "test"
+    - name: "pytest"
 
 language: python
 
