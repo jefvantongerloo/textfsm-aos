@@ -3,7 +3,6 @@ textfsm
 scrapli
 scrapli[community]
 scrapli[ssh2]
-tox
 tox-travis
 rich
 pyyaml
