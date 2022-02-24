@@ -2,7 +2,11 @@
 
 > Alcatel-Lucent Enterprise AOS CLI parsing
 
-Python package for Alcatel-Lucent Enterprise aos6 and aos8 parsing based on TextFSM templates. Parse semi-structured cli data to structured data ready for your network automation pipeline. Autmatically transform gathered output from screen-scraping tools like Netmiko, Scrapli and Paramiko.
+Python package for Alcatel-Lucent Enterprise aos6 and aos8 parsing based on TextFSM templates.
+
+## Why TextFSM-AOS?
+
+Parse semi-structured cli data to structured data ready to be ingested by your network automation pipeline. Autmatically transform gathered output from screen-scraping tools like Netmiko, Scrapli and Paramiko. Receive uniform data accross Alcatel-Lucent Enterprise devices running aos6 or aos8.
 
 ## Installing / Getting started
 
@@ -33,10 +37,30 @@ parse result
 
 ```python
 [
-    {'package': 'KFbase.img', 'release': '6.7.2.89.R06', 'size': '18059551', 'description': 'Alcatel-Lucent Enterprise Base Softw'},
-    {'package': 'KFos.img', 'release': '6.7.2.89.R06', 'size': '3566798', 'description': 'Alcatel-Lucent Enterprise OS'},
-    {'package': 'KFeni.img', 'release': '6.7.2.89.R06', 'size': '6123991', 'description': 'Alcatel-Lucent Enterprise NI softwar'},
-    {'package': 'KFsecu.img', 'release': '6.7.2.89.R06', 'size': '649383', 'description': 'Alcatel-Lucent Enterprise Security M'}
+   {
+      "package":"KFbase.img",
+      "release":"6.7.2.89.R06",
+      "size":"18059551",
+      "description":"Alcatel-Lucent Enterprise Base Softw"
+   },
+   {
+      "package":"KFos.img",
+      "release":"6.7.2.89.R06",
+      "size":"3566798",
+      "description":"Alcatel-Lucent Enterprise OS"
+   },
+   {
+      "package":"KFeni.img",
+      "release":"6.7.2.89.R06",
+      "size":"6123991",
+      "description":"Alcatel-Lucent Enterprise NI softwar"
+   },
+   {
+      "package":"KFsecu.img",
+      "release":"6.7.2.89.R06",
+      "size":"649383",
+      "description":"Alcatel-Lucent Enterprise Security M"
+   }
 ]
 ```
 
@@ -66,6 +90,71 @@ parse result
 
 ## Direct TextFSM example usage
 
+Bypass the build-in parser functionality and use the TextFSM templates directly in network cli scraping and orchestration tools like Netmiko, Scrapli and Ansible.
+
+### Scrapli
+
+Python script
+
+```python
+from scrapli import Scrapli
+from scrapli.helper import textfsm_parse
+
+device = {
+    "host": "<host ip>",
+    "auth_username": "<username>",
+    "auth_password": "<password>",
+    "auth_strict_key": False,
+    "transport": "ssh2",
+    "platform": "alcatel_aos",
+}
+
+with Scrapli(**device) as conn:
+    response = conn.send_command("show health").result
+    structured_response = textfsm_parse(
+        "templates/ale_aos6_show_health.textfsm", response
+    )
+```
+
+Example output
+
+```python
+[
+   {
+      "resource":"Receive",
+      "limit":"80",
+      "current":"01",
+      "min_avg":"01",
+      "hr_avg":"01",
+      "hr_max":"01"
+   },
+   {
+      "resource":"Transmit/Receive",
+      "limit":"80",
+      "current":"01",
+      "min_avg":"01",
+      "hr_avg":"01",
+      "hr_max":"01"
+   },
+   {
+      "resource":"Memory",
+      "limit":"80",
+      "current":"76",
+      "min_avg":"76",
+      "hr_avg":"76",
+      "hr_max":"76"
+   },
+   {
+      "resource":"Cpu",
+      "limit":"80",
+      "current":"32",
+      "min_avg":"33",
+      "hr_avg":"29",
+      "hr_max":"97"
+   }
+]
+```
+
 ### Netmiko
 
 Python script
@@ -73,28 +162,53 @@ Python script
 ```python
 from netmiko import ConnectHandler
 
-alcatel = {
+device = {
     'device_type': 'alcatel_aos',
     'host': '<host ip>',
     'username': '<username>',
     'password': '<password>'
 }
 
-net_connect = ConnectHandler(**alcatel)
-prompt = net_connect.find_prompt()
-output = net_connect.send_command("show health", use_textfsm=True, textfsm_template="textfsm-aos/templates/ale_aos6_show_health.textfsm")
-
-print(output)
+with ConnecHandler(**device) as conn:
+    output = conn.send_command("show health", use_textfsm=True, textfsm_template="textfsm-aos/templates/ale_aos6_show_health.textfsm")
 ```
 
 Example Output
 
 ```python
 [
-    {'resource': 'Receive', 'limit': '80', 'current': '01', 'min_avg': '01', 'hr_avg': '01', 'hr_max': '01'},
-    {'resource': 'Transmit/Receive', 'limit': '80', 'current': '01', 'min_avg': '01', 'hr_avg': '01', 'hr_max': '01'},
-    {'resource': 'Memory', 'limit': '80', 'current': '76', 'min_avg': '76', 'hr_avg': '76', 'hr_max': '76'},
-    {'resource': 'Cpu', 'limit': '80', 'current': '32', 'min_avg': '33', 'hr_avg': '29', 'hr_max': '97'}
+   {
+      "resource":"Receive",
+      "limit":"80",
+      "current":"01",
+      "min_avg":"01",
+      "hr_avg":"01",
+      "hr_max":"01"
+   },
+   {
+      "resource":"Transmit/Receive",
+      "limit":"80",
+      "current":"01",
+      "min_avg":"01",
+      "hr_avg":"01",
+      "hr_max":"01"
+   },
+   {
+      "resource":"Memory",
+      "limit":"80",
+      "current":"76",
+      "min_avg":"76",
+      "hr_avg":"76",
+      "hr_max":"76"
+   },
+   {
+      "resource":"Cpu",
+      "limit":"80",
+      "current":"32",
+      "min_avg":"33",
+      "hr_avg":"29",
+      "hr_max":"97"
+   }
 ]
 ```
 
@@ -105,7 +219,7 @@ Ansible task
 ```yaml
 - name: AOS6 >> parsed with textfsm
   set_fact:
-    vlans: "{{ vlans-aos6 | ansible.netcommon.parse_cli_textfsm('textfsm/templates/ale_aos6_show_vlan.textfsm') }}"
+    health: "{{ health-aos6 | ansible.netcommon.parse_cli_textfsm('textfsm/templates/ale_aos6_show_health.textfsm') }}"
 ```
 
 Example Output
@@ -141,3 +255,4 @@ Example Output
 
 - Google TextFSM: https://github.com/google/textfsm
 - Scrapli: https://github.com/carlmontanari/scrapli
+- Netmiko: https://github.com/ktbyers/netmiko
