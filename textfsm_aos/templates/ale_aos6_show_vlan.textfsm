@@ -1,0 +1,20 @@
+Value vlannumber (\d+)
+Value vlantype (std|vstk|gvrp|ipmv)
+Value vlanadmstatus (on|off)
+Value vlanoperstatus (on|off)
+Value stp_1x1 (on|off)
+Value flat (on|off)
+Value auth (on|off)
+Value vlanrouterstatus (on|off)
+Value tag (on|off)
+Value vlansrclearningstatus (on|off)
+Value vlandescription ((\S+\s*)+\S+)
+
+Start
+  ^\s*stree\s+mble\s+src\s*$$
+  ^\s*vlan\s+type\s+admin\s+oper\s+1x1\s+flat\s+auth\s+ip\s+tag\s+lrn\s+name\s*$$
+  ^-----\+-----\+------\+------\+------\+------\+----\+-----\+-----\+------\+----------$$ -> VLAN
+
+VLAN
+  ^\s*${vlannumber}\s+${vlantype}\s+${vlanadmstatus}\s+${vlanoperstatus}\s+${stp_1x1}\s+${flat}\s+${auth}\s+${vlanrouterstatus}\s+${tag}\s+${vlansrclearningstatus}\s+${vlandescription}\s*$$ -> Record
+  ^. -> Error

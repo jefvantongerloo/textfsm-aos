@@ -1,0 +1,16 @@
+Value slot (\d+\/\d+)
+Value mac_address (([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]){2})
+Value vlan (\d{1,4})
+Value hic_status ((\S+\s)*\S+)
+Value unp (\S+)
+Value user_name (\S+)
+
+Start
+  ^Slot  MAC               Vlan  HIC             Dynamic            User$$
+  ^Port  Address                 Status          UNP                Name$$
+  ^-----\+-----------------\+-----\+---------------\+------------------\+-------------$$ -> Unp
+
+Unp
+  ^${slot}\s${mac_address}\s+${vlan}\s+${hic_status}\s+${unp}\s+${user_name}$$ -> Record Start
+  ^Slot \d Port \d{1,2}  - has no non-supplicant unp to show.$$ -> Start
+  ^. -> Error

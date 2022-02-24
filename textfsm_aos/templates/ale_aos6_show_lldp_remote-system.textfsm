@@ -1,0 +1,50 @@
+Value local_port (\d\/\d{1,2})
+Value remote_chassis (.+)
+Value remote_port (.+)
+Value remote_id (\d+)
+Value chassis_subtype (.+)
+Value port_subtype (.+)
+Value port_description (.+)
+Value system_name (.+)
+Value system_description (.+)
+Value capabilities_supported (.+)
+Value capabilities_enabled (.+)
+Value management_ip_address ((?:[0-9]{1,3}\.){3}[0-9]{1,3})
+Value vlan_id (\d+)
+Value vlan_name (.+)
+Value med_device_type (.+)
+Value med_capabilities (.+)
+Value med_extension_tlv (.+)
+Value med_power_type (.+)
+Value med_power_source (.+)
+Value med_power_priority (.+)
+Value med_power_value (.+)
+Value remote_port_autoneg (.+)
+Value mau_type (.+)
+
+Start
+  ^Remote LLDP Agents on Local Slot/Port ${local_port}: -> LLDP
+
+LLDP
+  ^    Chassis ${remote_chassis}, Port ${remote_port}:
+  ^      Remote ID                   = ${remote_id},$$
+  ^      Chassis Subtype             = ${chassis_subtype},$$
+  ^      Port Subtype                = ${port_subtype},$$
+  ^      Port Description            = ${port_description},$$
+  ^      System Name                 = ${system_name},$$
+  ^      System Description          = ${system_description},$$
+  ^      Capabilities Supported      = ${capabilities_supported},$$
+  ^      Capabilities Enabled        = ${capabilities_enabled},$$
+  ^      Management IP Address       = ${management_ip_address},*$$
+  ^      Vlan ID                     = ${vlan_id},*$$
+  ^      Vlan Name                   = ${vlan_name},$$
+  ^      MED Device Type             = ${med_device_type},$$
+  ^      MED Capabilities            = ${med_capabilities},$$
+  ^      MED Extension TLVs Present  = ${med_extension_tlv},$$
+  ^      MED Power Type              = ${med_power_type},$$
+  ^      MED Power Source            = ${med_power_source},$$     
+  ^      MED Power Priority          = ${med_power_priority},$$
+  ^      MED Power Value             = ${med_power_value},$$
+  ^      Remote port MAC/PHY AutoNeg = ${remote_port_autoneg},$$
+  ^      Mau Type                    = ${mau_type} -> Record Start
+  ^. -> Error

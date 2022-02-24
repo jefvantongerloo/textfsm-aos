@@ -1,0 +1,37 @@
+---
+stages:
+    - name: "lint"
+    - name: "pytest"
+    - name: "deploy-pypi"
+      if: tag IS present AND branch = main
+
+language: python
+
+python:
+    - "3.7"
+
+# before_install:
+#     - pip install -r requirements.txt
+
+# --------------------------------------------------------------------------
+# Linting & tests
+# --------------------------------------------------------------------------
+
+jobs:
+    include:
+        - stage: "lint"
+          install:
+            - pip install tox-travis
+          script:
+            - tox -e ALL
+        - stage: "pytest"
+          script:
+            - pytest
+        - stage: "deploy-pypi"
+          deploy:
+            provider: pypi
+            username: __token__
+            password: $TOKEN_PYPITEST
+            on:
+              tags: true
+              branch: main

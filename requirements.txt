@@ -1,3 +1,7 @@
-rich
-textfsm==1.1.0
-tabulate
+pytest
+pyyaml
+scrapli
+scrapli[community]
+scrapli[ssh2]
+textfsm
+tox-travis

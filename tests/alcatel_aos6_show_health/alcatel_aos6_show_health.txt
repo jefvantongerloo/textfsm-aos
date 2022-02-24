@@ -1,9 +1,0 @@
-* - current value exceeds threshold
-
-Device                          1 Min  1 Hr  1 Hr
-Resources          Limit   Curr   Avg    Avg   Max  
------------------+-------+------+------+-----+---- 
-Receive              80     01     01    01    01  
-Transmit/Receive     80     01     01    01    01  
-Memory               80     77     77    77    77  
-Cpu                  80     88     33    33   100

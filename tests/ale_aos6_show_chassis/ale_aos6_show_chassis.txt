@@ -1,0 +1,24 @@
+
+Chassis 1
+  Model Name:                    OS6450-P48,
+  Description:                   48 POE 10/100/1000 + 2 10G  + 2 1/10G STK/UPLINK,
+  Part Number:                   903780-90,
+  Hardware Revision:             04,
+  Serial Number:                 U0000001,
+  Manufacture Date:              APR 18 2016,
+  Admin Status:                  POWER ON,
+  Operational Status:            UP,
+  Number Of Resets:              12
+  MAC Address:                   2c:fa:a2:55:14:fc,
+
+Chassis 2
+  Model Name:                    OS6450-P48,
+  Description:                   48 POE 10/100/1000 + 2 10G  + 2 1/10G STK/UPLINK,
+  Part Number:                   903780-90,
+  Hardware Revision:             04,
+  Serial Number:                 U0000002,
+  Manufacture Date:              APR 18 2016,
+  Admin Status:                  POWER ON,
+  Operational Status:            UP,
+  MAC Address:                   2c:fa:a2:55:1e:50,
+

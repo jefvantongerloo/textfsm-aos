@@ -1,0 +1,15 @@
+
+Slot  MAC               MAC Authent                  Classification      Vlan      User
+Port  Address           Status                       Policy              Learned   Name
+-----+-----------------+----------------------------+-------------------+--------+-------------
+
+Slot 1 Port 1  - has no non-supplicant to show.
+
+01/02 00:26:73:a7:88:33 Authenticated                 Basic-UNP-Auth Svr 10        002673A78833
+01/03 00:80:9f:e0:11:cc Authenticated                 Basic-UNP-Auth Svr 100       00809FE011CC
+
+Slot 1 Port 4  - has no non-supplicant to show.
+
+
+Slot 1 Port 5  - has no non-supplicant to show.
+

@@ -1,0 +1,35 @@
+Value healthmoduleslot ([1-9])
+Value healthmodulerx1minavg (\d{2,3})
+Value healthmodulerx1hravg (\d{2,3})
+Value healthmodulerx1hrmax (\d{2,3})
+Value healthmodulerxlatest (\d{2,3})
+Value healthmodulerxlimit (\d{2,3})
+Value healthmodulerxtxrx1minavg (\d{2,3})
+Value healthmodulerxtxrx1hravg (\d{2,3})
+Value healthmodulerxtxrx1hrmax (\d{2,3})
+Value healthmodulerxtxrxlatest (\d{2,3})
+Value healthmodulerxtxrxlimit (\d{2,3})
+Value healthmodulememory1minavg (\d{2,3})
+Value healthmodulememory1hravg (\d{2,3})
+Value healthmodulememory1hrmax (\d{2,3})
+Value healthmodulememorylatest (\d{2,3})
+Value healthmodulememorylimit (\d{2,3})
+Value healthmodulecpu1minavg (\d{2,3})
+Value healthmodulecpu1hravg (\d{2,3})
+Value healthmodulecpu1hrmax (\d{2,3})
+Value healthmodulecpulatest (\d{2,3})
+Value healthmodulecpulimit (\d{2,3})
+
+Start
+  ^\* - current value exceeds threshold$$
+  ^Device                          1 Min  1 Hr  1 Hr$$
+  ^Slot\s{3}${healthmoduleslot}\s+1 Min  1 Hr  1 Hr$$
+  ^Resources          Limit   Curr   Avg    Avg   Max\s*$$
+  ^-----------------\+-------\+------\+------\+-----\+----\s*$$ -> Health
+
+Health
+  ^Receive\s+${healthmodulerxlimit}\s+${healthmodulerxlatest}\s+${healthmodulerx1minavg}\s+${healthmodulerx1hravg}\s+${healthmodulerx1hrmax}\s*$$
+  ^Transmit/Receive\s+${healthmodulerxtxrxlimit}\s+${healthmodulerxtxrxlatest}\s+${healthmodulerxtxrx1minavg}\s+${healthmodulerxtxrx1hravg}\s+${healthmodulerxtxrx1hrmax}\s*$$
+  ^Memory\s+${healthmodulememorylimit}\s+${healthmodulememorylatest}\s+${healthmodulememory1minavg}\s+${healthmodulememory1hravg}\s+${healthmodulememory1hrmax}\s*$$
+  ^Cpu\s+${healthmodulecpulimit}\s+${healthmodulecpulatest}\s+${healthmodulecpu1minavg}\s+${healthmodulecpu1hravg}\s+${healthmodulecpu1hrmax}\s*$$ -> Record
+  ^. -> Error

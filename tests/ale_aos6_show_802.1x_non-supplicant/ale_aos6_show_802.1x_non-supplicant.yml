@@ -1,0 +1,13 @@
+---
+- slot: '01/02'
+  mac_address: '00:26:73:a7:88:33'
+  mac_auth_status: 'Authenticated'
+  classification_policy: 'Basic-UNP-Auth'
+  vlan_learned: '10'
+  user_name: '002673A78833'
+- slot: '01/03'
+  mac_address: '00:80:9f:e0:11:cc'
+  mac_auth_status: 'Authenticated'
+  classification_policy: 'Basic-UNP-Auth'
+  vlan_learned: '100'
+  user_name: '00809FE011CC'

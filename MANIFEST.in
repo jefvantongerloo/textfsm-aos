@@ -1,0 +1,2 @@
+include textfsm_aos/templates/*
+include README.md

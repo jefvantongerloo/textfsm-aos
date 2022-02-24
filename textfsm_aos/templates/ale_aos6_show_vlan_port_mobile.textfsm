@@ -1,0 +1,18 @@
+Value interface (\d\/\d+)
+Value mobile (on|off)
+Value cfg_def (\d+)
+Value authenticate (on-8021x|off)
+Value enabled (on|off)
+Value restore (on|off)
+Value ignore_bpdu (on|off)
+Value ingress_filtering (on|off)
+
+Start
+  ^                 cfg                               ignore   ingress$$
+  ^  port   mobile  def  authent   enabled   restore   bpdu   filtering$$
+  ^-------\+--------\+----\+--------\+---------\+---------\+-------\+----------$$ -> PORT
+
+PORT
+  ^\s+${interface}\s+${mobile}\s+${cfg_def}\s+${authenticate}\s+${enabled}\s+${restore}\s+${ignore_bpdu}\s+${ingress_filtering}$$ -> Record
+  ^\s+${interface}\s+${mobile}\s+${ingress_filtering}$$ -> Record
+  ^. -> Error
