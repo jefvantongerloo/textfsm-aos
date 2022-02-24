@@ -10,8 +10,8 @@ language: python
 python:
     - "3.7"
 
-before_install:
-    - pip install -r requirements.txt
+# before_install:
+#     - pip install -r requirements.txt
 
 # --------------------------------------------------------------------------
 # Linting & tests
