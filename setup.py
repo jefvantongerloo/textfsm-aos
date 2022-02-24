@@ -21,7 +21,7 @@ config = {
     "license": "Apache-2.0",
     "author_email": "jefvantongerloo@gmail.com",
     "include_package_data": True,
-    "install_requires": ["scrapli", "textfsm"],
+    "install_requires": ["scrapli", "textfsm", "pyyaml"],
     "packages": ["textfsm_aos"],
     "scripts": "",
     "zip_safe": True,
