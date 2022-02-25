@@ -1,4 +1,5 @@
 # Custom
+.pre-commit-config.yaml
 *.code-workspace
 dev/
 launch.json
