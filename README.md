@@ -33,7 +33,7 @@ KFsecu.img        6.7.2.89.R06      649383 Alcatel-Lucent Enterprise Security M
 parse("ale_aos6", "show microcode", sample_data)
 ```
 
-parse result
+parsed result
 
 ```python
 [
@@ -79,7 +79,7 @@ parse result
 | show ip route                  | :heavy_check_mark: |        :x:         |
 | show lld remote system         | :heavy_check_mark: |        :x:         |
 | show mac-address-table         | :heavy_check_mark: |        :x:         |
-| show microcode                 | :heavy_check_mark: |        :x:         |
+| show microcode                 | :heavy_check_mark: | :heavy_check_mark: |
 | show ntp server status         | :heavy_check_mark: |        :x:         |
 | show user                      | :heavy_check_mark: |        :x:         |
 | show snmp station              | :heavy_check_mark: |        :x:         |
@@ -250,6 +250,20 @@ Example Output
 ```
 
 ## How to contribute
+
+1. Create branch with naming `<platform>_<command>` (for example: ale_aos8_show_system)
+
+2. Add TextFSM template file in templates folder with naming `<platform>_<command>.textfsm`
+
+3. Add entry in templates_index with attribute command, template and platform
+
+5. Add test folder in 'templates' with naming `<platform>_<command>`
+
+4. Add sample cli output file in newly created folder `<platform>_<command>.txt`
+
+5. Add expected parsed data from sample cli output in `<platform>_<command>.yml`
+
+6. Run linting `tox` and tests `pytest`
 
 ## Related projects
 

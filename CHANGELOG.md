@@ -1,5 +1,11 @@
 # Textfsm-aos release notes
 
+## [0.2.0]
+
+### Added CLI commands
+
+- aos8 - show microcode
+
 ## [0.1.0] - 2022-02-23
 
 ### Added CLI commands
@@ -15,7 +21,7 @@
 - aos6 - show ip route
 - aos6 - show lldp remote-system
 - aos6 - show mac-address-table
-- aos6 - show microcode - OK
+- aos6 - show microcode
 - aos6 - show ntp server status
 - aos6 - show user
 - aos6 - show snmp station
