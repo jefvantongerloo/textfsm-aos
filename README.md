@@ -72,7 +72,7 @@ parsed result
 | show 802.1x non-supplicant     | :heavy_check_mark: |        :x:         |
 | show 802.1x non-supplicant unp | :heavy_check_mark: |        :x:         |
 | show chassis                   | :heavy_check_mark: |        :x:         |
-| show command-log               |        :x:         | :heavy_check_mark: |
+| show command-log               | :heavy_check_mark: | :heavy_check_mark: |
 | show health                    | :heavy_check_mark: |        :x:         |
 | show history                   | :heavy_check_mark: |        :x:         |
 | show interface status          | :heavy_check_mark: |        :x:         |
@@ -256,7 +256,7 @@ Example Output:
 
 2. Add TextFSM template file in templates folder with naming `<platform>_<command>.textfsm`.
 
-3. Add entry in templates_index with attribute command, template and platform.
+3. Add entry in templates_index with attribute command and platform.
 
 4. Add test folder in 'templates' with naming `<platform>_<command>`.
 
