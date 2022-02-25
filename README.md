@@ -268,6 +268,6 @@ Example Output:
 
 ## Related projects
 
-- Google TextFSM: https://github.com/google/textfsm
-- Scrapli: https://github.com/carlmontanari/scrapli
-- Netmiko: https://github.com/ktbyers/netmiko
+- Google TextFSM: [https://github.com/google/textfsm](https://github.com/google/textfsm)
+- Scrapli: [https://github.com/carlmontanari/scrapli](https://github.com/carlmontanari/scrapli)
+- Netmiko: [https://github.com/ktbyers/netmiko](https://github.com/ktbyers/netmiko)
