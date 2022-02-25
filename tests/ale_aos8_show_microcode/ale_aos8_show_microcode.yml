@@ -1,0 +1,5 @@
+---
+- package: 'Uos.img'
+  release: '8.7.252.R02'
+  size: '145072124'
+  description: 'Alcatel-Lucent OS'
