@@ -84,7 +84,7 @@ parse result
 | show user                      | :heavy_check_mark: |        :x:         |
 | show snmp station              | :heavy_check_mark: |        :x:         |
 | show snmp community map        | :heavy_check_mark: |        :x:         |
-| show system                    | :heavy_check_mark: |        :x:         |
+| show system                    | :heavy_check_mark: | :heavy_check_mark: |
 | show vlan                      | :heavy_check_mark: |        :x:         |
 | show vlan port mobile          | :heavy_check_mark: |        :x:         |
 

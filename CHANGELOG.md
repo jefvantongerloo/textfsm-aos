@@ -1,5 +1,11 @@
 # Textfsm-aos release notes
 
+## [0.2.0]
+
+### Added CLI commands
+
+- aos8 - show system
+
 ## [0.1.0] - 2022-02-23
 
 ### Added CLI commands
