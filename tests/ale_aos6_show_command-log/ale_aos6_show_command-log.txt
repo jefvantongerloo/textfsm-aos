@@ -1,0 +1,18 @@
+Command : ntp client enable
+  UserName : admin
+  Date     : FRI FEB 25 16:06:52 
+  Ip Addr  : 10.212.10.10
+  Result   : SUCCESS
+
+Command : command-log enable
+  UserName : admin
+  Date     : FRI FEB 25 16:05:52 
+  Ip Addr  : 10.212.10.10
+  Result   : SUCCESS
+
+Command : vlan 2200 802.1q 1/10
+  UserName : admin
+  Date     : TUE AUG 24 10:49:19 
+  Ip Addr  : 10.212.10.10
+  Result   : ERROR: 1/10 is mobile port, can't be tagged
+

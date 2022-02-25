@@ -1,0 +1,13 @@
+Value command (.+)
+Value username (.+)
+Value date (.+)
+Value ipaddr ((?:[0-9]{1,3}\.){3}[0-9]{1,3})
+Value result (SUCCESS|ERROR.+)
+
+Start
+  ^Command\s+:\s+${command}\s*$$
+  ^\s+UserName\s+:\s+${username}\s*$$
+  ^\s+Date\s+:\s+${date}\s+$$
+  ^\s+Ip Addr\s+:\s+${ipaddr}\s*$$
+  ^\s+Result\s+:\s+${result}\s*$$ -> Record Start
+  ^. -> Error
