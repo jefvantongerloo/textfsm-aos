@@ -56,3 +56,6 @@
 - command: show vlan port mobile
   template: alcatel_aos6_show_vlan_port_mobile.textfsm
   platform: ale_aos6
+- command: show microcode
+  template: alcatel_aos8_show_microcode.textfsm
+  platform: ale_aos8
