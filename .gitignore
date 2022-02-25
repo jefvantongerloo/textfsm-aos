@@ -1,6 +1,7 @@
 # Custom
 *.code-workspace
 dev/
+launch.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
