@@ -1,0 +1,11 @@
+---
+- description: 'Alcatel-Lucent Enterprise OS6560-P48X4 8.7.354.R01 GA, October 06, 2020.'
+  object_id: '1.3.6.1.4.1.6486.801.1.1.2.1.14.1.17'
+  up_time: '25 days 0 hours 13 minutes and 2 seconds'
+  contact: 'Alcatel-Lucent Enterprise, https://www.al-enterprise.com'
+  name: 'NET-SWI-001'
+  location: 'BEL 00.07'
+  services: '78'
+  date_time: 'FRI FEB 25 2022 12:08:45 (CET)'
+  available: '484024320'
+  comments: 'None'
