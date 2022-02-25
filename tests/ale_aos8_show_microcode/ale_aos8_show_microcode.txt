@@ -1,0 +1,5 @@
+   /flash/working
+   Package           Release                 Size     Description
+-----------------+-------------------------+---------+-----------------------------------
+Uos.img           8.7.252.R02               145072124 Alcatel-Lucent OS
+

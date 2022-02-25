@@ -59,3 +59,9 @@
 - command: show system
   template: alcatel_aos8_show_system.textfsm
   platform: ale_aos8
+- command: show microcode
+  template: alcatel_aos8_show_microcode.textfsm
+  platform: ale_aos8
+- command: show command-log
+  template: alcatel_aos8_show_command-log.textfsm
+  platform: ale_aos8

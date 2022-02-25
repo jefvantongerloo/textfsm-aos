@@ -31,7 +31,9 @@ def _get_benchmark(platform: str, command: str) -> dict:
 def test_parsed_data(template: dict):
     """Test parsed data against benchmark."""
     raw_data = _get_raw(template["platform"], template["command"])
-    parsed_data = textfsm_aos.parser.parse(template["platform"], template["command"], raw_data)
+    parsed_data = textfsm_aos.parser.parse(
+        template["platform"], template["command"], raw_data
+    )
     benchmark_data = _get_benchmark(template["platform"], template["command"])
 
     print("Parsed data: \n {0} \n".format(parsed_data))
