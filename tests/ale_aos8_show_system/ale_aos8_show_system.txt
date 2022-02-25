@@ -1,0 +1,14 @@
+System:
+  Description:  Alcatel-Lucent Enterprise OS6560-P48X4 8.7.354.R01 GA, October 06, 2020.,
+  Object ID:    1.3.6.1.4.1.6486.801.1.1.2.1.14.1.17,
+  Up Time:      25 days 0 hours 13 minutes and 2 seconds,
+  Contact:      Alcatel-Lucent Enterprise, https://www.al-enterprise.com,
+  Name:         NET-SWI-001,
+  Location:     BEL 00.07,
+  Services:     78,
+  Date & Time:  FRI FEB 25 2022 12:08:45 (CET)
+Flash Space:
+    Primary CMM:
+      Available (bytes):  484024320,
+      Comments         :  None
+

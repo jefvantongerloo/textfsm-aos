@@ -4,8 +4,9 @@
 
 ### Added CLI commands
 
-- aos8 - show microcode
 - aos8 - show command-log
+- aos8 - show microcode
+- aos8 - show system
 
 ## [0.1.0] - 2022-02-23
 
