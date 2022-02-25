@@ -72,6 +72,7 @@ parsed result
 | show 802.1x non-supplicant     | :heavy_check_mark: |        :x:         |
 | show 802.1x non-supplicant unp | :heavy_check_mark: |        :x:         |
 | show chassis                   | :heavy_check_mark: |        :x:         |
+| show command-log               |        :x:         | :heavy_check_mark: |
 | show health                    | :heavy_check_mark: |        :x:         |
 | show history                   | :heavy_check_mark: |        :x:         |
 | show interface status          | :heavy_check_mark: |        :x:         |
@@ -94,7 +95,7 @@ Bypass the build-in parser functionality and use the TextFSM templates directly 
 
 ### Scrapli
 
-Python script
+Python script:
 
 ```python
 from scrapli import Scrapli
@@ -116,7 +117,7 @@ with Scrapli(**device) as conn:
     )
 ```
 
-Example output
+Example output:
 
 ```python
 [
@@ -157,7 +158,7 @@ Example output
 
 ### Netmiko
 
-Python script
+Python script:
 
 ```python
 from netmiko import ConnectHandler
@@ -173,7 +174,7 @@ with ConnecHandler(**device) as conn:
     output = conn.send_command("show health", use_textfsm=True, textfsm_template="textfsm-aos/templates/ale_aos6_show_health.textfsm")
 ```
 
-Example Output
+Example Output:
 
 ```python
 [
@@ -214,7 +215,7 @@ Example Output
 
 ### Ansible
 
-Ansible task
+Ansible task:
 
 ```yaml
 - name: AOS6 >> parsed with textfsm
@@ -222,7 +223,7 @@ Ansible task
     health: "{{ health-aos6 | ansible.netcommon.parse_cli_textfsm('textfsm/templates/ale_aos6_show_health.textfsm') }}"
 ```
 
-Example Output
+Example Output:
 
 ```yaml
     health:
@@ -251,19 +252,19 @@ Example Output
 
 ## How to contribute
 
-1. Create branch with naming `<platform>_<command>` (for example: ale_aos8_show_system)
+1. Create branch with naming `<platform>_<command>` (for example: ale_aos8_show_system).
 
-2. Add TextFSM template file in templates folder with naming `<platform>_<command>.textfsm`
+2. Add TextFSM template file in templates folder with naming `<platform>_<command>.textfsm`.
 
-3. Add entry in templates_index with attribute command, template and platform
+3. Add entry in templates_index with attribute command, template and platform.
 
-5. Add test folder in 'templates' with naming `<platform>_<command>`
+4. Add test folder in 'templates' with naming `<platform>_<command>`.
 
-4. Add sample cli output file in newly created folder `<platform>_<command>.txt`
+5. Add sample cli output file in newly created folder `<platform>_<command>.txt`.
 
-5. Add expected parsed data from sample cli output in `<platform>_<command>.yml`
+6. Add expected parsed data from sample cli output in `<platform>_<command>.yml`.
 
-6. Run linting `tox` and tests `pytest`
+7. Run linting `tox` and tests `pytest`.
 
 ## Related projects
 
