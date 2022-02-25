@@ -1,10 +1,11 @@
 # Textfsm-aos release notes
 
-## [0.2.0]
+## [0.2.0] - Unreleased
 
 ### Added CLI commands
 
 - aos8 - show microcode
+- aos8 - show command-log
 
 ## [0.1.0] - 2022-02-23
 
