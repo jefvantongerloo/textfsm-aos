@@ -7,6 +7,12 @@
   platform: ale_aos6
 - command: show chassis
   platform: ale_aos6
+- command: show chassis
+  platform: ale_aos8
+- command: show command-log
+  platform: ale_aos6
+- command: show command-log
+  platform: ale_aos8
 - command: show health
   platform: ale_aos6
 - command: show history
@@ -23,6 +29,8 @@
   platform: ale_aos6
 - command: show microcode
   platform: ale_aos6
+- command: show microcode
+  platform: ale_aos8
 - command: show ntp server status
   platform: ale_aos6
 - command: show user
@@ -33,15 +41,9 @@
   platform: ale_aos6
 - command: show system
   platform: ale_aos6
+- command: show system
+  platform: ale_aos8
 - command: show vlan
   platform: ale_aos6
 - command: show vlan port mobile
-  platform: ale_aos6
-- command: show system
-  platform: ale_aos8
-- command: show microcode
-  platform: ale_aos8
-- command: show command-log
-  platform: ale_aos8
-- command: show command-log
   platform: ale_aos6
