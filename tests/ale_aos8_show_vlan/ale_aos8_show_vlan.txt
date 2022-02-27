@@ -1,0 +1,13 @@
+ vlan    type   admin   oper    ip    mtu          name
+------+-------+-------+------+------+------+------------------
+1      std       Ena     Ena   Dis    1500    VLAN 1                          
+2      std       Ena     Ena   Ena    1500    192.168.2.x/24 Server           
+10     std       Ena     Ena   Ena    1500    192.168.10.x/24 Stellar OV      
+11     std       Ena     Ena   Ena    1500    192.168.11.x/24                 
+12     std       Ena     Ena   Ena    1500    192.168.12.x/24                 
+13     std       Ena     Ena   Ena    1500    192.168.13.x/24                 
+14     std       Ena     Ena   Ena    1500    192.168.14.x/24                 
+15     std       Ena     Ena   Ena    1500    192.168.15.x/24 Stellar Express 
+20     std       Ena     Ena   Dis    1500    VLAN 20                         
+4094   vcm       Ena     Dis   Dis    1500    VCM IPC                         
+
