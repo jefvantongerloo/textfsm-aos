@@ -1,0 +1,26 @@
+Local Chassis ID 1 (Master)
+  Model Name:                    OS6900-X20,
+  Module Type:                   0x5062201,
+  Description:                   20 SFP+ W/EXP SLOT,
+  Part Number:                   903167-90,
+  Hardware Revision:             C07,
+  Serial Number:                 JSZ211000023,
+  Manufacture Date:              Mar  7 2021,
+  Admin Status:                  POWER ON,
+  Operational Status:            UP,
+  Number Of Resets:              2,
+  MAC Address:                   94:24:e1:6d:e2:3b
+
+Remote Chassis ID 2 (Slave)
+  Model Name:                    OS6900-X20,
+  Module Type:                   0x5062201,
+  Description:                   20 SFP+ W/EXP SLOT,
+  Part Number:                   903167-90,
+  Hardware Revision:             C07,
+  Serial Number:                 JSZ211000024,
+  Manufacture Date:              Mar  7 2021,
+  Admin Status:                  POWER ON,
+  Operational Status:            UP,
+  Number Of Resets:              6,
+  MAC Address:                   94:24:e1:6d:e2:ff
+

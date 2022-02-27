@@ -4,6 +4,7 @@
 
 ### Added CLI commands
 
+- aos8 - show chassis
 - aos6 - show command-log
 - aos8 - show command-log
 - aos8 - show microcode
