@@ -9,6 +9,11 @@
 - aos8 - show command-log
 - aos8 - show microcode
 - aos8 - show system
+- aos8 - show vlan by @BennyE
+
+### New contributors
+
+- @BennyE first contribution [https://github.com/jefvantongerloo/textfsm-aos/pull/7](https://github.com/jefvantongerloo/textfsm-aos/pull/7)
 
 ## [0.1.0] - 2022-02-23
 
