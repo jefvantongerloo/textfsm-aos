@@ -4,16 +4,17 @@
 
 ### Added CLI commands
 
-- aos8 - show chassis
-- aos6 - show command-log
-- aos8 - show command-log
-- aos8 - show microcode
-- aos8 - show system
-- aos8 - show vlan by @BennyE
+- aos6 - show command-log [#5](https://github.com/jefvantongerloo/textfsm-aos/pull/5)
+- aos6 - show running-directory [#8](https://github.com/jefvantongerloo/textfsm-aos/pull/8) by [@BennyE](https://github.com/BennyE)
+- aos8 - show chassis [#6](https://github.com/jefvantongerloo/textfsm-aos/pull/6)
+- aos8 - show command-log [#4](https://github.com/jefvantongerloo/textfsm-aos/pull/4)
+- aos8 - show microcode [#2](https://github.com/jefvantongerloo/textfsm-aos/pull/2)
+- aos8 - show system [#3](https://github.com/jefvantongerloo/textfsm-aos/pull/3)
+- aos8 - show vlan [#7](https://github.com/jefvantongerloo/textfsm-aos/pull/7) by [@BennyE](https://github.com/BennyE)
 
 ### New contributors
 
-- @BennyE first contribution [https://github.com/jefvantongerloo/textfsm-aos/pull/7](https://github.com/jefvantongerloo/textfsm-aos/pull/7)
+- [@BennyE](https://github.com/BennyE) first contribution [https://github.com/jefvantongerloo/textfsm-aos/pull/7](https://github.com/jefvantongerloo/textfsm-aos/pull/7)
 
 ## [0.1.0] - 2022-02-23
 

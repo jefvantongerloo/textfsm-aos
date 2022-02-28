@@ -1,0 +1,9 @@
+---
+- running_cmm: 'MASTER-PRIMARY'
+  cmm_mode: 'VIRTUAL-CHASSIS MONO CMM'
+  current_cmm_slot: 'CHASSIS-1 A'
+  running_directory: 'WORKING'
+  certify_restore_status: 'CERTIFIED'
+  flash_between_cmms: ''
+  running_configuration_status: 'SYNCHRONIZED'
+  machine_state: ''
