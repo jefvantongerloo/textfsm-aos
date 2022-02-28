@@ -1,0 +1,21 @@
+Value running_cmm (.+)
+Value cmm_mode (.+)
+Value current_cmm_slot (.+)
+Value running_directory (.+)
+Value certify_restore_status (.+)
+Value flash_between_cmms (.+)
+Value running_configuration_status (.+)
+Value machine_state (.+)
+
+Start
+  ^CONFIGURATION STATUS,
+  ^\s{2}Running CMM\s+:\s${running_cmm},
+  ^\s{2}CMM Mode\s+:\s${cmm_mode},
+  ^\s{2}Current CMM Slot\s+:\s${current_cmm_slot},
+  ^\s{2}Running configuration\s+:\s${running_directory},
+  ^\s{2}Certify/Restore Status\s+:\s${certify_restore_status}
+  ^SYNCHRONIZATION STATUS,
+  ^\s{2}Flash Between CMMs\s+:\s${flash_between_cmms} -> Continue
+  ^\s{2}Running Configuration\s+:\s${running_configuration_status}
+  ^BOOT STATUS, -> Continue
+  ^\s{2}Machine State\s+:\s${machine_state} -> Record Start
