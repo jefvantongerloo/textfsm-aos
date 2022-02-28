@@ -12,6 +12,10 @@
 - aos8 - show system [#3](https://github.com/jefvantongerloo/textfsm-aos/pull/3)
 - aos8 - show vlan [#7](https://github.com/jefvantongerloo/textfsm-aos/pull/7) by [@BennyE](https://github.com/BennyE)
 
+### Fixed
+
+- aos6 - show health asterisk in current value not captured [#10](https://github.com/jefvantongerloo/textfsm-aos/pull/10)
+
 ### New contributors
 
 - [@BennyE](https://github.com/BennyE) first contribution [https://github.com/jefvantongerloo/textfsm-aos/pull/7](https://github.com/jefvantongerloo/textfsm-aos/pull/7)
