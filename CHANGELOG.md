@@ -11,6 +11,10 @@
 - aos8 - show system
 - aos8 - show vlan by @BennyE
 
+### Fixed
+
+- aos6 - show health asterisk in current value not captured [#10](https://github.com/jefvantongerloo/textfsm-aos/pull/10)
+
 ### New contributors
 
 - @BennyE first contribution [https://github.com/jefvantongerloo/textfsm-aos/pull/7](https://github.com/jefvantongerloo/textfsm-aos/pull/7)
