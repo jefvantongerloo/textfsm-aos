@@ -10,6 +10,7 @@
 - aos8 - show command-log [#4](https://github.com/jefvantongerloo/textfsm-aos/pull/4)
 - aos8 - show microcode [#2](https://github.com/jefvantongerloo/textfsm-aos/pull/2)
 - aos8 - show system [#3](https://github.com/jefvantongerloo/textfsm-aos/pull/3)
+- aos8 - show unp user [#11](https://github.com/jefvantongerloo/textfsm-aos/pull/11)
 - aos8 - show vlan [#7](https://github.com/jefvantongerloo/textfsm-aos/pull/7) by [@BennyE](https://github.com/BennyE)
 
 ### Fixed
