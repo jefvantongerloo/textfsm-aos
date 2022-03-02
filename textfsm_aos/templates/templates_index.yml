@@ -9,6 +9,8 @@
   platform: ale_aos6
 - command: show chassis
   platform: ale_aos8
+- command: show cmm
+  platform: ale_aos8
 - command: show command-log
   platform: ale_aos6
 - command: show command-log

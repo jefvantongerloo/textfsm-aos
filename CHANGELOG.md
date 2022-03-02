@@ -7,6 +7,7 @@
 - aos6 - show command-log [#5](https://github.com/jefvantongerloo/textfsm-aos/pull/5)
 - aos6 - show running-directory [#8](https://github.com/jefvantongerloo/textfsm-aos/pull/8) by [@BennyE](https://github.com/BennyE)
 - aos8 - show chassis [#6](https://github.com/jefvantongerloo/textfsm-aos/pull/6)
+- aos8 - show cmm [#12](https://github.com/jefvantongerloo/textfsm-aos/pull/12)
 - aos8 - show command-log [#4](https://github.com/jefvantongerloo/textfsm-aos/pull/4)
 - aos8 - show microcode [#2](https://github.com/jefvantongerloo/textfsm-aos/pull/2)
 - aos8 - show system [#3](https://github.com/jefvantongerloo/textfsm-aos/pull/3)
