@@ -1,0 +1,9 @@
+                                               User
+Port    Username             Mac address       IP              Vlan Profile                          Type         Status
+-------+--------------------+-----------------+---------------+----+--------------------------------+------------+-----------
+1/1/1   00809f949ce7         00:80:9f:94:9c:e7 -               2010 zone-staf                        Bridge       Active
+1/1/10  00:80:9f:e0:19:b8    00:80:9f:e0:19:b8 -               2010 zone-staf                        Bridge       Active
+2/1/1   ALPACA\user01        04:0e:3c:d0:14:77 -               2020 zone-iot                         Access       Active
+0/10    00:d0:c9:eb:1c:c7    00:d0:c9:eb:1c:c7 10.10.1.10      2020 zone-iot                         Bridge       Block
+
+Total users : 4
