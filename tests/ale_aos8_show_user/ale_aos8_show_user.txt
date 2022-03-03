@@ -1,0 +1,55 @@
+User name = admin,
+  Password expiration     = None,
+  Password allow to be modified date     = None,
+  Account lockout     = None,
+  Password bad attempts     = 10,
+  Read Only for domains   = None,
+  Read/Write for domains  = All ,
+  Snmp allowed     = NO
+  Console-Only    = Disabled
+User name = snmpv3,
+  Password expiration     = None,
+  Password allow to be modified date     = None,
+  Account lockout     = None,
+  Password bad attempts     = 0,
+  Read Only for domains   = None,
+  Read/Write for domains  = All ,
+  Snmp allowed     = YES,
+  Snmp authentication     = SHA,
+  Snmp encryption     = AES
+  Console-Only    = Disabled
+User name = default (*),
+  Password expiration     = None,
+  Password allow to be modified date     = None,
+  Account lockout     = None,
+  Password bad attempts     = 0,
+  Read Only for domains   = None,
+  Read/Write for domains  = None,
+  Snmp allowed     = NO
+  Console-Only    = Disabled,
+(*)Note:
+  The default user is not an active user account.
+  It constains the default user account settings,
+  for new user accounts.
+
+User name = testuser,
+  Password expiration     = None,
+  Password allow to be modified date     = None,
+  Account lockout     = None,
+  Password bad attempts     = 1,
+  Read Only for domains   = None,
+  Read/Write for domains  = All ,
+  Snmp allowed     = NO
+  Console-Only    = Disabled
+User name = testuser2,
+  Password expiration     = None,
+  Password allow to be modified date     = None,
+  Account lockout     = None,
+  Password bad attempts     = 0,
+  Read Only for domains   = Admin Physical Layer2 Services Policy Security MPLS VCM AFN ,
+  Read only for families  = system snmp rmon webmgt config rip ospf bgp vrrp ip-routing ipmr ipms ripng ospfv3 isis vrf bfd-std licensing grm isic-vc openflow remote-config alarm-manager storage-locking pkgmgr ,
+  Read/Write for domains  = Datacenter ,
+  Read/Write for families = aip ip ,
+  Snmp allowed     = NO
+  Console-Only    = Disabled
+

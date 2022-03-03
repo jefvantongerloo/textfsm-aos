@@ -35,6 +35,8 @@
   platform: ale_aos6
 - command: show user
   platform: ale_aos6
+- command: show user
+  platform: ale_aos8
 - command: show running-directory
   platform: ale_aos8
 - command: show snmp station
