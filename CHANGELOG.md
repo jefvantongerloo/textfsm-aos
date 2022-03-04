@@ -9,9 +9,11 @@
 - aos8 - show chassis [#6](https://github.com/jefvantongerloo/textfsm-aos/pull/6)
 - aos8 - show cmm [#12](https://github.com/jefvantongerloo/textfsm-aos/pull/12)
 - aos8 - show command-log [#4](https://github.com/jefvantongerloo/textfsm-aos/pull/4)
+- aos8 - show log events [#14](https://github.com/jefvantongerloo/textfsm-aos/pull/14)
 - aos8 - show microcode [#2](https://github.com/jefvantongerloo/textfsm-aos/pull/2)
 - aos8 - show system [#3](https://github.com/jefvantongerloo/textfsm-aos/pull/3)
 - aos8 - show unp user [#11](https://github.com/jefvantongerloo/textfsm-aos/pull/11)
+- aos8 - show user [#13](https://github.com/jefvantongerloo/textfsm-aos/pull/13) by [@BennyE](https://github.com/BennyE)
 - aos8 - show vlan [#7](https://github.com/jefvantongerloo/textfsm-aos/pull/7) by [@BennyE](https://github.com/BennyE)
 
 ### Fixed
