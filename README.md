@@ -84,7 +84,7 @@ parsed result
 | show microcode                 | :heavy_check_mark: | :heavy_check_mark: |
 | show ntp server status         | :heavy_check_mark: |        :x:         |
 | show unp user                  |        :x:         | :heavy_check_mark: |
-| show user                      | :heavy_check_mark: |        :x:         |
+| show user                      | :heavy_check_mark: | :heavy_check_mark: |
 | show running-directory         |        :x:         | :heavy_check_mark: |
 | show snmp station              | :heavy_check_mark: |        :x:         |
 | show snmp community map        | :heavy_check_mark: |        :x:         |
