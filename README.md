@@ -80,6 +80,7 @@ parsed result
 | show ip interface              | :heavy_check_mark: |        :x:         |
 | show ip route                  | :heavy_check_mark: |        :x:         |
 | show lld remote system         | :heavy_check_mark: |        :x:         |
+| show log events                |        :x:         | :heavy_check_mark: |
 | show mac-address-table         | :heavy_check_mark: |        :x:         |
 | show microcode                 | :heavy_check_mark: | :heavy_check_mark: |
 | show ntp server status         | :heavy_check_mark: |        :x:         |

@@ -1,0 +1,8 @@
+Value swlog_timestamp (\d+\s\w+\s+\d+\s\d{1,2}:\d{1,2}:\d+.\d+)
+Value cmm_ni ([^:]*)
+Value module_name ([^:]*)
+Value log_description ([^:]*)
+
+Start
+  ^${swlog_timestamp}\s+:\s${cmm_ni}\s:\s${module_name}\s:\s${log_description}$$ -> Record
+  ^. -> Error
