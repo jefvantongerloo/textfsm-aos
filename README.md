@@ -66,32 +66,33 @@ parsed result
 
 ## Supported commands
 
-| command                        |        aos6        |        aos8        |
-|--------------------------------|:------------------:|:------------------:|
-| show 802.1x users              | :heavy_check_mark: |        :x:         |
-| show 802.1x non-supplicant     | :heavy_check_mark: |        :x:         |
-| show 802.1x non-supplicant unp | :heavy_check_mark: |        :x:         |
-| show chassis                   | :heavy_check_mark: | :heavy_check_mark: |
-| show cmm                       |        :x:         | :heavy_check_mark: |
-| show command-log               | :heavy_check_mark: | :heavy_check_mark: |
-| show health                    | :heavy_check_mark: |        :x:         |
-| show history                   | :heavy_check_mark: |        :x:         |
-| show interface status          | :heavy_check_mark: |        :x:         |
-| show ip interface              | :heavy_check_mark: |        :x:         |
-| show ip route                  | :heavy_check_mark: |        :x:         |
-| show lld remote system         | :heavy_check_mark: |        :x:         |
-| show log events                |        :x:         | :heavy_check_mark: |
-| show mac-address-table         | :heavy_check_mark: |        :x:         |
-| show microcode                 | :heavy_check_mark: | :heavy_check_mark: |
-| show ntp server status         | :heavy_check_mark: |        :x:         |
-| show unp user                  |        :x:         | :heavy_check_mark: |
-| show user                      | :heavy_check_mark: | :heavy_check_mark: |
-| show running-directory         |        :x:         | :heavy_check_mark: |
-| show snmp station              | :heavy_check_mark: |        :x:         |
-| show snmp community map        | :heavy_check_mark: |        :x:         |
-| show system                    | :heavy_check_mark: | :heavy_check_mark: |
-| show vlan                      | :heavy_check_mark: | :heavy_check_mark: |
-| show vlan port mobile          | :heavy_check_mark: |        :x:         |
+| command                        |               aos6              |            aos8           |
+|--------------------------------|:-------------------------------:|:-------------------------:|
+| show 802.1x users              |        :heavy_check_mark:       |            :x:            |
+| show 802.1x non-supplicant     |        :heavy_check_mark:       |            :x:            |
+| show 802.1x non-supplicant unp |        :heavy_check_mark:       |            :x:            |
+| show chassis                   |        :heavy_check_mark:       |     :heavy_check_mark:    |
+| show cmm                       |               :x:               |     :heavy_check_mark:    |
+| show command-log               |        :heavy_check_mark:       |     :heavy_check_mark:    |
+| show health                    |        :heavy_check_mark:       |            :x:            |
+| show history                   |        :heavy_check_mark:       |            :x:            |
+| show interface status          |        :heavy_check_mark:       |            :x:            |
+| show ip interface              |        :heavy_check_mark:       |            :x:            |
+| show ip route                  |        :heavy_check_mark:       |            :x:            |
+| show lld remote system         |        :heavy_check_mark:       |            :x:            |
+| show log events                |               :x:               |     :heavy_check_mark:    |
+| show mac-address-table         |        :heavy_check_mark:       | `alias: show mac-learning`|
+| show mac-learning              | `alias: show mac-address-table` |     :heavy_check_mark:    |
+| show microcode                 |        :heavy_check_mark:       |     :heavy_check_mark:    |
+| show ntp server status         |        :heavy_check_mark:       |            :x:            |
+| show unp user                  |               :x:               |     :heavy_check_mark:    |
+| show user                      |        :heavy_check_mark:       |     :heavy_check_mark:    |
+| show running-directory         |               :x:               |     :heavy_check_mark:    |
+| show snmp station              |        :heavy_check_mark:       |            :x:            |
+| show snmp community map        |        :heavy_check_mark:       |            :x:            |
+| show system                    |        :heavy_check_mark:       |     :heavy_check_mark:    |
+| show vlan                      |        :heavy_check_mark:       |     :heavy_check_mark:    |
+| show vlan port mobile          |        :heavy_check_mark:       |            :x:            |
 
 ## Direct TextFSM example usage
 

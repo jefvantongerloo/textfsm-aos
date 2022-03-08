@@ -1,0 +1,31 @@
+Legend: Mac Address: * = address not valid,
+
+        Mac Address: & = duplicate static address,
+
+   Domain    Vlan/SrvcId[ISId/vnId]     Mac Address           Type          Operation          Interface
+------------+----------------------+-------------------+------------------+-------------+-------------------------
+      VLAN                        1   2c:fa:a2:e6:ea:52            dynamic     bridging                    1/1/10 
+      VLAN                        2   2c:fa:a2:e6:ea:61            dynamic     bridging                    1/1/10 
+      VLAN                        2   52:54:00:06:ea:95            dynamic  quarantined                    1/1/10 
+      VLAN                        2   52:54:00:66:ea:af            dynamic     bridging                    1/1/10 
+      VLAN                        2   52:54:00:77:e1:c2            dynamic     bridging                    1/1/10 
+      VLAN                        2   52:54:00:78:eb:0b            dynamic    filtering                    1/1/10 
+      VLAN                        2   da:88:56:bc:eb:f3            dynamic     bridging                    1/1/10 
+      VLAN                       10   dc:08:56:3f:ea:e0            dynamic     bridging                     1/1/1 
+      VLAN                       10   dc:08:56:36:ea:a0            dynamic     bridging                    1/1/10 
+      VLAN                       11   4e:21:ed:4f:ae:5d            dynamic     bridging                     1/1/1 
+      VLAN                       11   a0:78:17:17:ae:bf            dynamic     bridging                     1/1/1 
+      VLAN                       11   42:62:19:3f:b5:82            dynamic     bridging                    1/1/10 
+      VLAN                       15   dc:08:56:0d:6d:fd            dynamic     bridging                     1/1/5 
+      VLAN                     4051   e8:e7:32:40:10:7e               bmac     bridging                    1/5/14 
+      VLAN                     4051   e8:e7:32:00:24:a5               bmac     bridging                       0/1 
+       SPB                1000:1000   e8:e7:32:11:db:72            dynamic    servicing           sap:1/1/13:1000 
+       SPB                1000:1000   e8:e7:32:40:10:7e            dynamic    servicing            sdp:32867:1000 
+       SPB                3899:3899   e8:e7:32:42:e0:4d            dynamic    servicing               sap:0/99:99 
+     VXLAN                      5:5   00:0e:1e:06:87:8c            dynamic    servicing               sap:1/1/20A 
+     VXLAN                      5:5   00:0e:1e:0c:58:94            dynamic    servicing                 sdp:175:5 
+     L2GRE                  261:261   2c:fa:a2:8c:9a:5d            dynamic    servicing            sap:1/1/25:261 
+     L2GRE                  261:261   28:3f:69:48:9a:5c            dynamic    servicing                sdp:12:261 
+
+ Total number of Valid MAC addresses above = 21
+
