@@ -1,0 +1,11 @@
+---
+- ip_address: '192.168.2.15'
+  udp_port: '162'
+  status: 'enable'
+  protocol: 'v3'
+  user: 'snmpv3'
+- ip_address: '192.168.2.134'
+  udp_port: '162'
+  status: 'enable'
+  protocol: 'v2'
+  user: 'snmpv2'
