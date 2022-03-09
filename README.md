@@ -84,7 +84,7 @@ parsed result
 | show mac-address-table         |        :heavy_check_mark:       | `alias: show mac-learning`|
 | show mac-learning              | `alias: show mac-address-table` |     :heavy_check_mark:    |
 | show microcode                 |        :heavy_check_mark:       |     :heavy_check_mark:    |
-| show ntp server status         |        :heavy_check_mark:       |            :x:            |
+| show ntp server status         |        :heavy_check_mark:       |     :heavy_check_mark:    |
 | show unp user                  |               :x:               |     :heavy_check_mark:    |
 | show user                      |        :heavy_check_mark:       |     :heavy_check_mark:    |
 | show running-directory         |               :x:               |     :heavy_check_mark:    |
