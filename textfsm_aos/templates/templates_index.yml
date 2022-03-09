@@ -55,6 +55,8 @@
   platform: ale_aos8
 - command: show snmp community map
   platform: ale_aos6
+- command: show snmp community-map
+  platform: ale_aos8
 - command: show system
   platform: ale_aos6
 - command: show system

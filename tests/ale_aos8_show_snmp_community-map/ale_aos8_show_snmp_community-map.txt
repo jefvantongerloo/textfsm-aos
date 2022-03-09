@@ -1,0 +1,7 @@
+Community mode : enabled
+
+status        community string                 user name
+--------+--------------------------------+--------------------------------
+enabled  PrivateSecure                    snmpv2_2
+enabled  private                          snmpv2
+

@@ -1,0 +1,9 @@
+---
+- status: 'enabled'
+  community_mode: 'enabled'
+  community_string: 'PrivateSecure'
+  user: 'snmpv2_2'
+- status: 'enabled'
+  community_mode: 'enabled'
+  community_string: 'private'
+  user: 'snmpv2'
