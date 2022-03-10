@@ -12,6 +12,7 @@
 - aos8 - show log events [#14](https://github.com/jefvantongerloo/textfsm-aos/pull/14)
 - aos8 - show mac-learning [#13](https://github.com/jefvantongerloo/textfsm-aos/pull/15) by [@BennyE](https://github.com/BennyE)
 - aos8 - show microcode [#2](https://github.com/jefvantongerloo/textfsm-aos/pull/2)
+- aos8 - show snmp community-map [#18](https://github.com/jefvantongerloo/textfsm-aos/pull/18) by [@BennyE](https://github.com/BennyE)
 - aos8 - show system [#3](https://github.com/jefvantongerloo/textfsm-aos/pull/3)
 - aos8 - show unp user [#11](https://github.com/jefvantongerloo/textfsm-aos/pull/11)
 - aos8 - show user [#13](https://github.com/jefvantongerloo/textfsm-aos/pull/13) by [@BennyE](https://github.com/BennyE)
