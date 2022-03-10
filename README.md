@@ -272,6 +272,16 @@ Example Output:
 
 7. Run linting `tox` and tests `pytest`.
 
+## How to setup development environment
+
+1. Create virtual Python environment `python -m .venv venv`
+
+2. Activate environment `source .venv/bin/activate`
+
+3. Install Python dependencies `pip install -r requirements.txt`
+
+4. Install textfsm_aos package in development mode `pip install -e .`
+
 ## Related projects
 
 - Google TextFSM: [https://github.com/google/textfsm](https://github.com/google/textfsm)

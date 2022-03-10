@@ -23,6 +23,7 @@
 ### Fixed
 
 - aos6 - show health asterisk in current value not captured [#10](https://github.com/jefvantongerloo/textfsm-aos/pull/10)
+- aos8 - show cmm os6560 only first chassis captured [#19](https://github.com/jefvantongerloo/textfsm-aos/pull/19)
 
 ### New contributors
 
