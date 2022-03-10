@@ -26,12 +26,12 @@ Cmm
   ^\s+Hardware Revision:\s+${hardware_revision},$$
   ^\s+Serial Number:\s+${serial_number},$$
   ^\s+Manufacture Date:\s+${manufacture_date},$$
-  ^\s+FPGA\/CPLD - Physical 1:\s+${fpga_control},$$
-  ^\s+FPGA\/CPLD - Physical 2:\s+${fpga_power},$$
+  ^\s+FPGA[\/CPLD]* - Physical 1:\s+${fpga_control},$$
+  ^\s+FPGA[\/CPLD]* - Physical 2:\s+${fpga_power},$$
   ^\s+Admin Status:\s+${admin_status},$$
   ^\s+Operational Status:\s+${operational_status},$$
   ^\s+Max Power:\s+${max_power},$$
   ^\s+CPU Model Type:\s+${cpu_model_type},$$
   ^\s+MAC Address:\s+${mac_address},$$
   ^\s+Coreboot Version:\s+${coreboot_version},$$ -> Record Start
-  
+  ^. -> Error
