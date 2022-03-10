@@ -6,6 +6,7 @@
 
 - aos6 - show command-log [#5](https://github.com/jefvantongerloo/textfsm-aos/pull/5)
 - aos6 - show running-directory [#8](https://github.com/jefvantongerloo/textfsm-aos/pull/8) by [@BennyE](https://github.com/BennyE)
+- aos6 - show snmp station [#17](https://github.com/jefvantongerloo/textfsm-aos/pull/17) by [@BennyE](https://github.com/BennyE)
 - aos8 - show chassis [#6](https://github.com/jefvantongerloo/textfsm-aos/pull/6)
 - aos8 - show cmm [#12](https://github.com/jefvantongerloo/textfsm-aos/pull/12)
 - aos8 - show command-log [#4](https://github.com/jefvantongerloo/textfsm-aos/pull/4)
