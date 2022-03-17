@@ -77,7 +77,7 @@ parsed result
 | show health                    |          :heavy_check_mark:         |                :x:                |
 | show history                   |          :heavy_check_mark:         |                :x:                |
 | show interface status          |          :heavy_check_mark:         |                :x:                |
-| show ip interface              |          :heavy_check_mark:         |                :x:                |
+| show ip interface              |          :heavy_check_mark:         |         :heavy_check_mark:        |
 | show ip route                  |          :heavy_check_mark:         |                :x:                |
 | show lld remote system         |          :heavy_check_mark:         |                :x:                |
 | show log events                |                 :x:                 |         :heavy_check_mark:        |

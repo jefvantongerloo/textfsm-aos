@@ -23,6 +23,8 @@
   platform: ale_aos6
 - command: show ip interface
   platform: ale_aos6
+- command: show ip interface
+  platform: ale_aos8
 - command: show ip route
   platform: ale_aos6
 - command: show lldp remote-system
