@@ -1,5 +1,11 @@
 # Textfsm-aos release notes
 
+## [0.3.0] - Unreleased
+
+### Added CLI commands
+
+- aos8 - show ip interface [#20](https://github.com/jefvantongerloo/textfsm-aos/pull/20) by [@BennyE](https://github.com/BennyE)
+
 ## [0.2.0] - 2022-03-14
 
 ### Added CLI commands
