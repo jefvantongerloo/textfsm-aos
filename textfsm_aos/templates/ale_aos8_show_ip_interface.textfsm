@@ -8,7 +8,7 @@ Value flags (D|)
 
 Start
   ^Total (\d+) interfaces$$
-  ^ Flags (D=Directly-bound)
+  ^ Flags (D=Directly-bound)$$
   ^            Name                 IP Address      Subnet Mask     Status Forward  Device   Flags$$
   ^--------------------------------\+---------------\+---------------\+------\+-------\+---------\+------$$ -> Interfaces
 
