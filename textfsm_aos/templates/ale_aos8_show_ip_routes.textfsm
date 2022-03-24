@@ -13,4 +13,4 @@ Start
 Routes
   ^\s+${dest_address}/${cidr}\s+(\+)*${gateway_address}\s+${age}\s+${protocol}\s*$$ -> Record
   ^\s+(\+)*${gateway_address}\s+${age}\s+${protocol}\s*$$ -> Record
-  ^.-> Error
+  ^. -> Error
