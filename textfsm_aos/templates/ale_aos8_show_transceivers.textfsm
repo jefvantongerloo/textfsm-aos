@@ -15,7 +15,7 @@ Start
 
 XCVR
   ^Chassis ID ${chassis_id}\s*$$
-  ^Slot ${slot_id} Transceiver ${transceiver_id}
+  ^Slot ${slot_id} Transceiver ${transceiver_id}$$
   ^  Manufacturer Name:             ${manufacturer_name},$$
   ^  Part Number:                   ${part_number},$$
   ^  Hardware Revision:             ${hardware_revision},$$
