@@ -1,5 +1,11 @@
 # Textfsm-aos release notes
 
+## [0.3.0] - Unreleased
+
+### Added CLI commands
+
+- aos8 - show ip routes [#21](https://github.com/jefvantongerloo/textfsm-aos/pull/21) by [@BennyE](https://github.com/BennyE)
+
 ## [0.2.0] - 2022-03-14
 
 ### Added CLI commands

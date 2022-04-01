@@ -1,0 +1,17 @@
+Total 12 interfaces
+ Flags (D=Directly-bound)
+
+            Name                 IP Address      Subnet Mask     Status Forward  Device   Flags
+--------------------------------+---------------+---------------+------+-------+---------+------
+Loopback                         127.0.0.1       255.255.255.255     UP      NO Loopback    
+vlan-10                          192.168.10.254  255.255.255.0       UP     YES vlan 10     
+vlan-11                          192.168.11.254  255.255.255.0       UP     YES vlan 11     
+vlan-12                          192.168.12.254  255.255.255.0       UP     YES vlan 12     
+vlan-13                          192.168.13.254  255.255.255.0       UP     YES vlan 13     
+vlan-14                          192.168.14.254  255.255.255.0       UP     YES vlan 14     
+vlan-15                          192.168.15.254  255.255.255.0       UP     YES vlan 15     
+vlan-2                           192.168.2.10    255.255.255.0       UP     YES vlan 2      
+rp-vlan850                       37.2.2.1        255.0.0.0         DOWN      NO vlan 850     D
+L3VPN-2000                       11.1.1.1        255.255.255.0       UP     YES service 1
+gre-1                            24.24.24.1      255.255.255.0       UP     YES GRE tunnel
+ipip-1                           25.25.25.1      255.255.255.0       UP     YES IPIP tunnel
