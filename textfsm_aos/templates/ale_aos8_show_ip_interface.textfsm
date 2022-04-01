@@ -14,4 +14,4 @@ Start
 
 Interfaces
   ^${name}\s+${ip_address}\s+${subnet_mask}\s+${status}\s+${forward}\s+${device}\s*${flags}$$ -> Record
-  #^. -> Error
+  ^. -> Error
