@@ -1,0 +1,152 @@
+Chassis ID 1 
+Slot 1 Transceiver 4
+  Manufacturer Name:             FINISAR CORP.   ,
+  Part Number:                   FCLF8521P2BTL   ,
+  Hardware Revision:             A   ,
+  Serial Number:                 XYZ12345        ,
+  Manufacture Date:              Nov 17 2010,
+  Laser Wave Length:             N/A,
+  Admin Status:                  POWER ON,
+  Operational Status:            UP
+
+Slot 1 Transceiver 6
+  Manufacturer Name:             FINISAR CORP.   ,
+  Part Number:                   FCLF-8521-3     ,
+  Hardware Revision:             A   ,
+  Serial Number:                 XYZ12345        ,
+  Manufacture Date:              Jan 10 2008,
+  Laser Wave Length:             N/A,
+  Admin Status:                  POWER ON,
+  Operational Status:            UP
+
+Slot 1 Transceiver 7
+  Manufacturer Name:             Tyco Electronics,
+  Part Number:                   1559874-2       ,
+  Hardware Revision:             A   ,
+  Serial Number:                 XYZ12345        ,
+  Manufacture Date:              Mar 18 2010,
+  Laser Wave Length:             N/A,
+  Admin Status:                  POWER ON,
+  Operational Status:            UP
+
+Slot 1 Transceiver 11
+  Manufacturer Name:             FOXCONN         ,
+  Part Number:                   2GSPWWA-GEG-EN  ,
+  Hardware Revision:             A   ,
+  Serial Number:                 XYZ12345        ,
+  Manufacture Date:              Nov 25 2011,
+  Laser Wave Length:             N/A,
+  Admin Status:                  POWER ON,
+  Operational Status:            UP
+
+Slot 1 Transceiver 17
+  Manufacturer Name:             FOXCONN         ,
+  Part Number:                   2GSPWWA-GEG-EN  ,
+  Hardware Revision:             A   ,
+  Serial Number:                 XYZ12345        ,
+  Manufacture Date:              Jun  5 2013,
+  Laser Wave Length:             N/A,
+  Admin Status:                  POWER ON,
+  Operational Status:            UP
+
+Slot 1 Transceiver 18
+  Manufacturer Name:             FCI Electronics,
+  Part Number:                   10119315-3006LF,
+  Hardware Revision:             A,
+  Serial Number:                 XYZ12345       ,
+  Manufacture Date:              Jul 31 2012,
+  Laser Wave Length:             N/A,
+  Admin Status:                  POWER ON,
+  Operational Status:            UP
+
+Slot 1 Transceiver 19
+  Manufacturer Name:             ALL BEST        ,
+  Part Number:                   R-CS-S2AFS2AF-DV,
+  Hardware Revision:             C   ,
+  Serial Number:                 XYZ12345        ,
+  Manufacture Date:              Sep 10 2009,
+  Laser Wave Length:             N/A,
+  Admin Status:                  POWER ON,
+  Operational Status:            UP
+
+Slot 1 Transceiver 25
+  Manufacturer Name:             CISCO-TYCO      ,
+  Part Number:                   2127493-1       ,
+  Hardware Revision:             A   ,
+  Serial Number:                 XYZ12345,
+  Manufacture Date:              Mar 18 2015,
+  Laser Wave Length:             N/A,
+  Admin Status:                  POWER ON,
+  Operational Status:            UP
+
+Slot 1 Transceiver 26
+  Manufacturer Name:             FINISAR CORP.   ,
+  Part Number:                   FTLX8571D3BCL   ,
+  Hardware Revision:             A   ,
+  Serial Number:                 XYZ12345        ,
+  Manufacture Date:              Aug 13 2013,
+  Laser Wave Length:             850nm,
+  Admin Status:                  POWER ON,
+  Operational Status:            UP
+
+Slot 1 Transceiver 27
+  Manufacturer Name:             FINISAR CORP.   ,
+  Part Number:                   FTLX8571D3BCL   ,
+  Hardware Revision:             A   ,
+  Serial Number:                 XYZ12345        ,
+  Manufacture Date:              Aug 13 2013,
+  Laser Wave Length:             850nm,
+  Admin Status:                  POWER ON,
+  Operational Status:            UP
+
+Slot 1 Transceiver 28
+  Manufacturer Name:             FINISAR CORP.   ,
+  Part Number:                   FTLX8571D3BCL   ,
+  Hardware Revision:             A   ,
+  Serial Number:                 XYZ12345        ,
+  Manufacture Date:              Dec 19 2011,
+  Laser Wave Length:             850nm,
+  Admin Status:                  POWER ON,
+  Operational Status:            UP
+
+Chassis ID 2 
+Slot 1 Transceiver 7
+  Manufacturer Name:             Tyco Electronics,
+  Part Number:                   1559874-2       ,
+  Hardware Revision:             A   ,
+  Serial Number:                 XYZ12345        ,
+  Manufacture Date:              Mar 18 2010,
+  Laser Wave Length:             N/A,
+  Admin Status:                  POWER ON,
+  Operational Status:            UP
+
+Slot 1 Transceiver 11
+  Manufacturer Name:             ALL BEST        ,
+  Part Number:                   R-CS-S2AFS2AF-DV,
+  Hardware Revision:             C   ,
+  Serial Number:                 XYZ12345        ,
+  Manufacture Date:              Sep 10 2009,
+  Laser Wave Length:             N/A,
+  Admin Status:                  POWER ON,
+  Operational Status:            UP
+
+Slot 1 Transceiver 18
+  Manufacturer Name:             FCI Electronics,
+  Part Number:                   10119315-3006LF,
+  Hardware Revision:             A,
+  Serial Number:                 XYZ12345       ,
+  Manufacture Date:              Jul 31 2012,
+  Laser Wave Length:             N/A,
+  Admin Status:                  POWER ON,
+  Operational Status:            UP
+
+Slot 1 Transceiver 19
+  Manufacturer Name:             ALL BEST        ,
+  Part Number:                   R-CS-S2AFS2AF-DV,
+  Hardware Revision:             C   ,
+  Serial Number:                 XYZ12345        ,
+  Manufacture Date:              Sep 10 2009,
+  Laser Wave Length:             N/A,
+  Admin Status:                  POWER ON,
+  Operational Status:            UP
+

@@ -65,6 +65,8 @@
   platform: ale_aos6
 - command: show system
   platform: ale_aos8
+- command: show transceivers
+  platform: ale_aos8
 - command: show vlan
   platform: ale_aos6
 - command: show vlan

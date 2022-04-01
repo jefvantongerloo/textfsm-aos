@@ -1,0 +1,27 @@
+Value Filldown chassis_id (\d)
+Value Required slot_id (\d{1,2})
+Value transceiver_id (\d{1,2})
+Value manufacturer_name (.+)
+Value part_number (.+)
+Value hardware_revision (.+)
+Value serial_number (.+)
+Value manufacture_date (.+)
+Value laser_wave_length (.+)
+Value admin_status (POWER ON|POWER OFF|.+)
+Value operational_status (UP|DOWN|.+)
+
+Start
+  ^Chassis ID ${chassis_id}\s*$$ -> XCVR
+
+XCVR
+  ^Chassis ID ${chassis_id}\s*$$
+  ^Slot ${slot_id} Transceiver ${transceiver_id}
+  ^  Manufacturer Name:             ${manufacturer_name},$$
+  ^  Part Number:                   ${part_number},$$
+  ^  Hardware Revision:             ${hardware_revision},$$
+  ^  Serial Number:                 ${serial_number},$$
+  ^  Manufacture Date:              ${manufacture_date},$$
+  ^  Laser Wave Length:             ${laser_wave_length},$$
+  ^  Admin Status:                  ${admin_status},$$
+  ^  Operational Status:            ${operational_status} -> Record XCVR
+  ^. -> Error
