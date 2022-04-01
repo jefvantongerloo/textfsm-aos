@@ -78,7 +78,8 @@ parsed result
 | show history                   |          :heavy_check_mark:         |                :x:                |
 | show interface status          |          :heavy_check_mark:         |                :x:                |
 | show ip interface              |          :heavy_check_mark:         |         :heavy_check_mark:        |
-| show ip route                  |          :heavy_check_mark:         |                :x:                |
+| show ip route                  |          :heavy_check_mark:         |       `alias: show ip routes`     |
+| show ip routes                 |        `alias: show ip route`       |         :heavy_check_mark:        |
 | show lld remote system         |          :heavy_check_mark:         |                :x:                |
 | show log events                |                 :x:                 |         :heavy_check_mark:        |
 | show mac-address-table         |          :heavy_check_mark:         |     `alias: show mac-learning`    |
