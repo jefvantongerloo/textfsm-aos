@@ -8,6 +8,9 @@
 - aos8 - show ip routes [#21](https://github.com/jefvantongerloo/textfsm-aos/pull/21) by [@BennyE](https://github.com/BennyE)
 - aos8 - show transceivers [#23] (https://github.com/jefvantongerloo/textfsm-aos/pull/23) by [@BennyE](https://github.com/BennyE)
 - aos8 - show health [#24] (https://github.com/jefvantongerloo/textfsm-aos/pull/24) by [@BennyE](https://github.com/BennyE)
+- aos8 - show history [#25] (https://github.com/jefvantongerloo/textfsm-aos/pull/25) by [@BennyE](https://github.com/BennyE)
+- aos8 - show hardware-info [#26] (https://github.com/jefvantongerloo/textfsm-aos/pull/26) by [@BennyE](https://github.com/BennyE)
+- aos8 - show interfaces status [#27] (https://github.com/jefvantongerloo/textfsm-aos/pull/27) by [@BennyE](https://github.com/BennyE)
 
 ## [0.2.0] - 2022-03-14
 
