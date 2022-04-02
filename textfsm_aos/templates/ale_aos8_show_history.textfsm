@@ -1,0 +1,6 @@
+Value id (\d+)
+Value command (.*)
+
+Start
+  ^\s*${id}\s+${command}\s*$$ -> Record
+  ^. -> Error
