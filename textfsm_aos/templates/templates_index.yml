@@ -39,6 +39,8 @@
   platform: ale_aos8
 - command: show lldp remote-system
   platform: ale_aos6
+- command: show lldp remote-system
+  platform: ale_aos8
 - command: show log events
   platform: ale_aos8
 - command: show mac-address-table

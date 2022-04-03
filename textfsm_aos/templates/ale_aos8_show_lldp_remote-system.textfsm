@@ -1,0 +1,137 @@
+Value Filldown local_port (\d/\d{1,2}/\d{1,2}[\w]*)
+Value Required remote_chassis (.+)
+Value Required remote_port (.+)
+Value remote_id (\d+)
+Value chassis_subtype (.+)
+Value port_subtype (.+)
+Value port_description (.+)
+Value system_name (.+)
+Value system_description (.+)
+Value capabilities_supported (.+)
+Value capabilities_enabled (.+)
+Value management_ip_address ((?:[0-9]{1,3}\.){3}[0-9]{1,3})
+Value remote_port_default_vlan (\d+)
+Value vlan_id (\d+)
+Value vlan_name (.+)
+Value protocol_vlan_id (.+)
+Value protocol_identity (.+)
+Value med_device_type (.+)
+Value med_capabilities (.+)
+Value med_extension_tlv (.+)
+Value med_power_type (.+)
+Value med_power_source (.+)
+Value med_power_priority (.+)
+Value med_power_value (.+)
+Value remote_port_autoneg (.+)
+Value mau_type (.+)
+
+Start
+  ^Remote LLDP nearest-bridge Agents on Local Port ${local_port}:
+  ^\s{4}Chassis ${remote_chassis}, Port ${remote_port}:$$
+  ^\s{6}Remote ID                   = ${remote_id},$$
+  ^\s{6}Chassis Subtype             = ${chassis_subtype},$$
+  ^\s{6}Port Subtype                = ${port_subtype},$$
+  ^\s{6}Port Description            = ${port_description},$$
+  ^\s{6}System Name                 = ${system_name},$$
+  ^\s{6}System Description          = ${system_description},$$
+  ^\s{6}Capabilities Supported      = ${capabilities_supported},$$
+  ^\s{6}Capabilities Enabled        = ${capabilities_enabled},*$$
+  ^\s{6}Management IP Address       = ${management_ip_address},$$
+  ^\s{6}Remote port default vlan    = ${remote_port_default_vlan},$$
+  ^\s{6}Vlan ID                     = ${vlan_id},$$
+  ^\s{6}Vlan Name                   = ${vlan_name},$$
+  ^\s{6}Protocol vlan Id            = ${protocol_vlan_id},$$
+  ^\s{6}Protocol Identity           = ${protocol_identity},$$
+  ^\s{6}MED Device Type             = ${med_device_type},$$
+  ^\s{6}MED Capabilities            = ${med_capabilities},$$
+  ^\s{6}MED Extension TLVs Present  = ${med_extension_tlv},$$
+  ^\s{6}MED Power Type              = ${med_power_type},$$
+  ^\s{6}MED Power Source            = ${med_power_source},$$
+  ^\s{6}MED Power Priority          = ${med_power_priority},$$
+  ^\s{6}MED Power Value             = ${med_power_value},$$
+  ^\s{6}Remote port MAC/PHY AutoNeg = ${remote_port_autoneg},$$
+  ^\s{6}Mau Type                    =\s*${mau_type}$$ -> Record Start
+  #^. -> Error
+  #^. 
+  #^. -> CAPABILITIESENABLED
+  #^\s{6}Capabilities\s+Enabled -> CAPABILITIESENABLED
+ # ^\s{6}Management\s+IP\s+Address -> MANAGEMENT
+  #^. -> Record Start
+  #^. -> Error
+
+# CAPABILITIESENABLED
+#   ^\s{6}Capabilities Enabled        = ${capabilities_enabled},*$$ -> Record
+#  ^${capabilities_enabled}(,$$|$$) -> Continue.Record 
+  
+#  ^\s{6}Capabilities Enabled        = ${capabilities_enabled} -> CHECKEND
+#  ^.${capabilities_enabled}$$ -> Record Start
+#  ^\s{6}Capabilities Enabled        = ${capabilities_enabled},*$$ -> Start
+
+# CHECKEND
+#   ^\s*$$ -> Record Start
+#   ^\s*,$$ -> Start
+#   ^. -> Error
+
+#  ^\s*\=\s*${capabilities_enabled}$$ -> LLDP
+  # ^\s{6}Capabilities Enabled        = ${capabilities_enabled},*$$ -> Continue
+#  ^\s{6}Capabilities Enabled        = ${capabilities_enabled}$$ -> Record
+
+# MANAGEMENT  
+#   ^\s{6}Management IP Address       = ${management_ip_address},$$ -> Continue.Record
+#   ^\s{6}Management IP Address       = ${management_ip_address}$$ -> Record
+
+# REMOTEPORTDEFAULTVLAN
+#   ^\s{6}Remote port default vlan    = ${remote_port_default_vlan},$$ -> VLANID
+#   ^\s{6}Remote port default vlan    = ${remote_port_default_vlan}$$ -> Record Start
+
+# VLANID
+#   ^\s{6}Vlan ID                     = ${vlan_id},$$ -> VLANNAME
+#   ^\s{6}Vlan ID                     = ${vlan_id}$$ -> Record Start
+
+# VLANNAME
+#   ^\s{6}Vlan Name                   = ${vlan_name},$$ -> PROTOCOLVLANID
+#   ^\s{6}Vlan Name                   = ${vlan_name}$$ -> Record Start
+
+# PROTOCOLVLANID
+#   ^\s{6}Protocol vlan Id            = ${protocol_vlan_id},$$ -> PROTOCOLIDENTITY
+#   ^\s{6}Protocol vlan Id            = ${protocol_vlan_id}$$ -> Record Start
+
+# PROTOCOLIDENTITY
+#   ^\s{6}Protocol Identity           = ${protocol_identity},$$ -> MEDDEVICETYPE
+#   ^\s{6}Protocol Identity           = ${protocol_identity}$$ -> Record Start
+
+# MEDDEVICETYPE
+#   ^\s{6}MED Device Type             = ${med_device_type},$$ -> MEDCAPABILITIES
+#   ^\s{6}MED Device Type             = ${med_device_type}$$ -> Record Start
+
+# MEDCAPABILITIES
+#   ^\s{6}MED Capabilities            = ${med_capabilities},$$ -> MEDEXTENSIONTLVPRESENT
+#   ^\s{6}MED Capabilities            = ${med_capabilities}$$ -> Record Start
+
+# MEDEXTENSIONTLVPRESENT
+#   ^\s{6}MED Extension TLVs Present  = ${med_extension_tlv},$$ -> MEDPOWERTYPE
+#   ^\s{6}MED Extension TLVs Present  = ${med_extension_tlv}$$ -> Record Start
+
+# MEDPOWERTYPE
+#   ^\s{6}MED Power Type              = ${med_power_type},$$ -> MEDPOWERSOURCE
+#   ^\s{6}MED Power Type              = ${med_power_type}$$ -> Record Start
+
+# MEDPOWERSOURCE
+#   ^\s{6}MED Power Source            = ${med_power_source},$$ -> MEDPOWERPRIORITY
+#   ^\s{6}MED Power Source            = ${med_power_source}$$ -> Record Start
+
+# MEDPOWERPRIORITY
+#   ^\s{6}MED Power Priority          = ${med_power_priority},$$ -> MEDPOWERVALUE
+#   ^\s{6}MED Power Priority          = ${med_power_priority}$$ -> Record Start
+
+# MEDPOWERVALUE
+#   ^\s{6}MED Power Value             = ${med_power_value},$$ -> REMOTEPORTMACPHY
+#   ^\s{6}MED Power Value             = ${med_power_value}$$ -> Record Start
+
+# REMOTEPORTMACPHY
+#   ^\s{6}Remote port MAC/PHY AutoNeg = ${remote_port_autoneg},$$ -> MAUTYPE
+#   ^\s{6}Remote port MAC/PHY AutoNeg = ${remote_port_autoneg}$$ -> Record Start
+
+# MAUTYPE
+#   ^\s{6}Mau Type                    =\s*${mau_type}$$ -> Record Start
+  # ^. -> Error
