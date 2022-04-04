@@ -5,6 +5,7 @@
 ### Added CLI commands
 
 - aos6 - show 802.1x users unp [#30](https://github.com/jefvantongerloo/textfsm-aos/pull/28)
+- aos8 - history [#32] https://github.com/jefvantongerloo/textfsm-aos/pull/32 by [@BennyE](https://github.com/BennyE)
 - aos8 - show health [#24](https://github.com/jefvantongerloo/textfsm-aos/pull/24) by [@BennyE](https://github.com/BennyE)
 - aos8 - show ip interface [#20](https://github.com/jefvantongerloo/textfsm-aos/pull/20) by [@BennyE](https://github.com/BennyE)
 - aos8 - show ip routes [#21](https://github.com/jefvantongerloo/textfsm-aos/pull/21) by [@BennyE](https://github.com/BennyE)
