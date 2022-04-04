@@ -1,11 +1,11 @@
-Value healthmodulecpu1minavg (\d{2,3})
-Value healthmodulecpu1hravg (\d{2,3})
-Value healthmodulecpu1dayavg (\d{2,3})
-Value healthmodulecpucurrent (\d{2,3}[/*]*)
-Value healthmodulememory1minavg (\d{2,3})
-Value healthmodulememory1hravg (\d{2,3})
-Value healthmodulememory1dayavg (\d{2,3})
-Value healthmodulememorycurrent (\d{2,3}[/*]*)
+Value healthmodulecpu1minavg (\d{1,3})
+Value healthmodulecpu1hravg (\d{1,3})
+Value healthmodulecpu1dayavg (\d{1,3})
+Value healthmodulecpucurrent (\d{1,3}[/*]*)
+Value healthmodulememory1minavg (\d{1,3})
+Value healthmodulememory1hravg (\d{1,3})
+Value healthmodulememory1dayavg (\d{1,3})
+Value healthmodulememorycurrent (\d{1,3}[/*]*)
 
 Start
   ^CMM                    Current   1 Min    1 Hr   1 Day$$

@@ -1,7 +1,7 @@
 Value Filldown chassis_id (\d+)
 Value Required cpu_manufacturer (.*)
 Value cpu_model (.*)
-Value compact_flash_manufacturer (.*)
+Value compact_flash_manufacturer ([\S]+( [\S]+)*)
 Value compact_flash_size (.*)
 Value flash_manufacturer (.*)
 Value flash_size (.*)
@@ -26,25 +26,25 @@ Start
 
 Chassis
   ^Chassis ${chassis_id}$$
-  ^CPU Manufacturer                  : ${cpu_manufacturer}$$
-  ^CPU Model                         : ${cpu_model}$$
-  ^Compact Flash Manufacturer        : ${compact_flash_manufacturer}\s*$$
-  ^Compact Flash size                : ${compact_flash_size}\s*$$
-  ^Flash Manufacturer                : ${flash_manufacturer}\s*$$
-  ^Flash size                        : ${flash_size}\s*$$
-  ^RAM Manufacturer                  : ${ram_manufacturer}\s*$$ 
-  ^RAM size                          : ${ram_size}$$
-  ^CPLD version                      : ${cpld_version}$$
-  ^ONIE Version                      : ${onie_version}$$
-  ^Control FPGA version              : ${control_fpga_version}$$
-  ^Power FPGA version                : ${power_fpga_version}$$
-  ^Coreboot Version                  : ${coreboot_version}$$
-  ^CFMs Present                      : ${cfms_present}$$
-  ^FPGA version                      : ${fpga_version}$$
-  ^FPGA 1 version                    : ${fpga_1_version}$$
-  ^FPGA 2 version                    : ${fpga_2_version}$$
-  ^U-Boot Version                    : ${uboot_version}$$
-  ^Power Supplies Present            : ${power_supplies_present}$$
-  ^Fan Trays Present                 : ${fan_trays_present}$$
-  ^NIs Present                       : ${network_interfaces_present}$$ -> Record Start
+  ^CPU Manufacturer\s+: ${cpu_manufacturer}$$
+  ^CPU Model\s+: ${cpu_model}$$
+  ^Compact Flash Manufacturer\s+: ${compact_flash_manufacturer}\s*$$
+  ^Compact Flash size\s+: ${compact_flash_size}\s*$$
+  ^Flash Manufacturer\s+: ${flash_manufacturer}\s*$$
+  ^Flash size\s+: ${flash_size}\s*$$
+  ^RAM Manufacturer\s+: ${ram_manufacturer}\s*$$ 
+  ^RAM size\s+: ${ram_size}$$
+  ^CPLD version\s+: ${cpld_version}$$
+  ^ONIE Version\s+: ${onie_version}$$
+  ^Control FPGA version\s+: ${control_fpga_version}$$
+  ^Power FPGA version\s+: ${power_fpga_version}$$
+  ^Coreboot Version\s+: ${coreboot_version}$$
+  ^CFMs Present\s+: ${cfms_present}$$
+  ^FPGA version\s+: ${fpga_version}$$
+  ^FPGA 1 version\s+: ${fpga_1_version}$$
+  ^FPGA 2 version\s+: ${fpga_2_version}$$
+  ^U-Boot Version\s+: ${uboot_version}$$
+  ^Power Supplies Present\s+: ${power_supplies_present}$$
+  ^Fan Trays Present\s+: ${fan_trays_present}$$
+  ^NIs Present\s+: ${network_interfaces_present}$$ -> Record Start
   ^. -> Error
