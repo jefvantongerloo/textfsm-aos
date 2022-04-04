@@ -1,0 +1,18 @@
+Value healthmodulecpu1minavg (\d{1,3})
+Value healthmodulecpu1hravg (\d{1,3})
+Value healthmodulecpu1dayavg (\d{1,3})
+Value healthmodulecpucurrent (\d{1,3}[/*]*)
+Value healthmodulememory1minavg (\d{1,3})
+Value healthmodulememory1hravg (\d{1,3})
+Value healthmodulememory1dayavg (\d{1,3})
+Value healthmodulememorycurrent (\d{1,3}[/*]*)
+
+Start
+  ^CMM                    Current   1 Min    1 Hr   1 Day$$
+  ^Resources                         Avg      Avg     Avg$$
+  ^----------------------\+---------\+-------\+-------\+-------$$ -> Health
+
+Health
+  ^CPU\s+${healthmodulecpucurrent}\s+${healthmodulecpu1minavg}\s+${healthmodulecpu1hravg}\s+${healthmodulecpu1dayavg}\s*$$
+  ^Memory\s+${healthmodulememorycurrent}\s+${healthmodulememory1minavg}\s+${healthmodulememory1hravg}\s+${healthmodulememory1dayavg}\s*$$ -> Record
+  ^. -> Error

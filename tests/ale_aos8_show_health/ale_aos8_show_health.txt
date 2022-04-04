@@ -1,0 +1,6 @@
+CMM                    Current   1 Min    1 Hr   1 Day
+Resources                         Avg      Avg     Avg
+----------------------+---------+-------+-------+-------
+CPU                     10       11      11      10
+Memory                  54       54      54      54
+

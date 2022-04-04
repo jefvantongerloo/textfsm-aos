@@ -17,6 +17,8 @@
   platform: ale_aos8
 - command: show health
   platform: ale_aos6
+- command: show health
+  platform: ale_aos8
 - command: show history
   platform: ale_aos6
 - command: show interfaces status

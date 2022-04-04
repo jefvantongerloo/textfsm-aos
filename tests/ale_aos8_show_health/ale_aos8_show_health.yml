@@ -1,0 +1,9 @@
+---
+- healthmodulecpu1minavg: '11'
+  healthmodulecpu1hravg: '11'
+  healthmodulecpu1dayavg: '10'
+  healthmodulecpucurrent: '10'
+  healthmodulememory1minavg: '54'
+  healthmodulememory1hravg: '54'
+  healthmodulememory1dayavg: '54'
+  healthmodulememorycurrent: '54'
