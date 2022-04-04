@@ -3,8 +3,8 @@ Value Required slot_id (\d{1,2})
 Value alu_model_name (\S+)
 Value alu_model_number (\S+)
 Value transceiver_id (\d{1,2})
-Value manufacturer_name (.+)
-Value part_number (.+)
+Value manufacturer_name ([\S]+( [\S]+)*)
+Value part_number (\S+)
 Value hardware_revision (.+)
 Value serial_number (\S+)
 Value manufacture_date (.+)
@@ -20,8 +20,8 @@ XCVR
   ^Slot ${slot_id} Transceiver ${transceiver_id}$$
   ^\s+ALU Model Name:\s+${alu_model_name}\s*,$$
   ^\s+ALU Model Number:\s+${alu_model_number}\s*,$$
-  ^\s+Manufacturer Name:\s+${manufacturer_name},$$
-  ^\s+Part Number:\s+${part_number},$$
+  ^\s+Manufacturer Name:\s+${manufacturer_name}\s*,$$
+  ^\s+Part Number:\s+${part_number}\s*,$$
   ^\s+Hardware Revision:\s+${hardware_revision},$$
   ^\s+Serial Number:\s+${serial_number}\s*,$$
   ^\s+Manufacture Date:\s+${manufacture_date},$$
