@@ -3,8 +3,6 @@
 import yaml
 import pytest
 import textfsm_aos
-from textfsm_aos import templates
-import importlib.resources as pkg_resources
 
 
 def _get_raw(platform: str, command: str) -> str:
@@ -43,38 +41,3 @@ def test_parsed_data(template: dict):
     print("Benchmark data: \n {0} \n".format(benchmark_data))
 
     assert parsed_data == benchmark_data
-
-
-def test_template_index_count():
-    len_template_files = 0
-
-    template_index = textfsm_aos.parser._get_template_index()
-    len_template_index = len(template_index)
-
-    template_files = pkg_resources.contents(templates)
-    for template in template_files:
-        if template.find("ale_") != -1:
-            len_template_files += 1
-
-    assert len_template_files == len_template_index
-
-
-def test_template_index_names():
-    template_files_ale = []
-    template_index_ale = []
-    template_files = pkg_resources.contents(templates)
-    template_index = textfsm_aos.parser._get_template_index()
-
-    for template in template_files:
-        if template.find("ale_") != -1:
-            template_files_ale.append(template.split(".")[0])
-
-    for template in template_index:
-        template_index_ale.append(
-            template["platform"]
-            + "_"
-            + template["command"].replace(" ", "_")
-            + ".textfsm"
-        )
-
-    assert template_index_ale.sort() == template_files_ale.sort()
