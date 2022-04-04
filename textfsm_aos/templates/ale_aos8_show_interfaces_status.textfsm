@@ -1,6 +1,6 @@
 Value Key,Required chassis_slot_port (\d/\d+/\d+[\w]*)
 Value admin_status (-|en|dis)
-Value autoneg (-|en|dis)
+Value autonego (-|en|dis)
 Value detected_speed (-|Auto|10|100|1000|2500|5000|10000|25000|40000|50000|100000)
 Value detected_duplex (-|Half|Full|Auto)
 Value detected_pause (-|Rx-N-Tx|Rx|Tx)
@@ -19,5 +19,5 @@ Start
   ^--------\+------\+----\+--------\+------\+-------\+----\+--------\+------\+-------\+-----\+-----\+---$$ -> Interfaces
 
 Interfaces
-  ^\s*${chassis_slot_port}\s+${admin_status}\s+${autoneg}\s+${detected_speed}\s+${detected_duplex}\s+${detected_pause}\s+${detected_fec}\s+${configured_speed}\s+${configured_duplex}\s+${configured_pause}\s+${configured_fec}\s+${trap_linkupdown}\s+${eee}\s*$$ -> Record
+  ^\s*${chassis_slot_port}\s+${admin_status}\s+${autonego}\s+${detected_speed}\s+${detected_duplex}\s+${detected_pause}\s+${detected_fec}\s+${configured_speed}\s+${configured_duplex}\s+${configured_pause}\s+${configured_fec}\s+${trap_linkupdown}\s+${eee}\s*$$ -> Record
   ^. -> Error
