@@ -1,7 +1,8 @@
 """Pytests for TextFSM_aos project."""
-import textfsm_aos
+
 import yaml
 import pytest
+import textfsm_aos
 
 
 def _get_raw(platform: str, command: str) -> str:

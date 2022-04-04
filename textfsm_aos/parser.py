@@ -5,7 +5,7 @@ from scrapli.helper import textfsm_parse
 from . import templates
 
 
-def _get_template_index() -> dict:
+def _get_template_index() -> list:
     """Get textfsm template index."""
     template_index = yaml.safe_load(
         pkg_resources.read_text(templates, "templates_index.yml")
