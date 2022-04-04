@@ -1,0 +1,7 @@
+Slot  MAC               Vlan  HIC             Dynamic            User
+Port  Address                 Status          UNP                Name
+-----+-----------------+-----+---------------+------------------+-------------
+01/25 8c:dc:d4:51:e5:53  2000 Not Started     voip       host/pc-0001.ny.int
+01/38 00:80:9f:e0:19:40  2100 Not Started     iot        DOMAIN
+01/47 8c:dc:d4:4f:73:e5  2000 Not Started     printing   DOMAIN\mf-user
+04/09 00:80:9f:e0:19:c9  2010 Not Started     wireless   DOMAIN
