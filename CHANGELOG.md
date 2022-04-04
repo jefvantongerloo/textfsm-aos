@@ -7,6 +7,9 @@
 - aos8 - show ip interface [#20](https://github.com/jefvantongerloo/textfsm-aos/pull/20) by [@BennyE](https://github.com/BennyE)
 - aos8 - show ip routes [#21](https://github.com/jefvantongerloo/textfsm-aos/pull/21) by [@BennyE](https://github.com/BennyE)
 
+- pytest - test if command count matches textfsm template count [#29](https://github.com/jefvantongerloo/textfsm-aos/pull/29)
+- pytest - test if command names matches testfsm template names [#29](https://github.com/jefvantongerloo/textfsm-aos/pull/29)
+
 ## [0.2.0] - 2022-03-14
 
 ### Added CLI commands
