@@ -68,7 +68,8 @@ parsed result
 
 | command                        |                 aos6                |                aos8               |
 |--------------------------------|:-----------------------------------:|:---------------------------------:|
-| show 802.1x users              |          :heavy_check_mark:         |                :x:                |
+| show 802.1x users              |          :heavy_check_mark:         |       `alias: show unp user`      |
+| show 802.1x users unp          |          :heavy_check_mark:         |                :x:                |
 | show 802.1x non-supplicant     |          :heavy_check_mark:         |                :x:                |
 | show 802.1x non-supplicant unp |          :heavy_check_mark:         |                :x:                |
 | show chassis                   |          :heavy_check_mark:         |         :heavy_check_mark:        |

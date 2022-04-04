@@ -1,6 +1,8 @@
 ---
 - command: show 802.1x users
   platform: ale_aos6
+- command: show 802.1x users unp
+  platform: ale_aos6
 - command: show 802.1x non-supplicant
   platform: ale_aos6
 - command: show 802.1x non-supplicant unp
