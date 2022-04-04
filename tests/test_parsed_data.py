@@ -59,10 +59,22 @@ def test_template_index_count():
     assert len_template_files == len_template_index
 
 
-# def test_template_index_names():
-#     template_index = textfsm_aos.parser._get_template_index()
+def test_template_index_names():
+    template_files_ale = []
+    template_index_ale = []
+    template_files = pkg_resources.contents(templates)
+    template_index = textfsm_aos.parser._get_template_index()
 
-#     template_files = pkg_resources.contents(templates)
-#     for template in template_files:
+    for template in template_files:
+        if template.find("ale_") != -1:
+            template_files_ale.append(template.split(".")[0])
 
-#     assert len_template_files == len_template_index
+    for template in template_index:
+        template_index_ale.append(
+            template["platform"]
+            + "_"
+            + template["command"].replace(" ", "_")
+            + ".textfsm"
+        )
+
+    assert template_index_ale.sort() == template_files_ale.sort()
