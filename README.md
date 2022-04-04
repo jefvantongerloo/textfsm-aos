@@ -180,7 +180,7 @@ device = {
     'password': '<password>'
 }
 
-with ConnecHandler(**device) as conn:
+with ConnectHandler(**device) as conn:
     output = conn.send_command("show health", use_textfsm=True, textfsm_template="textfsm-aos/templates/ale_aos6_show_health.textfsm")
 ```
 
