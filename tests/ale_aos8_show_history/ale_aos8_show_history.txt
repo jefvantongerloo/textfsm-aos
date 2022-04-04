@@ -1,0 +1,10 @@
+  496  show virtual-chassis 
+  497  show virtual-chassis topology 
+  498  show virtual-chassis vf-link member-port 
+  499  show fan
+  500  exit
+  501  show transceivers 
+  502  show health 
+  503  show history
+  504  history
+

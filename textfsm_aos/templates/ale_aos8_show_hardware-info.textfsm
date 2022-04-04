@@ -1,0 +1,50 @@
+Value Filldown chassis_id (\d+)
+Value Required cpu_manufacturer (.*)
+Value cpu_model (.*)
+Value compact_flash_manufacturer ([\S]+( [\S]+)*)
+Value compact_flash_size (.*)
+Value flash_manufacturer (.*)
+Value flash_size (.*)
+Value ram_manufacturer (.*)
+Value ram_size (.*)
+Value cpld_version (.*)
+Value onie_version (.*)
+Value control_fpga_version (.*)
+Value power_fpga_version (.*)
+Value coreboot_version (.*)
+Value cfms_present (.*)
+Value fpga_version (.*)
+Value fpga_1_version (.*)
+Value fpga_2_version (.*)
+Value uboot_version (.*)
+Value power_supplies_present (.*)
+Value fan_trays_present (.*)
+Value network_interfaces_present (.*)
+
+Start
+  ^Chassis ${chassis_id}$$ -> Chassis
+
+Chassis
+  ^Chassis ${chassis_id}$$
+  ^CPU Manufacturer\s+: ${cpu_manufacturer}$$
+  ^CPU Model\s+: ${cpu_model}$$
+  ^Compact Flash Manufacturer\s+: ${compact_flash_manufacturer}\s*$$
+  ^Compact Flash size\s+: ${compact_flash_size}\s*$$
+  ^Flash Manufacturer\s+: ${flash_manufacturer}\s*$$
+  ^Flash size\s+: ${flash_size}\s*$$
+  ^RAM Manufacturer\s+: ${ram_manufacturer}\s*$$ 
+  ^RAM size\s+: ${ram_size}$$
+  ^CPLD version\s+: ${cpld_version}$$
+  ^ONIE Version\s+: ${onie_version}$$
+  ^Control FPGA version\s+: ${control_fpga_version}$$
+  ^Power FPGA version\s+: ${power_fpga_version}$$
+  ^Coreboot Version\s+: ${coreboot_version}$$
+  ^CFMs Present\s+: ${cfms_present}$$
+  ^FPGA version\s+: ${fpga_version}$$
+  ^FPGA 1 version\s+: ${fpga_1_version}$$
+  ^FPGA 2 version\s+: ${fpga_2_version}$$
+  ^U-Boot Version\s+: ${uboot_version}$$
+  ^Power Supplies Present\s+: ${power_supplies_present}$$
+  ^Fan Trays Present\s+: ${fan_trays_present}$$
+  ^NIs Present\s+: ${network_interfaces_present}$$ -> Record Start
+  ^. -> Error

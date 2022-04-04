@@ -15,12 +15,16 @@
   platform: ale_aos6
 - command: show command-log
   platform: ale_aos8
+- command: show hardware-info
+  platform: ale_aos8
 - command: show health
   platform: ale_aos6
 - command: show health
   platform: ale_aos8
 - command: show history
   platform: ale_aos6
+- command: show history
+  platform: ale_aos8
 - command: show interfaces status
   platform: ale_aos6
 - command: show ip interface

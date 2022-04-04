@@ -74,8 +74,9 @@ parsed result
 | show chassis                   |          :heavy_check_mark:         |         :heavy_check_mark:        |
 | show cmm                       |                 :x:                 |         :heavy_check_mark:        |
 | show command-log               |          :heavy_check_mark:         |         :heavy_check_mark:        |
+| show hardware-info             |                 :x:                 |         :heavy_check_mark:        |
 | show health                    |          :heavy_check_mark:         |         :heavy_check_mark:        |
-| show history                   |          :heavy_check_mark:         |                :x:                |
+| show history                   |          :heavy_check_mark:         |         :heavy_check_mark:        |
 | show interface status          |          :heavy_check_mark:         |                :x:                |
 | show ip interface              |          :heavy_check_mark:         |         :heavy_check_mark:        |
 | show ip route                  |          :heavy_check_mark:         |       `alias: show ip routes`     |
