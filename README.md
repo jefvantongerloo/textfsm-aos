@@ -279,7 +279,7 @@ Example Output:
 
 ## How to setup development environment
 
-1. Create virtual Python environment `python -m .venv venv`
+1. Create virtual Python environment `python -m venv .venv`
 
 2. Activate environment `source .venv/bin/activate`
 
