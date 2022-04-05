@@ -7,4 +7,5 @@
   502  show health 
   503  show history
   504  history
+  505  ip interface "weird   name" address 1.2.3.4/24 vlan 15
 

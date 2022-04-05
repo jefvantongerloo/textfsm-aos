@@ -68,6 +68,7 @@ parsed result
 
 | command                        |                 aos6                |                aos8               |
 |--------------------------------|:-----------------------------------:|:---------------------------------:|
+| history                        |        `alias: show history`        |         :heavy_check_mark:        |
 | show 802.1x users              |          :heavy_check_mark:         |       `alias: show unp user`      |
 | show 802.1x users unp          |          :heavy_check_mark:         |                :x:                |
 | show 802.1x non-supplicant     |          :heavy_check_mark:         |                :x:                |
@@ -77,7 +78,7 @@ parsed result
 | show command-log               |          :heavy_check_mark:         |         :heavy_check_mark:        |
 | show hardware-info             |                 :x:                 |         :heavy_check_mark:        |
 | show health                    |          :heavy_check_mark:         |         :heavy_check_mark:        |
-| show history                   |          :heavy_check_mark:         |         :heavy_check_mark:        |
+| show history                   |          :heavy_check_mark:         |          `alias: history`         |
 | show interface status          |          :heavy_check_mark:         |         :heavy_check_mark:        |
 | show ip interface              |          :heavy_check_mark:         |         :heavy_check_mark:        |
 | show ip route                  |          :heavy_check_mark:         |       `alias: show ip routes`     |

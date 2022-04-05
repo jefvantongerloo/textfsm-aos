@@ -1,5 +1,5 @@
 Value id (\d+)
-Value command (.*)
+Value command ([\S]+( +[\S]+)*)
 
 Start
   ^\s*${id}\s+${command}\s*$$ -> Record
