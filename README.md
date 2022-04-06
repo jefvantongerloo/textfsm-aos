@@ -292,3 +292,4 @@ Example Output:
 - Google TextFSM: [https://github.com/google/textfsm](https://github.com/google/textfsm)
 - Scrapli: [https://github.com/carlmontanari/scrapli](https://github.com/carlmontanari/scrapli)
 - Netmiko: [https://github.com/ktbyers/netmiko](https://github.com/ktbyers/netmiko)
+- Getting started with TextFSM: [https://pyneng.readthedocs.io](https://pyneng.readthedocs.io/en/latest/book/21_textfsm/index.html)
