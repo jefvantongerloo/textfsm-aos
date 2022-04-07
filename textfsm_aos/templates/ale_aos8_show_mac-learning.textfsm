@@ -12,6 +12,6 @@ Start
   ^------------\+----------------------\+-------------------\+------------------\+-------------\+-------------------------$$ -> Mac
 
 Mac
-  ^\s+${domain}\s+${id}\s+${mac_address}\s+${type}\s+${operation}\s+${interface}\s$$ -> Record
+  ^\s+${domain}\s+${id}\s+${mac_address}\s+${type}\s+${operation}\s+${interface}\s*$$ -> Record
   ^\s+Total number of Valid MAC addresses above = (\d+)
   ^. -> Error
