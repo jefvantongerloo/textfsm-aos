@@ -1,7 +1,7 @@
 Value status (enabled|disabled)
 Value Filldown community_mode (enabled|disabled)
 Value Required community_string (\S+)
-Value user_name (\S+(\s)*\S*)
+Value user_name ((\S+(\s)*\S*)*)
 
 Start
   ^Community mode : ${community_mode}$$
