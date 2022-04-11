@@ -1,6 +1,6 @@
 Value Filldown dest_addr ((?:[0-9]{1,3}\.){3}[0-9]{1,3}\/[0-9]{1,2})
 Value Required gateway_addr ((?:[0-9]{1,3}\.){3}[0-9]{1,3})
-Value age ((\d+:\d+:\d+)|(\d+d\d+h))
+Value age ((\d+:\d+:\d+)|(\d+d\s*\d+h))
 Value protocol (\w+)
 
 Start
