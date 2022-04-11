@@ -13,6 +13,6 @@ Start
   ^-------\+--------------------\+-----------------\+---------------\+----\+--------------------------------\+------------\+-----------$$ -> Unp
 
 Unp
-  ^Total users : 4$$
-  ^${port}\s+${username}\s+${mac_address}\s${user_ip}\s+${vlan}\s+${profile}\s+${type}\s+${status}$$ -> Record
+  ^Total users : \d+$$
+  ^${port}\s+${username}\s+${mac_address}\s${user_ip}\s+${vlan}\s+${profile}\s+${type}\s+${status}\s*$$ -> Record
   ^. -> Error
