@@ -27,6 +27,9 @@
 - aos8 - `show unp user` catch missing trailing whitespace [#36](https://github.com/jefvantongerloo/textfsm-aos/pull/36)
 - aos8 - `show snmp community-map` fix empty username field value [#38](https://github.com/jefvantongerloo/textfsm-aos/pull/38)
 
+### New contributors
+[@FlorianHeigl](https://github.com/FlorianHeigl) first contribution [https://github.com/jefvantongerloo/textfsm-aos/pull/30](https://github.com/jefvantongerloo/textfsm-aos/pull/30)
+
 ## [0.2.0] - 2022-03-14
 
 ### Added CLI commands
