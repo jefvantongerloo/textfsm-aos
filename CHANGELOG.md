@@ -16,6 +16,7 @@
 
 ### fixed
 
+- aos8 - `show cmm` fix missing ',' at end of line on fpga parameters [#5](https://github.com/jefvantongerloo/textfsm-aos/pull/35)
 - aos8 - `show mac-learning` missing trailing whitespace in output causes parsing error [#5](https://github.com/jefvantongerloo/textfsm-aos/pull/5)
 - aos8 - `show unp user` catch missing trailing whitespace [#36](https://github.com/jefvantongerloo/textfsm-aos/pull/36)
 
