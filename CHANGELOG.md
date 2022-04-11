@@ -14,7 +14,7 @@
 - pytest - test if command count matches textfsm template count [#29](https://github.com/jefvantongerloo/textfsm-aos/pull/29)
 - pytest - test if command names matches testfsm template names [#29](https://github.com/jefvantongerloo/textfsm-aos/pull/29)
 
-### fixed
+### Fixed
 
 - aos6 - `show lldp remote-system` fix `remote port default vlan` value [#41](https://github.com/jefvantongerloo/textfsm-aos/pull/41)
 - aos6 - `show mac address-table` fix trailing spaces and empty protocol with `---` placeholder [#39](https://github.com/jefvantongerloo/textfsm-aos/pull/39)
