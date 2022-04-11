@@ -21,6 +21,7 @@
 - aos8 - `show cmm` fix missing ',' at end of line on fpga parameters [#3](https://github.com/jefvantongerloo/textfsm-aos/pull/35)
 - aos8 - `show ip routes` fix whitespace between days and hours [#40](https://github.com/jefvantongerloo/textfsm-aos/pull/40)
 - aos8 - `show log events` catch space in time instead of '0', for example `2022 Apr  7 17: 8: 5.306` [#37](https://github.com/jefvantongerloo/textfsm-aos/pull/37)
+- aos8 - `show log events` ':' in log_description value for example `Authentication failure detected: user admin` [#43](https://github.com/jefvantongerloo/textfsm-aos/pull/43)
 - aos8 - `show mac-learning` missing trailing whitespace in output causes parsing error [#5](https://github.com/jefvantongerloo/textfsm-aos/pull/5)
 - aos8 - `show unp user` catch missing trailing whitespace [#36](https://github.com/jefvantongerloo/textfsm-aos/pull/36)
 - aos8 - `show snmp community-map` fix empty username field value [#38](https://github.com/jefvantongerloo/textfsm-aos/pull/38)
