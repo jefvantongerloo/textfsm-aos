@@ -17,6 +17,7 @@
 ### fixed
 
 - aos8 - show mac-learning missing trailing whitespace in output causes parsing error [#5](https://github.com/jefvantongerloo/textfsm-aos/pull/5)
+- aos8 - `show log events` catch space in time instead of '0', for example `2022 Apr  7 17: 8: 5.306` [#36](https://github.com/jefvantongerloo/textfsm-aos/pull/36)
 
 ## [0.2.0] - 2022-03-14
 
