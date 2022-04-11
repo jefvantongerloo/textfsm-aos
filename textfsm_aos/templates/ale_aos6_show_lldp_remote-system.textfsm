@@ -1,4 +1,4 @@
-Value local_port (\d\/\d{1,2})
+Value local_port (\d/\d+)
 Value remote_chassis (.+)
 Value remote_port (.+)
 Value remote_id (\d+)
@@ -8,8 +8,9 @@ Value port_description (.+)
 Value system_name (.+)
 Value system_description (.+)
 Value capabilities_supported (.+)
-Value capabilities_enabled (.+)
+Value capabilities_enabled (\w+(\s+\w+)*)
 Value management_ip_address ((?:[0-9]{1,3}\.){3}[0-9]{1,3})
+Value remote_port_default_vlan ([1-4096])
 Value vlan_id (\d+)
 Value vlan_name (.+)
 Value med_device_type (.+)
@@ -23,9 +24,7 @@ Value remote_port_autoneg (.+)
 Value mau_type (.+)
 
 Start
-  ^Remote LLDP Agents on Local Slot/Port ${local_port}: -> LLDP
-
-LLDP
+  ^Remote LLDP Agents on Local Slot\/Port ${local_port}:$$
   ^    Chassis ${remote_chassis}, Port ${remote_port}:
   ^      Remote ID                   = ${remote_id},$$
   ^      Chassis Subtype             = ${chassis_subtype},$$
@@ -34,8 +33,9 @@ LLDP
   ^      System Name                 = ${system_name},$$
   ^      System Description          = ${system_description},$$
   ^      Capabilities Supported      = ${capabilities_supported},$$
-  ^      Capabilities Enabled        = ${capabilities_enabled},$$
+  ^      Capabilities Enabled        = ${capabilities_enabled},*$$
   ^      Management IP Address       = ${management_ip_address},*$$
+  ^      Remote port default vlan    = ${remote_port_default_vlan},$$
   ^      Vlan ID                     = ${vlan_id},*$$
   ^      Vlan Name                   = ${vlan_name},$$
   ^      MED Device Type             = ${med_device_type},$$
