@@ -16,8 +16,9 @@
 
 ### fixed
 
-- aos8 - show mac-learning missing trailing whitespace in output causes parsing error [#5](https://github.com/jefvantongerloo/textfsm-aos/pull/5)
-- aos8 - show cmm fix missing ',' at end of line on fpga parameters [#5](https://github.com/jefvantongerloo/textfsm-aos/pull/35)
+- aos8 - `show cmm` fix missing ',' at end of line on fpga parameters [#5](https://github.com/jefvantongerloo/textfsm-aos/pull/35)
+- aos8 - `show mac-learning` missing trailing whitespace in output causes parsing error [#5](https://github.com/jefvantongerloo/textfsm-aos/pull/5)
+- aos8 - `show unp user` catch missing trailing whitespace [#36](https://github.com/jefvantongerloo/textfsm-aos/pull/36)
 
 ## [0.2.0] - 2022-03-14
 
@@ -41,8 +42,8 @@
 
 ### Fixed
 
-- aos6 - show health asterisk in current value not captured [#10](https://github.com/jefvantongerloo/textfsm-aos/pull/10)
-- aos8 - show cmm os6560 only first chassis captured [#19](https://github.com/jefvantongerloo/textfsm-aos/pull/19)
+- aos6 - `show health` asterisk in current value not captured [#10](https://github.com/jefvantongerloo/textfsm-aos/pull/10)
+- aos8 - `show cmm` os6560 only first chassis captured [#19](https://github.com/jefvantongerloo/textfsm-aos/pull/19)
 
 ### New contributors
 
