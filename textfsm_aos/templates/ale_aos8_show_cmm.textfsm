@@ -6,8 +6,8 @@ Value part_number (\S+)
 Value hardware_revision (\S+)
 Value serial_number (\S+)
 Value manufacture_date (\w{3}\s+\d{1,2}\s\d{4})
-Value fpga_control (\S+)
-Value fpga_power (\S+)
+Value fpga_control (\d(.\d)*)
+Value fpga_power (\d(.\d)*)
 Value admin_status (POWER ON)
 Value operational_status (\S+)
 Value max_power (\d+)
@@ -26,8 +26,8 @@ Cmm
   ^\s+Hardware Revision:\s+${hardware_revision},$$
   ^\s+Serial Number:\s+${serial_number},$$
   ^\s+Manufacture Date:\s+${manufacture_date},$$
-  ^\s+FPGA[\/CPLD]* - Physical 1:\s+${fpga_control},$$
-  ^\s+FPGA[\/CPLD]* - Physical 2:\s+${fpga_power},$$
+  ^\s+FPGA(\/CPLD)*\s*( - Physical )*\s*1:\s+${fpga_control}[,]*$$
+  ^\s+FPGA(\/CPLD)*\s*( - Physical )*\s*2:\s+${fpga_power}[,]*$$
   ^\s+Admin Status:\s+${admin_status},$$
   ^\s+Operational Status:\s+${operational_status},$$
   ^\s+Max Power:\s+${max_power},$$
