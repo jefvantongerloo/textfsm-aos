@@ -19,6 +19,7 @@
 - aos6 - `show lldp remote-system` fix `remote port default vlan` value [#41](https://github.com/jefvantongerloo/textfsm-aos/pull/41)
 - aos6 - `show mac address-table` fix trailing spaces and empty protocol with `---` placeholder [#39](https://github.com/jefvantongerloo/textfsm-aos/pull/39)
 - aos8 - `show cmm` fix missing ',' at end of line on fpga parameters [#3](https://github.com/jefvantongerloo/textfsm-aos/pull/35)
+- aos8 - `show interfaces status` fix add 21000 configured speed [#42](https://github.com/jefvantongerloo/textfsm-aos/pull/42)
 - aos8 - `show ip routes` fix whitespace between days and hours [#40](https://github.com/jefvantongerloo/textfsm-aos/pull/40)
 - aos8 - `show log events` catch space in time instead of '0', for example `2022 Apr  7 17: 8: 5.306` [#37](https://github.com/jefvantongerloo/textfsm-aos/pull/37)
 - aos8 - `show mac-learning` missing trailing whitespace in output causes parsing error [#5](https://github.com/jefvantongerloo/textfsm-aos/pull/5)
