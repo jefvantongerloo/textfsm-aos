@@ -11,7 +11,7 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 config = {
     "name": "textfsm_aos",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "description": "Alcatel-Lucent Enterprise AOS CLI parsing (TextFSM) ",
     "long_description": README,
     "long_description_content_type": "text/markdown",
