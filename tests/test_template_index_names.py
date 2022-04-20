@@ -1,4 +1,3 @@
-import pytest
 import textfsm_aos
 from textfsm_aos import templates
 import importlib.resources as pkg_resources
