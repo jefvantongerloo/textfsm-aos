@@ -1,10 +1,16 @@
 # Textfsm-aos release notes
 
+## [0.4.0] - Unreleased
+
+### Fixed
+
+- pytest - test `template_index_names`, fix empty list return [#44](https://github.com/jefvantongerloo/textfsm-aos/pull/44)
+
 ## [0.3.0] - 2022-04-11
 
 ### Added CLI commands
 
-- aos6 - `show 802.1x users unp` [#30](https://github.com/jefvantongerloo/textfsm-aos/pull/28)
+- aos6 - `show 802.1x users unp` [#30](https://github.com/jefvantongerloo/textfsm-aos/pull/30)
 - aos8 - `history` [#32](https://github.com/jefvantongerloo/textfsm-aos/pull/32) by [@BennyE](https://github.com/BennyE)
 - aos8 - `show health` [#24](https://github.com/jefvantongerloo/textfsm-aos/pull/24) by [@BennyE](https://github.com/BennyE)
 - aos8 - `show ip interface` [#20](https://github.com/jefvantongerloo/textfsm-aos/pull/20) by [@BennyE](https://github.com/BennyE)

@@ -9,9 +9,9 @@ def test_template_index_names():
     template_files = pkg_resources.contents(templates)
     template_index = textfsm_aos.parser._get_template_index()
 
-    for template in template_files:
-        if template.find("ale_") != -1:
-            template_files_ale.append(template.split(".")[0])
+    template_files_ale = [
+        template for template in template_files if (template.find("ale_") != -1)
+    ]
 
     for template in template_index:
         template_index_ale.append(
@@ -21,4 +21,7 @@ def test_template_index_names():
             + ".textfsm"
         )
 
-    assert template_index_ale.sort() == template_files_ale.sort()
+    template_files_ale.sort()
+    template_index_ale.sort()
+
+    assert template_index_ale == template_files_ale
