@@ -2,6 +2,10 @@
 
 ## [0.4.0] - Unreleased
 
+### Changed
+
+- parser - remove scrapli dependency by using native TextFSM module [#45](https://github.com/jefvantongerloo/textfsm-aos/pull/45)
+
 ### Fixed
 
 - pytest - test `template_index_names`, fix empty list return [#44](https://github.com/jefvantongerloo/textfsm-aos/pull/44)
