@@ -1,7 +1,7 @@
 """Textfsm-aos.parse."""
 import yaml
 import importlib.resources as pkg_resources
-from scrapli.helper import textfsm_parse
+from textfsm import TextFSM
 from . import templates
 
 
@@ -27,7 +27,13 @@ def _parse_textfsm(template: dict, data: str) -> list:
     template_name = str(template["command"]).replace(" ", "_") + ".textfsm"
     template_path = template["platform"] + "_" + template_name
     template = pkg_resources.open_text(templates, template_path)
-    structured_response = textfsm_parse(template, data)
+
+    with open(template.name) as f:
+        template = TextFSM(f)
+
+    parsed_result = template.ParseText(data)
+    structured_response = [dict(zip(template.header, pr)) for pr in parsed_result]
+
     return structured_response
 
 
