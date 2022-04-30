@@ -1,7 +1,7 @@
 Value Key,Required port (\d\/\d{0,2}\/*\d{0,2})
 Value username (\S+)
 Value mac_address (([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]){2})
-Value user_ip (-|((?:[0-9]{1,3}\.){3}[0-9]{1,3}))
+Value user_ip (-|((?:[0-9]{1,3}\.){3}[0-9]{1,3})|([a-f0-9:]+:+)+[a-f0-9]+)
 Value vlan (\d{1,4})
 Value profile (\S+)
 Value type (Bridge|Access)
@@ -10,7 +10,7 @@ Value status (In progress|Active|Block)
 Start
   ^\s+User$$
   ^Port\s+Username\s+Mac\saddress\s+IP\s+Vlan Profile\s+Type\s+Status$$
-  ^-------\+--------------------\+-----------------\+---------------\+----\+--------------------------------\+------------\+-----------$$ -> Unp
+  ^[-+\+]+$$ -> Unp
 
 Unp
   ^Total users : \d+$$
