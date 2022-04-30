@@ -5,7 +5,7 @@ Value description (.*)
 
 Start
   ^\s+Package\s+Release\s+Size\s+Description$$
-  ^-----------------\+---------------\+--------\+-----------------------------------$$ -> Microcode
+  ^[-+\+]+\s*$$ -> Microcode
 
 Microcode
   ^${package}\s*${release}\s*${size}\s${description}$$ -> Record

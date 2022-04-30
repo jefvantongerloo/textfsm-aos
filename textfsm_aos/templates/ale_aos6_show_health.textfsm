@@ -25,7 +25,7 @@ Start
   ^Device                          1 Min  1 Hr  1 Hr$$
   ^Slot\s{3}${healthmoduleslot}\s+1 Min  1 Hr  1 Hr$$
   ^Resources          Limit   Curr   Avg    Avg   Max\s*$$
-  ^-----------------\+-------\+------\+------\+-----\+----\s*$$ -> Health
+  ^[-+\+]+\s*$$ -> Health
 
 Health
   ^Receive\s+${healthmodulerxlimit}\s+${healthmodulerxlatest}\s+${healthmodulerx1minavg}\s+${healthmodulerx1hravg}\s+${healthmodulerx1hrmax}\s*$$

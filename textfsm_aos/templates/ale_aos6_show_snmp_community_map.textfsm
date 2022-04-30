@@ -6,7 +6,7 @@ Value user_name (\S+(\s)*\S*)
 Start
   ^Community mode : ${community_mode}$$
   ^status   community string                 user name$$
-  ^--------\+--------------------------------\+--------------------------------$$ -> Community
+  ^[-+\+]+\s*$$ -> Community
 
 Community
   ^${status}\s+${community_string}\s+${user_name}$$ -> Record

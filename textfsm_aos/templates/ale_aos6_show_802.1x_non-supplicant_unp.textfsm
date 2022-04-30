@@ -8,7 +8,7 @@ Value user_name (\S+)
 Start
   ^Slot  MAC               Vlan  HIC             Dynamic            User$$
   ^Port  Address                 Status          UNP                Name$$
-  ^-----\+-----------------\+-----\+---------------\+------------------\+-------------$$ -> Unp
+  ^[-+\+]+\s*$$ -> Unp
 
 Unp
   ^${slot}\s${mac_address}\s+${vlan}\s+${hic_status}\s+${unp}\s+${user_name}$$ -> Record Start

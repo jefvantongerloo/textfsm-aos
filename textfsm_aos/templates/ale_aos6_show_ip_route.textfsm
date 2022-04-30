@@ -8,7 +8,7 @@ Start
   ^\+ = Equal cost multipath routes$$
   ^Total 3 routes$$
   ^  Dest Address      Subnet Mask       Gateway Addr      Age       Protocol $$
-  ^------------------\+-----------------\+-----------------\+---------\+-----------$$ -> Routes
+  ^[-+\+]+\s*$$ -> Routes
 
 Routes
   ^\s+${dest_address}\s+${subnet_mask}\s+${gateway_address}\s+${age}\s+${protocol}$$ -> Record

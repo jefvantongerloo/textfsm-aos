@@ -8,7 +8,7 @@ Value device (Loopback|EMP|unbound|(vlan\s\d+))
 Start
   ^Total 2 interfaces$$
   ^             Name                   IP Address     Subnet Mask   Status Forward  Device$$
-  ^--------------------------------\+---------------\+---------------\+------\+-------\+--------$$ -> Interfaces
+  ^[-+\+]+\s*$$ -> Interfaces
 
 Interfaces
   ^${name}\s+${ip_address}\s+${subnet_mask}\s+${status}\s+${forward}\s+${device}$$ -> Record

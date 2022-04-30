@@ -10,7 +10,7 @@ Start
   ^Total (\d+) interfaces$$
   ^ Flags (D=Directly-bound)$$
   ^            Name                 IP Address      Subnet Mask     Status Forward  Device   Flags$$
-  ^--------------------------------\+---------------\+---------------\+------\+-------\+---------\+------$$ -> Interfaces
+  ^[-+\+]+\s*$$ -> Interfaces
 
 Interfaces
   ^${name}\s+${ip_address}\s+${subnet_mask}\s+${status}\s+${forward}\s+${device}\s*${flags}$$ -> Record
