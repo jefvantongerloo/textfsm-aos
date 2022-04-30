@@ -10,7 +10,7 @@ Value user_name (\S+)
 Start
   ^Slot\s+MAC\s+Port\s+Classification\s+Auth\s+Auth\s+Last Successful\s+User$$
   ^Port\s+Address\s+State\s+Policy\s+Failure Reason\s+Retry Count\s+Auth Time\s+Name$$
-  ^-----\+-----------------\+---------------\+--------------------\+-------------------------------------\+-----------\+-------------------------\+------------------\s*$$ -> Users
+  ^[-+\+]+\s*$$ -> Users
 
 Users
   ^${slot_port}\s+${mac_address}\s+${port_state}\s+${classification_policy}\s+${auth_failure_reason}\s+${auth_retry_count}\s+${last_succesful_auth_time}\s+${user_name}$$ -> Record

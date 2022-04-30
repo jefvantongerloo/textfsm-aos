@@ -8,7 +8,9 @@
 
 ### Fixed
 
+- aos8 - `show unp user` fix ipv6 in user_ip [#46](https://github.com/jefvantongerloo/textfsm-aos/pull/46)
 - pytest - test `template_index_names`, fix empty list return [#44](https://github.com/jefvantongerloo/textfsm-aos/pull/44)
+
 
 ## [0.3.0] - 2022-04-11
 

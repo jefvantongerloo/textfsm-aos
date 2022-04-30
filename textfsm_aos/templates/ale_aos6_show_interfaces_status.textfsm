@@ -12,7 +12,7 @@ Start
   ^\s+DETECTED\s+CONFIGURED$$
   ^Slot/\s+AutoNego \s+Speed\s+Duplex\s+Hybrid\s+Speed\s+Duplex\s+Hybrid\s+Trap$$
   ^Port\s+(Mbps)\s+Type\s+(Mbps)\s+Mode\s+LinkUpDown$$
-  ^-----\+--------\+------\+------\+------\+--------\+------\+------\+------$$ -> Interfaces
+  ^[-+\+]+\s*$$ -> Interfaces
 
 Interfaces
   ^ ${slot}\s+${autoneg}\s+${detected_speed}\s+${detected_duplex}\s+${detected_hybrid_type}\s+${configured_speed}\s+${configured_duplex}\s+${configured_hybrid_mode}\s+${trap_linkupdown}\s*$$ -> Record

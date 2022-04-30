@@ -16,7 +16,7 @@ Start
   ^\s*Chas/\s+DETECTED-VALUES\s+CONFIGURED-VALUES\s*$$
   ^\s*Slot/\s+Admin\s+Auto\s+Speed\s+Duplex\s+Pause\s+FEC\s+Speed\s+Duplex\s+Pause\s+FEC\s+Link\s*$$
   ^\s*Port\s+Status\s+Nego\s+(Mbps)\s+Det\s+(Mbps)\s+Cfg\s+Trap\s+EEE\s*$$
-  ^--------\+------\+----\+--------\+------\+-------\+----\+--------\+------\+-------\+-----\+-----\+---$$ -> Interfaces
+  ^[-+\+]+\s*$$ -> Interfaces
 
 Interfaces
   ^\s*${chassis_slot_port}\s+${admin_status}\s+${autonego}\s+${detected_speed}\s+${detected_duplex}\s+${detected_pause}\s+${detected_fec}\s+${configured_speed}\s+${configured_duplex}\s+${configured_pause}\s+${configured_fec}\s+${trap_linkupdown}\s+${eee}\s*$$ -> Record

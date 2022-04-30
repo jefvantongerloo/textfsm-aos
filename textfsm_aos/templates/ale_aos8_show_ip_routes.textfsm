@@ -7,7 +7,7 @@ Start
   ^\+ = Equal cost multipath routes$$
   ^ Total (\d) routes$$
   ^  Dest Address       Gateway Addr        Age        Protocol $$
-  ^------------------\+-------------------\+----------\+-----------$$ -> Routes
+  ^[-+\+]+\s*$$ -> Routes
 
 Routes
   ^\s+${dest_addr}\s+(\+)*${gateway_addr}\s+${age}\s+${protocol}\s*$$ -> Record

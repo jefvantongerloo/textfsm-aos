@@ -8,7 +8,7 @@ Value user_name (\S+)
 Start
   ^Slot  MAC               MAC Authent                  Classification      Vlan      User$$
   ^Port  Address           Status                       Policy              Learned   Name$$
-  ^-----\+-----------------\+----------------------------\+-------------------\+--------\+-------------$$ -> Nonsupplicant
+  ^[-+\+]+\s*$$ -> Nonsupplicant
 
 Nonsupplicant
   ^${slot}\s${mac_address}\s${mac_auth_status}\s+${classification_policy}\s\w*\s*${vlan_learned}\s+${user_name}$$ -> Record

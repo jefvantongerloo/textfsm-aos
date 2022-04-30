@@ -10,7 +10,7 @@ Value ingress_filtering (on|off)
 Start
   ^                 cfg                               ignore   ingress$$
   ^  port   mobile  def  authent   enabled   restore   bpdu   filtering$$
-  ^-------\+--------\+----\+--------\+---------\+---------\+-------\+----------$$ -> PORT
+  ^[-+\+]+\s*$$ -> PORT
 
 PORT
   ^\s+${interface}\s+${mobile}\s+${cfg_def}\s+${authenticate}\s+${enabled}\s+${restore}\s+${ignore_bpdu}\s+${ingress_filtering}$$ -> Record

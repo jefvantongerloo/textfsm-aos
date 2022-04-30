@@ -8,7 +8,7 @@ Value interface (\d/\d+)
 Start
   ^Legend: Mac Address: \* = address not valid$$
   ^   Vlan      Mac Address          Type       Protocol    Operation    Interface$$ 
-  ^\s+------\+-------------------\+--------------\+-----------\+------------\+-----------$$ -> Mac
+  ^\s*[-+\+]+\s*$$ -> Mac
 
 Mac
   ^\s+${vlan}\s+${mac_address}\s+${type}\s+${protocol}\s+${operation}\s+${interface}\s*$$ -> Record

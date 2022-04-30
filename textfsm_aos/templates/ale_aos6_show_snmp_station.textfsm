@@ -6,7 +6,7 @@ Value user (.*)
 
 Start
   ^ipAddress/udpPort                                   status    protocol user$$
-  ^---------------------------------------------------\+---------\+--------\+-------$$ -> Station
+  ^[-+\+]+\s*$$ -> Station
 
 Station
   ^${ip_address}\/${udp_port}\s+${status}\s+${protocol}\s+${user}$$ -> Record

@@ -8,7 +8,7 @@ Value vlandescription ((\S+\s*)+\S+)
 
 Start
   ^\s*vlan\s+type\s+admin\s+oper\s+ip\s+mtu\s+name\s$$
-  ^------\+-------\+-------\+------\+------\+------\+------------------$$ -> VLAN
+  ^[-+\+]+\s*$$ -> VLAN
 
 VLAN
   ^\s*${vlannumber}\s+${vlantype}\s+${vlanadmstatus}\s+${vlanoperstatus}\s+${vlanrouterstatus}\s+${vlanmtu}\s+${vlandescription}\s*$$ -> Record
