@@ -98,6 +98,7 @@ parsed result
 | show system                    |          :heavy_check_mark:         |         :heavy_check_mark:        |
 | show transceivers              |                 :x:                 |         :heavy_check_mark:        |
 | show vlan                      |          :heavy_check_mark:         |         :heavy_check_mark:        |
+| show vlan members              |                 :x:                 |         :heavy_check_mark:        |
 | show vlan port mobile          |          :heavy_check_mark:         |                :x:                |
 
 ## Direct TextFSM example usage
