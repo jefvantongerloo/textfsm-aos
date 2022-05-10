@@ -2,6 +2,10 @@
 
 ## [0.4.0] - Unreleased
 
+### Added CLI commands
+
+- aos8 - `show vlan members` [#47](https://github.com/jefvantongerloo/textfsm-aos/pull/47)
+
 ### Changed
 
 - parser - remove scrapli dependency by using native TextFSM module [#45](https://github.com/jefvantongerloo/textfsm-aos/pull/45)

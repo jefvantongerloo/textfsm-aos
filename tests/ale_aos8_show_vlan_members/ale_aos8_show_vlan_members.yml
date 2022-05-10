@@ -1,0 +1,25 @@
+---
+- vlan: '1'
+  port: 1/1/1
+  type: default
+  status: inactive
+- vlan: '1'
+  port: 1/1/13
+  type: default
+  status: forwarding
+- vlan: '1'
+  port: 0/1
+  type: default
+  status: forwarding
+- vlan: '3200'
+  port: 1/1/25
+  type: unpUntag
+  status: forwarding
+- vlan: '3200'
+  port: 0/1
+  type: qtagged
+  status: forwarding
+- vlan: '3201'
+  port: 2/1/1
+  type: default
+  status: inactive
