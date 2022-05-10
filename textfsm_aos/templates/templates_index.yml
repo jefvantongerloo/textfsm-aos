@@ -81,5 +81,7 @@
   platform: ale_aos6
 - command: show vlan
   platform: ale_aos8
+- command: show vlan members
+  platform: ale_aos8
 - command: show vlan port mobile
   platform: ale_aos6

@@ -1,0 +1,8 @@
+  vlan       port         type         status
+--------+------------+------------+--------------
+  1         1/1/1        default    inactive
+  1         1/1/13       default    forwarding
+  1         0/1          default    forwarding
+  3200      1/1/25       unpUntag   forwarding
+  3200      0/1          qtagged    forwarding
+  3201      2/1/1        default    inactive
