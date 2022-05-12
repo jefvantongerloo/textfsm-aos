@@ -10,7 +10,16 @@ Parse semi-structured cli data to structured data ready to be ingested by your n
 
 ## Installing / Getting started
 
-Python package available through PyPi
+Textfsm-aos can be installed using Git + Poetry or PyPI.
+
+## Git
+
+```bash
+git clone https://github.com/jefvantongerloo/textfsm-aos
+poetry install
+```
+
+## PyPI
 
 ```bash
 pip install textfsm-aos
