@@ -1,6 +1,6 @@
 # Textfsm-aos release notes
 
-## [0.4.0] - Unreleased
+## [1.0.0] - 2022-04-12
 
 ### Added CLI commands
 
@@ -9,12 +9,12 @@
 ### Changed
 
 - parser - remove scrapli dependency by using native TextFSM module [#45](https://github.com/jefvantongerloo/textfsm-aos/pull/45)
+- migrate packaging to Poetry [#48](https://github.com/jefvantongerloo/textfsm-aos/pull/45)
 
 ### Fixed
 
 - aos8 - `show unp user` fix ipv6 in user_ip [#46](https://github.com/jefvantongerloo/textfsm-aos/pull/46)
 - pytest - test `template_index_names`, fix empty list return [#44](https://github.com/jefvantongerloo/textfsm-aos/pull/44)
-
 
 ## [0.3.0] - 2022-04-11
 
