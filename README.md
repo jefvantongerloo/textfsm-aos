@@ -101,6 +101,7 @@ parsed result
 | show unp user                  |                 :x:                 |         :heavy_check_mark:        |
 | show user                      |          :heavy_check_mark:         |         :heavy_check_mark:        |
 | show running-directory         |                 :x:                 |         :heavy_check_mark:        |
+| show qos log                   |                 :x:                 |         :heavy_check_mark:        |
 | show snmp station              |          :heavy_check_mark:         |         :heavy_check_mark:        |
 | show snmp community map        |          :heavy_check_mark:         |  `alias: show snmp community-map` |
 | show snmp community-map        |   `alias: show snmp community map`  |         :heavy_check_mark:        |

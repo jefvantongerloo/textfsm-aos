@@ -1,0 +1,48 @@
+ 6/03/22 13:12:21 [@13:12:19] rule 'Default' matched:drop in UNP profile restricted_access list restricted_list
+ 6/03/22 13:12:21  svlan 12 port 1/1/9 default
+ 6/03/22 13:12:21  MAC DC:A6:32:55:4E:61 -> 94:24:E1:1B:DA:D7
+ 6/03/22 13:12:21  TOS 0x00 (TCP) 192.168.12.130:52494 -> 172.217.16.74:443
+ 6/03/22 13:12:31 [@13:12:28] rule 'Default' matched:drop in UNP profile restricted_access list restricted_list
+ 6/03/22 13:12:31  svlan 12 port 1/1/9 default
+ 6/03/22 13:12:31  MAC DC:A6:32:55:4E:61 -> 94:24:E1:1B:DA:D7
+ 6/03/22 13:12:31  TOS 0x00 (TCP) 192.168.12.130:52494 -> 172.217.16.74:443
+ 6/03/22 13:12:31 [@13:12:28] rule 'Default' matched:drop in UNP profile restricted_access list restricted_list
+ 6/03/22 13:12:31  svlan 12 port 1/1/9 default
+ 6/03/22 13:12:31  MAC DC:A6:32:55:4E:61 -> 94:24:E1:1B:DA:D7
+ 6/03/22 13:12:31  TOS 0x00 (TCP) 192.168.12.130:52492 -> 172.217.16.74:443
+ 6/03/22 13:13:21 [@13:13:17] rule 'OV-L3-DenyAllPolicy' matched:drop in UNP profile unified_restricted_access list unified_restrict
+ 6/03/22 13:13:21  svlan 12 port 1/1/9 default
+ 6/03/22 13:13:21  MAC DC:A6:32:55:4E:61 -> 94:24:E1:1B:DA:D7
+ 6/03/22 13:13:21  TOS 0x00 (TCP) 192.168.12.130:52494 -> 172.217.16.74:443
+ 6/03/22 13:13:21 [@13:13:17] rule 'OV-L3-DenyAllPolicy' matched:drop in UNP profile unified_restricted_access list unified_restrict
+ 6/03/22 13:13:21  svlan 12 port 1/1/9 default
+ 6/03/22 13:13:21  MAC DC:A6:32:55:4E:61 -> 94:24:E1:1B:DA:D7
+ 6/03/22 13:13:21  TOS 0x00 (TCP) 192.168.12.130:52492 -> 172.217.16.74:443
+ 6/03/22 13:13:26 [@13:13:22] rule 'OV-L3-DenyAllPolicy' matched:drop in UNP profile unified_restricted_access list unified_restrict
+ 6/03/22 13:13:26  svlan 12 port 1/1/9 default
+ 6/03/22 13:13:26  MAC DC:A6:32:55:4E:61 -> 94:24:E1:1B:DA:D7
+ 6/03/22 13:13:26  ARP (op 1) 192.168.12.130 -> 192.168.12.254
+ 6/06/22 13:43:21 Loaded 17 policies from LDAP server 192.168.2.15:5389
+ 6/06/22 13:41:18 [@13:41:14] rule 'unified_BS' matched:accept in UNP profile  list unified_restricted
+ 6/06/22 13:41:18  svlan 12 port 1/1/255 -> 1/1/9 default
+ 6/06/22 13:41:18  MAC 94:24:E1:1B:DA:D7 -> DC:A6:32:55:4E:61
+ 6/06/22 13:41:18  ARP (op 2) 192.168.12.254 -> 192.168.12.130
+ 6/06/22 13:41:18 [@13:41:14] rule 'unified_BS' matched:accept in UNP profile  list unified_restricted
+ 6/06/22 13:41:18  svlan 12 port 1/1/255 -> 1/1/9 default
+ 6/06/22 13:41:18  MAC 94:24:E1:1B:DA:D7 -> DC:A6:32:55:4E:61
+ 6/06/22 13:41:18  ARP (op 2) 192.168.12.254 -> 192.168.12.130
+ 6/06/22 13:39:03 [@13:38:57] rule 'OV-L3-DenyAllPolicy-IPv6' matched:drop in UNP profile unified_restricted_access list unified_res
+ 6/06/22 13:39:03  svlan 12 port 1/1/9 default
+ 6/06/22 13:39:03  MAC DC:A6:32:55:4E:61 -> 33:33:00:00:00:FB
+ 6/06/22 13:39:03  V6: (UDP) fe80::1e67:bda3:5941:3ad2.5353 -> ff02::fb.5353
+ 6/06/22 13:39:03  FL 0xa0860, TC 0x29
+ 6/06/22 12:30:56 [@12:30:56] rule 'OV-L3-DenyAllPolicy-IPv6' matched:drop in UNP profile unified_restricted_access list unified_res
+ 6/06/22 12:30:56  svlan 12 port 1/1/9 default
+ 6/06/22 12:30:56  MAC DC:A6:32:55:4E:61 -> 33:33:00:00:00:02
+ 6/06/22 12:30:56  V6: (ICMPV6) fe80::1e67:bda3:5941:3ad2.133 -> ff02::2.0
+ 6/06/22 12:30:56  FL 0x10060, TC 0xcd
+ 6/03/22 22:01:09 [@22:01:08] rule 'OV-L3-DenyAllPolicy-IPv6' matched:drop in UNP profile unified_restricted_access list unified_res
+ 6/03/22 22:01:09  svlan 12 port 1/1/9 default
+ 6/03/22 22:01:09  MAC DC:A6:32:55:4E:61 -> 33:33:00:00:00:16
+ 6/03/22 22:01:09  V6 (0): fe80::1e67:bda3:5941:3ad2 -> ff02::16
+ 6/03/22 22:01:09  FL 0x60, TC 0x0
