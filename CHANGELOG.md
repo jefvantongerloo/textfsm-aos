@@ -1,5 +1,11 @@
 # Textfsm-aos release notes
 
+## [1.0.1] - Unreleased
+
+### Fixed
+
+- aos6 - `show ip route` [#50] (https://github.com/jefvantongerloo/textfsm-aos/pull/50)
+
 ## [1.0.0] - 2022-05-12
 
 ### Added CLI commands
