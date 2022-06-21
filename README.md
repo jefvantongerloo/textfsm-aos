@@ -8,7 +8,7 @@ Python package for Alcatel-Lucent Enterprise aos6 and aos8 parsing based on Text
 
 Parse semi-structured cli data to structured data ready to be ingested by your network automation pipeline. Autmatically transform gathered output from screen-scraping tools like Netmiko, Scrapli and Paramiko. Receive uniform data accross Alcatel-Lucent Enterprise devices running aos6 or aos8.
 
-## Installing / Getting started
+## Installation
 
 Textfsm-aos can be installed using Git + Poetry or PyPI.
 
@@ -24,6 +24,8 @@ poetry install
 ```bash
 pip install textfsm-aos
 ```
+
+## Getting started
 
 Provide screen-scraped data to parser
 
@@ -98,7 +100,8 @@ parsed result
 | show mac-learning              |   `alias: show mac-address-table`   |         :heavy_check_mark:        |
 | show microcode                 |          :heavy_check_mark:         |         :heavy_check_mark:        |
 | show ntp server status         |          :heavy_check_mark:         |         :heavy_check_mark:        |
-| show unp user                  |                 :x:                 |         :heavy_check_mark:        |
+| show port-security brief       |                 :x:                 |         :heavy_check_mark:        |
+| show unp user                  |     `alias: show 802.1x users`      |         :heavy_check_mark:        |
 | show user                      |          :heavy_check_mark:         |         :heavy_check_mark:        |
 | show running-directory         |                 :x:                 |         :heavy_check_mark:        |
 | show snmp station              |          :heavy_check_mark:         |         :heavy_check_mark:        |

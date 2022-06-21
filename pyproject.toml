@@ -7,12 +7,13 @@ license = "Apache-2.0"
 readme = "README.md"
 repository = "https://github.com/jefvantongerloo/textfsm-aos"
 homepage = "https://github.com/jefvantongerloo/textfsm-aos"
-keywords = ["network automation", "textfsm", "scraping", "cli"]
+keywords = ["network automation", "textfsm", "scraping", "Alcatel-Lucent Enterprise", "infrastructure"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
 textfsm = "^1.1.2"
 PyYAML = "^6.0"
+rich = "^12.4.1"
 
 [tool.poetry.dev-dependencies]
 textfsm = "^1.1.2"

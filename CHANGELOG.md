@@ -2,9 +2,13 @@
 
 ## [1.0.1] - Unreleased
 
+### Added CLI commands
+
+- aos8 - `show port-security brief` [#51](https://github.com/jefvantongerloo/textfsm-aos/pull/51)
+
 ### Fixed
 
-- aos6 - `show ip route` [#50] (https://github.com/jefvantongerloo/textfsm-aos/pull/50)
+- aos6 - `show ip route` [#50](https://github.com/jefvantongerloo/textfsm-aos/pull/50)
 
 ## [1.0.0] - 2022-05-12
 

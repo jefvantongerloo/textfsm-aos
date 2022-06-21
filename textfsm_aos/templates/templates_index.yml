@@ -55,6 +55,8 @@
   platform: ale_aos6
 - command: show ntp server status
   platform: ale_aos8
+- command: show port-security brief
+  platform: ale_aos8
 - command: show unp user
   platform: ale_aos8
 - command: show user
@@ -74,6 +76,8 @@
 - command: show system
   platform: ale_aos6
 - command: show system
+  platform: ale_aos8
+- command: show interfaces tdr-statistics
   platform: ale_aos8
 - command: show transceivers
   platform: ale_aos8
