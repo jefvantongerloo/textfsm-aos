@@ -55,6 +55,8 @@
   platform: ale_aos6
 - command: show ntp server status
   platform: ale_aos8
+- command: show port-security brief
+  platform: ale_aos8
 - command: show unp user
   platform: ale_aos8
 - command: show user

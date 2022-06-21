@@ -1,0 +1,17 @@
+Value Required port ((\d{1,2}\/)+\d*)
+Value operation_mode (ENABLED|DISABLED)
+Value max_bridge (\d{1,4})
+Value max_filter (\d{1,4})
+Value nb_macs_dyn_br (\d+)
+Value nb_macs_dyn_fltr (\d+)
+Value nb_macs_static_br (\d+)
+Value nb_macs_static_fltr (\d+)
+
+Start
+  ^\s+Slot/\s+Max\s+Max\s+Nb Macs\s+Nb Macs\s+Nb Macs\s+Nb Macs$$
+  ^\s+Port\s+Operation Mode\s+Bridge\s+Filter\s+Dyn Br\s+Dyn Fltr\s+Static Br\s+Static Fltr$$
+  ^[-+\+]+\s*$$ -> PortSecurity
+
+PortSecurity
+  ^\s+${port}\s+${operation_mode}\s+${max_bridge}\s+${max_filter}\s+${nb_macs_dyn_br}\s+${nb_macs_dyn_fltr}\s+${nb_macs_static_br}\s+${nb_macs_static_fltr}\s+$$ -> Record
+  ^. -> Error
