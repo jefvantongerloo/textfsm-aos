@@ -1,0 +1,21 @@
+Value Required port ((\d{1,2}\/)+\d*)
+Value active (Yes|No)
+Value trust (\*Yes|Yes|No)
+Value default_p (\d{1,2})
+Value default_dscp (\d{1,2})
+Value default_classification (802.1P|\*802.1P|ToS|\*ToS|DSCP|\*DSCP)
+Value physical_bandwidth (\d+(K|M|G|T))
+Value ingress_bandwidth (\d+(K|M|G|T)|-)
+Value egress_bandwidth (\d+(K|M|G|T)|-)
+Value dei_map (Yes|No)
+Value dei_mark (Yes|No)
+Value type ((ethernet|wan)(-\d+(K|M|G|T))*)
+
+Start
+  ^Slot\/\s+Default\s+Default\s+Bandwidth\s+DEI$$
+  ^Port\s+Active\s+Trust\s+P\/DSCP\s+Classification\s+Physical\s+Ingress\s+Egress\s+Map\s+Mark\s+Type$$
+  ^[-+\+]+\s*$$ -> QosPort
+
+QosPort
+  ^${port}\s+${active}\s+${trust}\s+${default_p}\/\s+${default_dscp}\s+${default_classification}\s+${physical_bandwidth}\s+${ingress_bandwidth}\s+${egress_bandwidth}\s+${dei_map}\s+${dei_mark}\s+${type}$$ -> Record
+  ^. -> Error
