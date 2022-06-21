@@ -5,6 +5,7 @@
 ### Added CLI commands
 
 - aos8 - `show port-security brief` [#51](https://github.com/jefvantongerloo/textfsm-aos/pull/51)
+- aos8 - `show qos port` [#52](https://github.com/jefvantongerloo/textfsm-aos/pull/52)
 
 ### Fixed
 
@@ -54,6 +55,7 @@
 - aos8 - `show snmp community-map` fix empty username field value [#38](https://github.com/jefvantongerloo/textfsm-aos/pull/38)
 
 ### New contributors
+
 [@FlorianHeigl](https://github.com/FlorianHeigl) first contribution [https://github.com/jefvantongerloo/textfsm-aos/pull/30](https://github.com/jefvantongerloo/textfsm-aos/pull/30)
 
 ## [0.2.0] - 2022-03-14

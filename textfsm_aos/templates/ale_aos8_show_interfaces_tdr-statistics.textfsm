@@ -1,0 +1,22 @@
+Value Required port ((\d{1,2}\/)+\d*)
+Value valid_pairs (\d)
+Value fuzz_length (\d+)
+Value pair_1_state (Ok|Open|Short|Crosstalk|Unknown)
+Value pair_1_len (\d+)
+Value pair_2_state (Ok|Open|Short|Crosstalk|Unknown)
+Value pair_2_len (\d+)
+Value pair_3_state (Ok|Open|Short|Crosstalk|Unknown)
+Value pair_3_len (\d+)
+Value pair_4_state (Ok|Open|Short|Crosstalk|Unknown)
+Value pair_4_len (\d+)
+Value test_result (Success|Fail|Unknown)
+
+Start
+  ^\s+Ch/
+  ^\s+Slot/\s+No of Fuzzy\s+Pair1\s+Pair1\s+Pair2\s+Pair2\s+Pair3\s+Pair3\s+Pair4\s+Pair4\s+Test
+  ^Port\s+Pairs\s+Len\s+State\s+Len\s+State\s+Len\s+State\s+Len\s+State\s+Len\s+Results
+  ^[-+\+]+\s*$$ -> TDR
+
+TDR
+  ^${port}\d+${valid_pairs}\d+${fuzz_length}\d+${pair_1_state}\d+${pair_1_len}\d+${pair_2_state}\d+${pair_2_len}\d+${pair_3_state}\d+${pair_3_len}\d+${pair_4_state}\d+${pair_4_len}\d+${test_result}
+  # ^. -> Error
