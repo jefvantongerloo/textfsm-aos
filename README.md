@@ -278,7 +278,7 @@ Example Output:
 
 ## How to contribute
 
-1. Create branch with naming `<platform>_<command>` (for example: ale_aos8_show_system).
+1. Fork and create a branch with naming `<platform>_<command>` (for example: ale_aos8_show_system).
 
 2. Add TextFSM template file in templates folder with naming `<platform>_<command>.textfsm`.
 
@@ -294,13 +294,11 @@ Example Output:
 
 ## How to setup development environment
 
-1. Create virtual Python environment `python -m venv .venv`
+1. Install `Poetry` package manager via `pip install poetry`
 
-2. Activate environment `source .venv/bin/activate`
+2. Install dev dependencies and textfsm-aos package in development mode with `poetry install`
 
-3. Install Python dependencies `pip install -r requirements.txt`
-
-4. Install textfsm_aos package in development mode `pip install -e .`
+3. Open virtual environment `poetry shell`
 
 ## Related projects
 
