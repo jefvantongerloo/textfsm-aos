@@ -27,6 +27,8 @@
   platform: ale_aos8
 - command: show history
   platform: ale_aos6
+- command: show interfaces
+  platform: ale_aos8
 - command: show interfaces status
   platform: ale_aos6
 - command: show interfaces status

@@ -91,6 +91,7 @@ parsed result
 | show health                    |          :heavy_check_mark:         |         :heavy_check_mark:        |
 | show history                   |          :heavy_check_mark:         |          `alias: history`         |
 | show interface status          |          :heavy_check_mark:         |         :heavy_check_mark:        |
+| show interfaces                |                 :x:                 |         :heavy_check_mark:        |
 | show ip interface              |          :heavy_check_mark:         |         :heavy_check_mark:        |
 | show ip route                  |          :heavy_check_mark:         |       `alias: show ip routes`     |
 | show ip routes                 |        `alias: show ip route`       |         :heavy_check_mark:        |
@@ -101,6 +102,7 @@ parsed result
 | show microcode                 |          :heavy_check_mark:         |         :heavy_check_mark:        |
 | show ntp server status         |          :heavy_check_mark:         |         :heavy_check_mark:        |
 | show port-security brief       |                 :x:                 |         :heavy_check_mark:        |
+| show qos port                  |                 :x:                 |         :heavy_check_mark:        |
 | show unp user                  |     `alias: show 802.1x users`      |         :heavy_check_mark:        |
 | show user                      |          :heavy_check_mark:         |         :heavy_check_mark:        |
 | show running-directory         |                 :x:                 |         :heavy_check_mark:        |
