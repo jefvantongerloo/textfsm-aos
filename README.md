@@ -84,6 +84,7 @@ parsed result
 | show 802.1x users unp          |          :heavy_check_mark:         |                :x:                |
 | show 802.1x non-supplicant     |          :heavy_check_mark:         |                :x:                |
 | show 802.1x non-supplicant unp |          :heavy_check_mark:         |                :x:                |
+| show arp                       |                 :x:                 |         :heavy_check_mark:        |
 | show chassis                   |          :heavy_check_mark:         |         :heavy_check_mark:        |
 | show cmm                       |                 :x:                 |         :heavy_check_mark:        |
 | show command-log               |          :heavy_check_mark:         |         :heavy_check_mark:        |
