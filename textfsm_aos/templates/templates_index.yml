@@ -17,6 +17,8 @@
   platform: ale_aos8
 - command: show command-log
   platform: ale_aos6
+- command: show arp
+  platform: ale_aos8
 - command: show command-log
   platform: ale_aos8
 - command: show hardware-info

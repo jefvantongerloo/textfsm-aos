@@ -1,0 +1,8 @@
+
+Total 1 arp entries
+ Flags (P=Proxy, A=Authentication, V=VRRP, B=BFD, H=HAVLAN, I=INTF, M=Managed)
+
+ IP Addr           Hardware Addr       Type       Flags   Port              Interface   Name
+-----------------+-------------------+----------+-------+-----------------+-----------+---------------------------------
+ 10.10.99.1        00:09:0f:09:01:26   DYNAMIC                         0/1  vlan10ip                                  
+
