@@ -1,3 +1,5 @@
+[![Build Status](https://app.travis-ci.com/jefvantongerloo/textfsm-aos.svg?branch=main)](https://app.travis-ci.com/jefvantongerloo/textfsm-aos)
+
 # TEXTFSM-AOS
 
 > Alcatel-Lucent Enterprise AOS CLI parsing
