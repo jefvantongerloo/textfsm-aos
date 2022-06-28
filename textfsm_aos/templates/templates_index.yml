@@ -43,6 +43,8 @@
   platform: ale_aos6
 - command: show ip routes
   platform: ale_aos8
+- command: show linkagg
+  platform: ale_aos8
 - command: show linkagg port
   platform: ale_aos8
 - command: show lldp remote-system

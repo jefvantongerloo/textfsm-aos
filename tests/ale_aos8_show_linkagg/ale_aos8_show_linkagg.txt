@@ -1,0 +1,5 @@
+
+Number  Aggregate     SNMP Id   Size Admin State  Oper State     Att/Sel Ports
+-------+-------------+---------+----+------------+--------------+-------------
+   1     Dynamic      40000001   4   ENABLED      UP              2   2
+  32     Dynamic      40000032   4   ENABLED      UP              2   2
