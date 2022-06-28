@@ -1,6 +1,6 @@
 # Textfsm-aos release notes
 
-## [1.0.1] - Unreleased
+## [1.1.0] - 28-06-2022
 
 ### Added CLI commands
 
@@ -10,6 +10,7 @@
 - aos8 - `show linkagg port` [#56](https://github.com/jefvantongerloo/textfsm-aos/pull/56)
 - aos8 - `show port-security brief` [#51](https://github.com/jefvantongerloo/textfsm-aos/pull/51)
 - aos8 - `show qos port` [#52](https://github.com/jefvantongerloo/textfsm-aos/pull/52)
+- aos8 - `show spantree ports` [#58](https://github.com/jefvantongerloo/textfsm-aos/pull/58)
 
 ### Fixed
 
