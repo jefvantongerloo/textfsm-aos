@@ -112,6 +112,7 @@ parsed result
 | show snmp station              |          :heavy_check_mark:         |         :heavy_check_mark:        |
 | show snmp community map        |          :heavy_check_mark:         |  `alias: show snmp community-map` |
 | show snmp community-map        |   `alias: show snmp community map`  |         :heavy_check_mark:        |
+| show spantree ports            |                 :x:                 |         :heavy_check_mark:        |
 | show system                    |          :heavy_check_mark:         |         :heavy_check_mark:        |
 | show transceivers              |                 :x:                 |         :heavy_check_mark:        |
 | show vlan                      |          :heavy_check_mark:         |         :heavy_check_mark:        |
