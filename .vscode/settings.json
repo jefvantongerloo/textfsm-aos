@@ -1,8 +1,0 @@
-{
-    "python.testing.pytestArgs": [
-        "--ignore=dev"
-    ],
-    "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true,
-    "python.testing.pytestPath": "/home/p064033/projects/forks/textfsm-aos/.venv/bin/pytest"
-}
