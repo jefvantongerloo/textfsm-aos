@@ -1,0 +1,7 @@
+
+Chassis/Slot/Port  Aggregate   SNMP Id   Status    Agg  Oper   Link Prim
+-------------------+----------+--------+----------+----+-----+-----+----
+          1/1/1     Dynamic      1001   ATTACHED      1  UP   UP    NO 
+         1/1/17     Dynamic      1017   ATTACHED     32  UP   UP    NO 
+         1/1/18     Dynamic      1018   ATTACHED     32  UP   UP    YES
+         2/1/18     Dynamic    101018   CONFIGURED NONE  DOWN DOWN  UNK

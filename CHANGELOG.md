@@ -6,6 +6,7 @@
 
 - aos8 - `show arp` [#54](https://github.com/jefvantongerloo/textfsm-aos/pull/54)
 - aos8 - `show interfaces` [#53](https://github.com/jefvantongerloo/textfsm-aos/pull/53)
+- aos8 - `show linkagg port` [#56](https://github.com/jefvantongerloo/textfsm-aos/pull/56)
 - aos8 - `show port-security brief` [#51](https://github.com/jefvantongerloo/textfsm-aos/pull/51)
 - aos8 - `show qos port` [#52](https://github.com/jefvantongerloo/textfsm-aos/pull/52)
 
