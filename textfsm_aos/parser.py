@@ -1,6 +1,6 @@
 """Textfsm-aos.parse."""
-import yaml
 import importlib.resources as pkg_resources
+import yaml
 from textfsm import TextFSM
 from . import templates
 
@@ -28,8 +28,8 @@ def _parse_textfsm(template: dict, data: str) -> list:
     template_path = template["platform"] + "_" + template_name
     template = pkg_resources.open_text(templates, template_path)
 
-    with open(template.name) as f:
-        template = TextFSM(f)
+    with open(template.name, encoding="utf-8") as file:
+        template = TextFSM(file)
 
     parsed_result = template.ParseText(data)
     structured_response = [dict(zip(template.header, pr)) for pr in parsed_result]
@@ -51,10 +51,9 @@ def parse(platform: str, command: str, data: str) -> list:
     template_index = _search_template_index(platform, command)
     if template_index:
         structured_response = _parse_textfsm(template_index, data)
-        return structured_response
     else:
         raise Exception(
-            "Unable to find platform:{0} or command:{1} in supported values.".format(
-                platform, command
-            )
+            f"Unable to find platform:{platform} or command:{command} in supported values."
         )
+
+    return structured_response
