@@ -1,9 +1,13 @@
+"""Pytests for TextFSM_aos project."""
+
+import importlib.resources as pkg_resources
 import textfsm_aos
 from textfsm_aos import templates
-import importlib.resources as pkg_resources
 
 
 def test_template_index_names():
+    """Check index names"""
+
     template_files_ale = []
     template_index_ale = []
     template_files = pkg_resources.contents(templates)

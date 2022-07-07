@@ -1,5 +1,11 @@
 # Textfsm-aos release notes
 
+## [1.1.1] - 07-07-2022
+
+### Fixed
+
+- textfsm package release 1.1.3 is broken, due to missing wheel in distribution. [GitHub textfsm issue](https://github.com/google/textfsm/issues/105)
+
 ## [1.1.0] - 28-06-2022
 
 ### Added CLI commands

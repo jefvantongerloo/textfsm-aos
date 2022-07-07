@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "textfsm_aos"
-version = "1.1.0"
+version = "1.1.1"
 description = "Alcatel-Lucent Enterprise AOS CLI parsing (TextFSM)"
 authors = ["Jef Vantongerloo <jefvantongerloo@gmail.com>"]
 license = "Apache-2.0"
@@ -11,7 +11,7 @@ keywords = ["network automation", "textfsm", "scraping", "Alcatel-Lucent Enterpr
 
 [tool.poetry.dependencies]
 python = ">=3.8"
-textfsm = "^1.1.2"
+textfsm = "1.1.2"
 PyYAML = "^6.0"
 
 [tool.poetry.dev-dependencies]
