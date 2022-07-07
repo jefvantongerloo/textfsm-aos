@@ -11,6 +11,7 @@ def _get_raw(platform: str, command: str) -> str:
     with open(
         "tests/" + platform + "_" + command + "/" + platform + "_" + command + ".txt",
         "r",
+        encoding="utf-8",
     ) as structured:
         raw = structured.read()
     return raw
@@ -23,6 +24,7 @@ def _get_benchmark(platform: str, command: str) -> dict:
     with open(
         "tests/" + platform + "_" + command + "/" + platform + "_" + command + ".yml",
         "r",
+        encoding="utf-8",
     ) as structured:
         benchmark_parsed = yaml.safe_load(structured.read())
     return benchmark_parsed
@@ -37,7 +39,7 @@ def test_parsed_data(template: dict):
     )
     benchmark_data = _get_benchmark(template["platform"], template["command"])
 
-    print("Parsed data: \n {0} \n".format(parsed_data))
-    print("Benchmark data: \n {0} \n".format(benchmark_data))
+    print(f"Parsed data: \n {parsed_data} \n")
+    print(f"Benchmark data: \n {benchmark_data} \n")
 
     assert parsed_data == benchmark_data
