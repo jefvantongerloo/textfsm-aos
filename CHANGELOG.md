@@ -1,5 +1,11 @@
 # Textfsm-aos release notes
 
+## [1.1.2] - Unreleased
+
+## Changes
+
+- dependency updated and tested tox 3.26.0 -> 3.27.1
+
 ## [1.1.1] - 07-07-2022
 
 ### Fixed
