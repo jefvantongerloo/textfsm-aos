@@ -4,6 +4,7 @@
 
 ## Fixed
 
+- aos8 - `show microcode` [#70](https://github.com/jefvantongerloo/textfsm-aos/pull/70)
 - aos8 - `show cmm` [#69](https://github.com/jefvantongerloo/textfsm-aos/pull/69)
 - Travis ci/cd fails due tox-travis package incompatible with tox version 4.x. [#68](https://github.com/jefvantongerloo/textfsm-aos/pull/68)
 
