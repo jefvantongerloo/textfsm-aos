@@ -1,5 +1,5 @@
 Value package (^\w+.?\w+)
-Value release (\d.\d.\d.\d+.[R]\d+)
+Value release ((\d+.)+[R]\d+)
 Value size (\d+)
 Value description (.*)
 
