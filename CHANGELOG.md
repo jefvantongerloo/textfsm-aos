@@ -4,8 +4,9 @@
 
 ## Fixed
 
-- aos8 - `show microcode` [#70](https://github.com/jefvantongerloo/textfsm-aos/pull/70)
-- aos8 - `show cmm` [#69](https://github.com/jefvantongerloo/textfsm-aos/pull/69)
+- aos6 - `show command-log` fix `user` and `ipaddr` console value  [#71](https://github.com/jefvantongerloo/textfsm-aos/pull/71)
+- aos8 - `show microcode` fix `release` not correctly captured [#70](https://github.com/jefvantongerloo/textfsm-aos/pull/70)
+- aos8 - `show cmm` fix `fpga` not correctly captured [#69](https://github.com/jefvantongerloo/textfsm-aos/pull/69)
 - Travis ci/cd fails due tox-travis package incompatible with tox version 4.x. [#68](https://github.com/jefvantongerloo/textfsm-aos/pull/68)
 
 ## Changes
