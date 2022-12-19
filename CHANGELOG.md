@@ -2,6 +2,10 @@
 
 ## [1.1.2] - Unreleased
 
+## Fixed
+
+- Travis ci/cd fails due tox-travis package incompatible with tox version 4.x. [#68](https://github.com/jefvantongerloo/textfsm-aos/pull/68)
+
 ## Changes
 
 - dependency updated and tested:
