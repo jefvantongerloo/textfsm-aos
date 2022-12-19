@@ -22,6 +22,7 @@ jobs:
         - stage: "lint"
           install:
             - pip install tox-travis
+            - pip install tox==3.28.0
           script:
             - tox -e ALL
         - stage: "pytest"
