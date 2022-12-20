@@ -13,5 +13,6 @@ Start
   ^[-+\+]+\s*$$ -> Users
 
 Users
+  ^System has no 802.1x client to show$$
   ^${slot_port}\s+${mac_address}\s+${port_state}\s+${classification_policy}\s+${auth_failure_reason}\s+${auth_retry_count}\s+${last_succesful_auth_time}\s+${user_name}$$ -> Record
   ^. -> Error
