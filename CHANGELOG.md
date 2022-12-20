@@ -1,6 +1,6 @@
 # Textfsm-aos release notes
 
-## [1.1.2] - Unreleased
+## [1.1.2] - 20-22-2022
 
 ## Fixed
 
@@ -10,8 +10,9 @@
 - aos8 - `show cmm` fix `fpga` not correctly captured [#69](https://github.com/jefvantongerloo/textfsm-aos/pull/69)
 - Travis ci/cd fails due tox-travis package incompatible with tox version 4.x. [#68](https://github.com/jefvantongerloo/textfsm-aos/pull/68)
 
-## Changes
+## Changed
 
+- Added integration testing on release to test and 'certify' certain aos firmwares. Data set contains sensitive information, so it cannot be part of the public get repository.
 - dependency updated and tested:
     - pytest (7.1.3 -> 7.2.0)
     - textfsm (1.1.2 -> 1.1.3)
