@@ -77,6 +77,13 @@ parsed result
 ]
 ```
 
+## Integration tests
+
+| aos version                       |                    tests            | 
+|-----------------------------------|:--------------------------------:|
+| 6.7.2.122.R08                  |    :heavy_check_mark:    |
+| 8.8.56.R02                       |    :heavy_check_mark:    |
+
 ## Supported commands
 
 | command                        |                 aos6                |                aos8               |
