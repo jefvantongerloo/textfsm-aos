@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "textfsm_aos"
-version = "1.1.1"
+version = "1.1.2"
 description = "Alcatel-Lucent Enterprise AOS CLI parsing (TextFSM)"
 authors = ["Jef Vantongerloo <jefvantongerloo@gmail.com>"]
 license = "Apache-2.0"
