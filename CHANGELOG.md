@@ -1,5 +1,11 @@
 # Textfsm-aos release notes
 
+## [1.1.3] - Unreleased
+
+- aos8 - `show vlan members`types `tagged`and `untagged`values missing [#72](https://github.com/jefvantongerloo/textfsm-aos/pull/72)
+
+## Fixed
+
 ## [1.1.2] - 20-22-2022
 
 ## Fixed
