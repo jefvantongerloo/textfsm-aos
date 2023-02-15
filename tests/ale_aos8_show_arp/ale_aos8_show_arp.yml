@@ -1,0 +1,8 @@
+---
+- ip_address: '10.10.99.1'
+  hardware_addr: '00:09:0f:09:01:26'
+  type: 'DYNAMIC'
+  flags: ''
+  port: '0/1'
+  interface: 'vlan10ip'
+  name: ''

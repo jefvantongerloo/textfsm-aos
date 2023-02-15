@@ -1,9 +1,13 @@
+"""Pytests for TextFSM_aos project."""
+
+import importlib.resources as pkg_resources
 import textfsm_aos
 from textfsm_aos import templates
-import importlib.resources as pkg_resources
 
 
 def test_template_index_count():
+    """Check template index count"""
+
     len_template_files = 0
 
     template_index = textfsm_aos.parser._get_template_index()

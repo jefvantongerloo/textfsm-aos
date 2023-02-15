@@ -11,5 +11,6 @@ Start
   ^[-+\+]+\s*$$ -> unp
 
 unp
+  ^System has no 802.1x client to show$$
   ^${slot}\s+${mac_address}\s+${vlan}\s+${hic_status}\s+${dynamic_unp}\s+${user_name} -> Record
   ^. -> Error

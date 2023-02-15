@@ -1,0 +1,7 @@
+ Vlan  Port   Oper Status  Path Cost  Role   Loop Guard   Note
+-----+-------+------------+---------+-------+----------+------
+    1   1/1/7      DIS             0    DIS    DIS       
+ 3200     0/1     FORW             1   DESG    DIS       
+ 3200    0/32     FORW             3   DESG    DIS       
+ 3201  1/1/15     FORW             4   DESG    DIS       
+ 3201  1/1/16     FORW             4   DESG    DIS       

@@ -1,0 +1,5 @@
+ Slot/                        Max      Max      Nb Macs   Nb Macs     Nb Macs     Nb Macs
+ Port       Operation Mode    Bridge   Filter   Dyn Br    Dyn Fltr    Static Br   Static Fltr
+----------+------------------+--------+--------+---------+-----------+-----------+------------
+   1/1/1          DISABLED       4        4        1           0          0           0 
+   1/1/2           ENABLED       4        4        1           0          0           0 

@@ -1,3 +1,5 @@
+[![Build Status](https://app.travis-ci.com/jefvantongerloo/textfsm-aos.svg?branch=main)](https://app.travis-ci.com/jefvantongerloo/textfsm-aos)
+
 # TEXTFSM-AOS
 
 > Alcatel-Lucent Enterprise AOS CLI parsing
@@ -8,7 +10,7 @@ Python package for Alcatel-Lucent Enterprise aos6 and aos8 parsing based on Text
 
 Parse semi-structured cli data to structured data ready to be ingested by your network automation pipeline. Autmatically transform gathered output from screen-scraping tools like Netmiko, Scrapli and Paramiko. Receive uniform data accross Alcatel-Lucent Enterprise devices running aos6 or aos8.
 
-## Installing / Getting started
+## Installation
 
 Textfsm-aos can be installed using Git + Poetry or PyPI.
 
@@ -24,6 +26,8 @@ poetry install
 ```bash
 pip install textfsm-aos
 ```
+
+## Getting started
 
 Provide screen-scraped data to parser
 
@@ -73,6 +77,14 @@ parsed result
 ]
 ```
 
+## Integration tests
+
+| aos version                       |                    tests            |
+|-----------------------------------|:--------------------------------:|
+| 6.7.2.122.R08                  |    :heavy_check_mark:    |
+| 8.9.73.R01                       |    :heavy_check_mark:    |
+| 8.8.56.R02                       |    :heavy_check_mark:    |
+
 ## Supported commands
 
 | command                        |                 aos6                |                aos8               |
@@ -82,6 +94,7 @@ parsed result
 | show 802.1x users unp          |          :heavy_check_mark:         |                :x:                |
 | show 802.1x non-supplicant     |          :heavy_check_mark:         |                :x:                |
 | show 802.1x non-supplicant unp |          :heavy_check_mark:         |                :x:                |
+| show arp                       |                 :x:                 |         :heavy_check_mark:        |
 | show chassis                   |          :heavy_check_mark:         |         :heavy_check_mark:        |
 | show cmm                       |                 :x:                 |         :heavy_check_mark:        |
 | show command-log               |          :heavy_check_mark:         |         :heavy_check_mark:        |
@@ -89,22 +102,28 @@ parsed result
 | show health                    |          :heavy_check_mark:         |         :heavy_check_mark:        |
 | show history                   |          :heavy_check_mark:         |          `alias: history`         |
 | show interface status          |          :heavy_check_mark:         |         :heavy_check_mark:        |
+| show interfaces                |                 :x:                 |         :heavy_check_mark:        |
 | show ip interface              |          :heavy_check_mark:         |         :heavy_check_mark:        |
 | show ip route                  |          :heavy_check_mark:         |       `alias: show ip routes`     |
 | show ip routes                 |        `alias: show ip route`       |         :heavy_check_mark:        |
+| show linkagg                   |                 :x:                 |         :heavy_check_mark:        |
+| show linkagg port              |                 :x:                 |         :heavy_check_mark:        |
 | show lld remote system         |          :heavy_check_mark:         |                :x:                |
 | show log events                |                 :x:                 |         :heavy_check_mark:        |
 | show mac-address-table         |          :heavy_check_mark:         |     `alias: show mac-learning`    |
 | show mac-learning              |   `alias: show mac-address-table`   |         :heavy_check_mark:        |
 | show microcode                 |          :heavy_check_mark:         |         :heavy_check_mark:        |
 | show ntp server status         |          :heavy_check_mark:         |         :heavy_check_mark:        |
-| show unp user                  |                 :x:                 |         :heavy_check_mark:        |
+| show port-security brief       |                 :x:                 |         :heavy_check_mark:        |
+| show qos port                  |                 :x:                 |         :heavy_check_mark:        |
+| show unp user                  |     `alias: show 802.1x users`      |         :heavy_check_mark:        |
 | show user                      |          :heavy_check_mark:         |         :heavy_check_mark:        |
 | show running-directory         |                 :x:                 |         :heavy_check_mark:        |
 | show qos log                   |                 :x:                 |         :heavy_check_mark:        |
 | show snmp station              |          :heavy_check_mark:         |         :heavy_check_mark:        |
 | show snmp community map        |          :heavy_check_mark:         |  `alias: show snmp community-map` |
 | show snmp community-map        |   `alias: show snmp community map`  |         :heavy_check_mark:        |
+| show spantree ports            |                 :x:                 |         :heavy_check_mark:        |
 | show system                    |          :heavy_check_mark:         |         :heavy_check_mark:        |
 | show transceivers              |                 :x:                 |         :heavy_check_mark:        |
 | show vlan                      |          :heavy_check_mark:         |         :heavy_check_mark:        |
@@ -274,7 +293,7 @@ Example Output:
 
 ## How to contribute
 
-1. Create branch with naming `<platform>_<command>` (for example: ale_aos8_show_system).
+1. Fork and create a branch with naming `<platform>_<command>` (for example: ale_aos8_show_system).
 
 2. Add TextFSM template file in templates folder with naming `<platform>_<command>.textfsm`.
 
@@ -290,13 +309,11 @@ Example Output:
 
 ## How to setup development environment
 
-1. Create virtual Python environment `python -m venv .venv`
+1. Install `Poetry` package manager via `pip install poetry`
 
-2. Activate environment `source .venv/bin/activate`
+2. Install dev dependencies and textfsm-aos package in development mode with `poetry install`
 
-3. Install Python dependencies `pip install -r requirements.txt`
-
-4. Install textfsm_aos package in development mode `pip install -e .`
+3. Open virtual environment `poetry shell`
 
 ## Related projects
 

@@ -6,6 +6,52 @@
 
 - aos8 - `show qos log` [#49](https://github.com/jefvantongerloo/textfsm-aos/pull/49) by [@BennyE](https://github.com/BennyE)
 
+### Fixed
+
+- aos8 - `show vlan members`types `tagged`and `untagged`values missing [#72](https://github.com/jefvantongerloo/textfsm-aos/pull/72)
+
+
+
+## [1.1.2] - 20-22-2022
+
+## Fixed
+
+- aos6 - `show 802.1x users` and `show 802.1x users unp` error on no clients [#71](https://github.com/jefvantongerloo/textfsm-aos/pull/71)
+- aos6 - `show command-log` fix `user` and `ipaddr` console value [#71](https://github.com/jefvantongerloo/textfsm-aos/pull/71)
+- aos8 - `show microcode` fix `release` not correctly captured [#70](https://github.com/jefvantongerloo/textfsm-aos/pull/70)
+- aos8 - `show cmm` fix `fpga` not correctly captured [#69](https://github.com/jefvantongerloo/textfsm-aos/pull/69)
+- Travis ci/cd fails due tox-travis package incompatible with tox version 4.x. [#68](https://github.com/jefvantongerloo/textfsm-aos/pull/68)
+
+## Changed
+
+- Added integration testing on release to test and 'certify' certain aos firmwares. Data set contains sensitive information, so it cannot be part of the public get repository.
+- dependency updated and tested:
+    - pytest (7.1.3 -> 7.2.0)
+    - textfsm (1.1.2 -> 1.1.3)
+    - tox (3.26.0 -> 3.28.0)
+
+## [1.1.1] - 07-07-2022
+
+### Fixed
+
+- textfsm package release 1.1.3 is broken, due to missing wheel in distribution. [GitHub textfsm issue](https://github.com/google/textfsm/issues/105)
+
+## [1.1.0] - 28-06-2022
+
+### Added CLI commands
+
+- aos8 - `show arp` [#54](https://github.com/jefvantongerloo/textfsm-aos/pull/54)
+- aos8 - `show interfaces` [#53](https://github.com/jefvantongerloo/textfsm-aos/pull/53)
+- aos8 - `show linkagg` [#55](https://github.com/jefvantongerloo/textfsm-aos/pull/55)
+- aos8 - `show linkagg port` [#56](https://github.com/jefvantongerloo/textfsm-aos/pull/56)
+- aos8 - `show port-security brief` [#51](https://github.com/jefvantongerloo/textfsm-aos/pull/51)
+- aos8 - `show qos port` [#52](https://github.com/jefvantongerloo/textfsm-aos/pull/52)
+- aos8 - `show spantree ports` [#58](https://github.com/jefvantongerloo/textfsm-aos/pull/58)
+
+### Fixed
+
+- aos6 - `show ip route` [#50](https://github.com/jefvantongerloo/textfsm-aos/pull/50)
+
 ## [1.0.0] - 2022-05-12
 
 ### Added CLI commands
@@ -50,6 +96,7 @@
 - aos8 - `show snmp community-map` fix empty username field value [#38](https://github.com/jefvantongerloo/textfsm-aos/pull/38)
 
 ### New contributors
+
 [@FlorianHeigl](https://github.com/FlorianHeigl) first contribution [https://github.com/jefvantongerloo/textfsm-aos/pull/30](https://github.com/jefvantongerloo/textfsm-aos/pull/30)
 
 ## [0.2.0] - 2022-03-14

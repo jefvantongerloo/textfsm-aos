@@ -1,0 +1,15 @@
+Value cist_param (\d{1,4})
+Value port ((\d{1,2}\/)+\d*)
+Value oper_status (\w+)
+Value path_cost (\d+)
+Value role (\w+)
+Value loop_guard (ENA|DIS)
+Value note (.*)
+
+Start
+  ^\s+(Bridge|Msti|Vlan)\s+Port\s+Oper Status\s+Path Cost\s+Role\s+Loop Guard\s+Note$$
+  ^[-+\+]+\s*$$ -> Spantree_ports
+
+Spantree_ports
+  ^\s+${cist_param}\s+${port}\s+${oper_status}\s+${path_cost}\s+${role}\s+${loop_guard}\s+${note}\s*$$ -> Record
+  ^. -> Error

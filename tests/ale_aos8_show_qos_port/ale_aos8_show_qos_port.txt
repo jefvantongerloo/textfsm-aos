@@ -1,0 +1,7 @@
+Slot/                 Default    Default               Bandwidth           DEI
+Port    Active  Trust P/DSCP Classification  Physical  Ingress Egress    Map Mark   Type
+-------+-------+-----+------+--------------+----------+-------+------+------+------+-------------
+1/1/1     Yes      No  0/ 0           DSCP         1G       -       -    No    No   ethernet-1G
+1/1/2     Yes      No  0/ 0           DSCP       100M       -       -    No    No   ethernet-100M
+1/1/3      No      No  0/ 0           DSCP         0K       -       -    No    No   ethernet
+1/1/4     Yes    *Yes  0/ 0        *802.1P        10G       -       -    No    No   ethernet-10G

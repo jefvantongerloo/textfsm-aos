@@ -1,7 +1,4 @@
 pytest
 pyyaml
-scrapli
-scrapli[community]
-scrapli[ssh2]
 textfsm
 tox-travis

@@ -17,6 +17,8 @@
   platform: ale_aos8
 - command: show command-log
   platform: ale_aos6
+- command: show arp
+  platform: ale_aos8
 - command: show command-log
   platform: ale_aos8
 - command: show hardware-info
@@ -27,6 +29,8 @@
   platform: ale_aos8
 - command: show history
   platform: ale_aos6
+- command: show interfaces
+  platform: ale_aos8
 - command: show interfaces status
   platform: ale_aos6
 - command: show interfaces status
@@ -38,6 +42,10 @@
 - command: show ip route
   platform: ale_aos6
 - command: show ip routes
+  platform: ale_aos8
+- command: show linkagg
+  platform: ale_aos8
+- command: show linkagg port
   platform: ale_aos8
 - command: show lldp remote-system
   platform: ale_aos6
@@ -54,6 +62,10 @@
 - command: show ntp server status
   platform: ale_aos6
 - command: show ntp server status
+  platform: ale_aos8
+- command: show port-security brief
+  platform: ale_aos8
+- command: show qos port
   platform: ale_aos8
 - command: show unp user
   platform: ale_aos8
@@ -72,6 +84,8 @@
 - command: show snmp community map
   platform: ale_aos6
 - command: show snmp community-map
+  platform: ale_aos8
+- command: show spantree ports
   platform: ale_aos8
 - command: show system
   platform: ale_aos6
