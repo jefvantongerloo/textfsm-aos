@@ -1,5 +1,11 @@
 # Textfsm-aos release notes
 
+## [1.1.3] - Unreleased
+
+### Added CLI commands
+
+- aos8 - `show qos log` [#49](https://github.com/jefvantongerloo/textfsm-aos/pull/49) by [@BennyE](https://github.com/BennyE)
+
 ## [1.0.0] - 2022-05-12
 
 ### Added CLI commands
