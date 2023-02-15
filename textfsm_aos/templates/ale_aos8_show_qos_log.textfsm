@@ -1,0 +1,34 @@
+Value qos_timestamp (\d{1,2}\/\d{1,2}\/\d{1,2}\s+\d{1,2}:\d{1,2}:\d{1,2})
+Value at_timestamp (\[@\d{1,2}:\d{1,2}:\d{1,2}\])
+Value rulename (.*)
+Value qos_action (.*)
+Value profile_type (.*)
+Value qos_list (.*)
+Value source_vlan (\d{1,4})
+Value source_switch_port (\d{1,2}\/\d{1,2}\/\d{1,3})
+Value destination_switch_port (\d{1,2}\/\d{1,2}\/\d{1,3})
+Value source_mac_address (([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]){2})
+Value destination_mac_address (([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]){2})
+Value protocol ([A-Z]*\s?(.*(\(.*\)))+)
+Value source_ip_address ((?:[0-9]{1,3}\.){3}[0-9]{1,3}(\:\d{1,5})?)
+Value destination_ip_address ((?:[0-9]{1,3}\.){3}[0-9]{1,3}(:\d{1,5})?)
+Value source_ip6_address (([a-f0-9:]+:+)+[a-f0-9]+)
+Value destination_ip6_address (([a-f0-9:]+:+)+[a-f0-9]+)
+Value source_ip6_port (\d{1,5})
+Value destination_ip6_port (\d{1,5})
+Value ip6_protocol ([A-Z0-9]*)
+Value ip6_flow_label (0x[a-z0-9]*)
+Value ip6_traffic_class (0x[a-z0-9]*)
+Value logmessage ([A-Za-z0-9\s\S]*)
+
+Start
+  ^.\s?${qos_timestamp}\s{1}${at_timestamp}\srule\s\'${rulename}\'\s${qos_action}\sin\s${profile_type}\slist\s${qos_list}$$ -> Qoslog
+  ^.\s?${qos_timestamp}\s{1}${logmessage}$$ -> Record
+
+Qoslog
+  ^.\s?${qos_timestamp}\s{2}svlan\s${source_vlan}\sport\s${source_switch_port}\s(\-\>\s${destination_switch_port}\s)?default$$ 
+  ^.\s?${qos_timestamp}\s{2}MAC\s${source_mac_address}\s\-\>\s${destination_mac_address}$$ 
+  ^.\s?${qos_timestamp}\s{2}V6:?\s\($ip6_protocol\):?\s${source_ip6_address}(\.${source_ip6_port})?\s\-\>\s${destination_ip6_address}(\.${destination_ip6_port})?$$
+  ^.\s?${qos_timestamp}\s{2}FL\s${ip6_flow_label}\,\sTC\s${ip6_traffic_class}$$ -> Record Start
+  ^.\s?${qos_timestamp}\s{2}${protocol}\s${source_ip_address}\s\-\>\s${destination_ip_address}$$ -> Record Start
+  ^. -> Error
