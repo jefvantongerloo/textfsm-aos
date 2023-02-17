@@ -4,13 +4,12 @@
 
 ### Added CLI commands
 
+- aos8 - `show ip router database` [#76](https://github.com/jefvantongerloo/textfsm-aos/pull/76)
 - aos8 - `show qos log` [#49](https://github.com/jefvantongerloo/textfsm-aos/pull/49) by [@BennyE](https://github.com/BennyE)
 
 ### Fixed
 
 - aos8 - `show vlan members`types `tagged`and `untagged`values missing [#72](https://github.com/jefvantongerloo/textfsm-aos/pull/72)
-
-
 
 ## [1.1.2] - 20-22-2022
 
@@ -24,11 +23,11 @@
 
 ## Changed
 
-- Added integration testing on release to test and 'certify' certain aos firmwares. Data set contains sensitive information, so it cannot be part of the public get repository.
+- Added integration testing on release to test and 'certify' certain aos firmware. Data set contains sensitive information, so it cannot be part of the public get repository.
 - dependency updated and tested:
-    - pytest (7.1.3 -> 7.2.0)
-    - textfsm (1.1.2 -> 1.1.3)
-    - tox (3.26.0 -> 3.28.0)
+    1. pytest (7.1.3 -> 7.2.0)
+    2. textfsm (1.1.2 -> 1.1.3)
+    3. tox (3.26.0 -> 3.28.0)
 
 ## [1.1.1] - 07-07-2022
 
