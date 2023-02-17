@@ -8,7 +8,7 @@ Python package for Alcatel-Lucent Enterprise aos6 and aos8 parsing based on Text
 
 ## Why TextFSM-AOS?
 
-Parse semi-structured cli data to structured data ready to be ingested by your network automation pipeline. Autmatically transform gathered output from screen-scraping tools like Netmiko, Scrapli and Paramiko. Receive uniform data accross Alcatel-Lucent Enterprise devices running aos6 or aos8.
+Parse semi-structured cli data to structured data ready to be ingested by your network automation pipeline. Automatically transform gathered output from screen-scraping tools like Netmiko, Scrapli and Paramiko. Receive uniform data across Alcatel-Lucent Enterprise devices running aos6 or aos8.
 
 ## Installation
 
@@ -84,6 +84,7 @@ parsed result
 | 6.7.2.122.R08                  |    :heavy_check_mark:    |
 | 8.9.73.R01                       |    :heavy_check_mark:    |
 | 8.8.56.R02                       |    :heavy_check_mark:    |
+| 8.8.152.R01                       |    :heavy_check_mark:    |
 
 ## Supported commands
 

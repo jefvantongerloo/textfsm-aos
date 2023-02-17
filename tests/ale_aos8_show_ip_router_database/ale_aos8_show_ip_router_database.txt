@@ -1,0 +1,17 @@
+Legend: + indicates routes in-use
+        b indicates BFD-enabled static route
+        i indicates interface static route
+        r indicates recursive static route, with following address in brackets
+
+Total IPRM IPv4 routes: 3
+
+  Destination         Gateway                   Interface              Protocol  Metric     Tag      Misc-Info
+---------------------+---------------+--------------------------------+--------+-------+----------+-----------------
++  0.0.0.0/0          10.10.10.1      vlan10                           STATIC         1          0
++  10.10.20.0/24      10.10.20.10     vlan20                           LOCAL          1          0
++  127.0.0.1/32       127.0.0.1       Loopback                         LOCAL          1          0
+
+
+Inactive Static Routes
+   Destination       Gateway           Metric        Tag   Misc-Info
+--------------------+-----------------+------+----------+-----------------

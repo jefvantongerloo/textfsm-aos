@@ -1,0 +1,27 @@
+Value flags ([\+bir]{0,2})
+Value destination ((?:[0-9]{1,3}\.){3}[0-9]{1,3}\/(\d{1,2}))
+Value gateway ((?:[0-9]{1,3}\.){3}[0-9]{1,3})
+Value interface (\S+)
+Value protocol (LOCAL|STATIC|IMPORT|OSPF|RIP|BGP|IS-IS|SPB-MGMT)
+Value metric (\d+)
+Value tag (\d+)
+Value misc_info (\S*)
+
+Start
+  ^Legend: + indicates routes in-use\s*$$
+  ^\s+b indicates BFD-enabled static route\s*$$
+  ^\s+i indicates interface static route\s*$$
+  ^\s+r indicates recursive static route, with following address in brackets\s*$$
+  ^Total IPRM IPv4 routes: \d+\s*$$
+  ^\s+Destination\s+Gateway\s+Interface\s+Protocol\s+Metric\s+Tag\s+Misc-Info\s*$$
+  ^[-+\+]+\s*$$ -> Active_routes
+
+Active_routes
+  ^${flags}\s+${destination}\s+${gateway}\s+${interface}\s+${protocol}\s+${metric}\s+${tag}\s*${misc_info} -> Record
+  ^Inactive Static Routes
+  ^Destination       Gateway           Metric        Tag   Misc-Info
+  ^[-+\+]+\s*$$ -> Inactive_routes
+	
+Inactive_routes
+  ^${flags}\s+${destination}\s+${gateway}\s+${metric}\s+${tag}\s*${misc_info} -> Record
+  ^. -> Error

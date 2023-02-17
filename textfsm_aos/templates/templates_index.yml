@@ -41,6 +41,8 @@
   platform: ale_aos8
 - command: show ip route
   platform: ale_aos6
+- command: show ip router database
+  platform: ale_aos8
 - command: show ip routes
   platform: ale_aos8
 - command: show linkagg
