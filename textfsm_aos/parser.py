@@ -52,7 +52,7 @@ def parse(platform: str, command: str, data: str) -> list:
     if template_index:
         structured_response = _parse_textfsm(template_index, data)
     else:
-        raise Exception(
+        raise ValueError(
             f"Unable to find platform:{platform} or command:{command} in supported values."
         )
 
