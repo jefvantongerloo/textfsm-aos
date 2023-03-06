@@ -106,6 +106,7 @@ parsed result
 | show interfaces                |                 :x:                 |         :heavy_check_mark:        |
 | show ip interface              |          :heavy_check_mark:         |         :heavy_check_mark:        |
 | show ip route                  |          :heavy_check_mark:         |       `alias: show ip routes`     |
+| show ip router database        |                 :x:                 |         :heavy_check_mark:        |
 | show ip routes                 |        `alias: show ip route`       |         :heavy_check_mark:        |
 | show linkagg                   |                 :x:                 |         :heavy_check_mark:        |
 | show linkagg port              |                 :x:                 |         :heavy_check_mark:        |

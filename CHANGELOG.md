@@ -4,12 +4,17 @@
 
 ### Added CLI commands
 
-- aos8 - `show ip router database` [#76](https://github.com/jefvantongerloo/textfsm-aos/pull/76)
+- aos8 - `show ip router database` ([#76](https://github.com/jefvantongerloo/textfsm-aos/pull/76))
 - aos8 - `show qos log` [#49](https://github.com/jefvantongerloo/textfsm-aos/pull/49) by [@BennyE](https://github.com/BennyE)
 
 ### Fixed
 
 - aos8 - `show vlan members`types `tagged`and `untagged`values missing [#72](https://github.com/jefvantongerloo/textfsm-aos/pull/72)
+
+### Changed
+
+- dependency updated and tested:
+    1. pytest (7.2.1 -> 7.2.2)
 
 ## [1.1.2] - 20-22-2022
 
