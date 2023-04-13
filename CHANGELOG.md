@@ -14,7 +14,7 @@
 ### Changed
 
 - dependency updated and tested:
-    1. pytest (7.2.1 -> 7.2.2)
+    1. pytest (7.2.1 -> 7.3.0)
 
 ## [1.1.2] - 20-22-2022
 
