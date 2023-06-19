@@ -1,0 +1,78 @@
+Value Key port (\d\/\d+\/\d+[\w]*)
+Value mac_address (([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]){2})
+Value sap (.+)
+Value service_id (.+)
+Value vnid (.+)
+Value vpnid (.+)
+Value isid (.+)
+Value access_timestamp (.+)
+Value user_name (.+)
+Value ip_address (-|((?:[0-9]{1,3}\.){3}[0-9]{1,3})|([a-f0-9:]+:+)+[a-f0-9]+)
+Value vlan (\d{1,4})
+Value authentication_type (Mac|802.1x|-)
+Value authentication_status (.+)
+Value authentication_failure_reason (.+)
+Value authentication_retry_count (.+)
+Value authentication_server_ip_used (.+)
+Value authentication_server_used (.+)
+Value server_reply_message (.+)
+Value profile (.+)
+Value profile_source (.+)
+Value profile_from_auth_server (.+)
+Value session_timeout (.+)
+Value classification_profile_rule (.+)
+Value role (.+)
+Value role_source (.+)
+Value user_role_rule (.+)
+Value restricted_access (.+)
+Value location_policy_status (.+)
+Value time_policy_status (.+)
+Value captive_portal_status (.+)
+Value qmr_status (.+)
+Value redirect_url (.+)
+Value sip_call_type (.+)
+Value sip_media_type (.+)
+Value applications (.+)
+Value encap_value (.+)
+Value rule_id (.+)
+
+Start
+  ^Port: ${port}
+  ^\s+MAC-Address: ${mac_address}
+  ^\s+SAP\s+= ${sap},
+  ^\s+Service ID\s+= ${service_id},
+  ^\s+VNID\s+= ${vnid},
+  ^\s+VPNID\s+= ${vpnid},
+  ^\s+ISID\s+= ${isid},
+  ^\s+Access Timestamp\s+= ${access_timestamp},
+  ^\s+User Name\s+= ${user_name},
+  ^\s+IP-Address\s+= ${ip_address},
+  ^\s+Vlan\s+= ${vlan},
+  ^\s+Authentication Type\s+= ${authentication_type},
+  ^\s+Authentication Status\s+= ${authentication_status},
+  ^\s+ Authentication Failure Reason\s+= ${authentication_failure_reason},
+  ^\s+Authentication Retry Count\s+= ${authentication_retry_count},
+  ^\s+Authentication Server IP Used\s+= ${authentication_server_ip_used},
+  ^\s+Authentication Server Used\s+= ${authentication_server_used},
+  ^\s+Server Reply-Message\s+= ${server_reply_message},
+  ^\s+Profile\s+= ${profile},
+  ^\s+Profile Source\s+= ${profile_source},
+  ^\s+Profile From Auth Server\s+= ${profile_from_auth_server},
+  ^\s+Session Timeout\s+= ${session_timeout},
+  ^\s+Classification Profile Rule\s+= ${classification_profile_rule},
+  ^\s+Role\s+= ${role},
+  ^\s+Role Source\s+= ${role_source},
+  ^\s+User Role Rule\s+= ${user_role_rule},
+  ^\s+Restricted Access\s+= ${restricted_access},
+  ^\s+Location Policy Status\s+= ${location_policy_status},
+  ^\s+Time Policy Status\s+= ${time_policy_status},
+  ^\s+Captive Portal Status\s+= ${captive_portal_status},
+  ^\s+QMR Status\s+= ${qmr_status},
+  ^\s+Redirect Url\s+= ${redirect_url},
+  ^\s+SIP Call Type\s+= ${sip_call_type},
+  ^\s+SIP Media Type\s+= ${sip_media_type},
+  ^\s+Applications\s+= ${applications},
+  ^\s+Encap Value\s+= ${encap_value},
+  ^\s+Rule ID\s+= ${rule_id}, -> Record
+  ^Total users : \d+
+  ^. -> Error
