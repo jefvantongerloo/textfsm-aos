@@ -5,6 +5,7 @@
 ### Added CLI commands
 
 - aos8 - `show ip router database` ([#76](https://github.com/jefvantongerloo/textfsm-aos/pull/76))
+- aos8 - `show unp user details' ([#84](https://github.com/jefvantongerloo/textfsm-aos/pull/84))
 - aos8 - `show qos log` [#49](https://github.com/jefvantongerloo/textfsm-aos/pull/49) by [@BennyE](https://github.com/BennyE)
 
 ### Fixed

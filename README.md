@@ -119,6 +119,7 @@ parsed result
 | show port-security brief       |                 :x:                 |         :heavy_check_mark:        |
 | show qos port                  |                 :x:                 |         :heavy_check_mark:        |
 | show unp user                  |     `alias: show 802.1x users`      |         :heavy_check_mark:        |
+| show unp user details          |                 :x:                 |         :heavy_check_mark:        |
 | show user                      |          :heavy_check_mark:         |         :heavy_check_mark:        |
 | show running-directory         |                 :x:                 |         :heavy_check_mark:        |
 | show qos log                   |                 :x:                 |         :heavy_check_mark:        |
