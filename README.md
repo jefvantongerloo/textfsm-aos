@@ -13,7 +13,7 @@ Parse semi-structured cli data to structured data ready to be ingested by your n
 ## Installation
 
 Textfsm-aos can be installed using Git + Poetry or PyPI.
-
+s
 ## Git
 
 ```bash
@@ -79,12 +79,16 @@ parsed result
 
 ## Integration tests
 
+Due to sensitive information the gathered live data for integration testing is stored in a private repository. Releases are tested against following aos versions:
+
 | aos version                       |                    tests            |
-|-----------------------------------|:--------------------------------:|
-| 6.7.2.122.R08                  |    :heavy_check_mark:    |
-| 8.9.73.R01                       |    :heavy_check_mark:    |
-| 8.8.56.R02                       |    :heavy_check_mark:    |
-| 8.8.152.R01                       |    :heavy_check_mark:    |
+|-----------------------------------|:-----------------------------------:|
+| 6.7.2.122.R08                     |         :heavy_check_mark:          |
+| 8.9.73.R01                        |         :heavy_check_mark:          |
+| 8.8.56.R02                        |         :heavy_check_mark:          |
+| 8.8.152.R01                       |         :heavy_check_mark:          |
+| 8.9.73.R01                        |         :heavy_check_mark:          |
+| 8.9.107.R02                       |         :heavy_check_mark:          |
 
 ## Supported commands
 

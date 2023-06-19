@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "textfsm_aos"
-version = "1.1.2"
+version = "1.1.3"
 description = "Alcatel-Lucent Enterprise AOS CLI parsing (TextFSM)"
 authors = ["Jef Vantongerloo <jefvantongerloo@gmail.com>"]
 license = "Apache-2.0"
@@ -17,8 +17,8 @@ PyYAML = "^6.0"
 [tool.poetry.dev-dependencies]
 textfsm = "^1.1.0"
 PyYAML = "^6.0"
-tox = "^4.6.1"
-pytest = "^7.3.2"
+tox = "^4.6.0"
+pytest = "^7.3.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

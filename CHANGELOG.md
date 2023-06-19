@@ -15,7 +15,9 @@
 ### Changed
 
 - dependency updated and tested:
-    1. pytest (7.2.1 -> 7.3.1)
+    1. pytest (7.3.1 -> 7.3.2)
+    2. textfsm (1.1.3 -> 1.1.4)
+    3. tox (3.28.0 -> 4.6.2)
 
 ## [1.1.2] - 20-22-2022
 
