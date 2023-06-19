@@ -1,6 +1,6 @@
 # Textfsm-aos release notes
 
-## [1.1.3] - Unreleased
+## [1.1.3] - 19-06-2023
 
 ### Added CLI commands
 
