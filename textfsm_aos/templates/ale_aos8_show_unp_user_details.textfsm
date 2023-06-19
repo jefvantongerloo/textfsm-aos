@@ -75,4 +75,5 @@ Start
   ^\s+Encap Value\s+= ${encap_value},
   ^\s+Rule ID\s+= ${rule_id}, -> Record
   ^Total users : \d+
+  ^No UNP Ports found
   ^. -> Error
