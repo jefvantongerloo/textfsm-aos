@@ -13,7 +13,7 @@ Parse semi-structured cli data to structured data ready to be ingested by your n
 ## Installation
 
 Textfsm-aos can be installed using Git + Poetry or PyPI.
-s
+
 ## Git
 
 ```bash
