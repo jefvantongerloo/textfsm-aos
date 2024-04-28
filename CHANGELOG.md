@@ -5,7 +5,7 @@
 ### Changed
 
 - dependency updated and tested:
-    - pytest (7.3.2 -> 7.4.0)
+    - pytest (7.3.2 -> 7.4.4)
     - pyyaml (6.0.0 -> 6.0.1)
     - tox (4.6.2 -> 4.10.0)
 
