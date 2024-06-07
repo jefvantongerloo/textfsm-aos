@@ -2,6 +2,10 @@
 
 ## [1.1.4] - Unreleased
 
+### Fixed
+
+- remove hard coded speed value from templates
+
 ### Changed
 
 - dependency updated and tested:
