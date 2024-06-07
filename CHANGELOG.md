@@ -7,7 +7,7 @@
 - dependency updated and tested:
     - pytest (7.3.2 -> 7.4.4)
     - pyyaml (6.0.0 -> 6.0.1)
-    - tox (4.6.2 -> 4.15.0)
+    - tox (4.6.2 -> 4.15.1)
 
 ## [1.1.3] - 19-06-2023
 
