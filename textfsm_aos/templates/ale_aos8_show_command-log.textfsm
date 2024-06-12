@@ -1,7 +1,7 @@
 Value command (.+)
 Value username (.+)
 Value date (.+)
-Value ipaddr ((?:[0-9]{1,3}\.){3}[0-9]{1,3})
+Value ipaddr (((?:[0-9]{1,3}\.){3}[0-9]{1,3})|console)
 Value result (SUCCESS|ERROR.+)
 
 Start

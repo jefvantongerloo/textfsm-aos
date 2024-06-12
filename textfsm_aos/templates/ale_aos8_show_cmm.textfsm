@@ -13,7 +13,6 @@ Value operational_status (\S+)
 Value max_power (\d+)
 Value cpu_model_type (.+)
 Value mac_address (([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]){2})
-Value coreboot_version (.+)
 
 Start
   ^Chassis ID ${chassis_id} Module in slot CMM-A$$ -> Cmm
@@ -32,6 +31,5 @@ Cmm
   ^\s+Operational Status:\s+${operational_status},$$
   ^\s+Max Power:\s+${max_power},$$
   ^\s+CPU Model Type:\s+${cpu_model_type},$$
-  ^\s+MAC Address:\s+${mac_address},$$
-  ^\s+Coreboot Version:\s+${coreboot_version},$$ -> Record Start
+  ^\s+MAC Address:\s+${mac_address},$$ -> Record Start
   ^. -> Error

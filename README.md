@@ -88,7 +88,9 @@ Due to sensitive information the gathered live data for integration testing is s
 | 8.8.56.R02                        |         :heavy_check_mark:          |
 | 8.8.152.R01                       |         :heavy_check_mark:          |
 | 8.9.73.R01                        |         :heavy_check_mark:          |
+| 8.9.94.R04                        |         :heavy_check_mark:          |
 | 8.9.107.R02                       |         :heavy_check_mark:          |
+| 8.9.221.R03                       |         :heavy_check_mark:          |
 
 ## Supported commands
 

@@ -2,8 +2,16 @@
 
 ## [1.1.4] - Unreleased
 
+### Added
+
+- - integration testing and support for aos release 8.9.221.R03
+
 ### Fixed
 
+- aos8 - `show command log` support `console` value for `Ip Addr``parameter [#106](https://github.com/jefvantongerloo/textfsm-aos/pull/76)
+- aos8 - `show unp user details` add `vplsid` parameter [#106](https://github.com/jefvantongerloo/textfsm-aos/pull/76)
+- aos8 - `show cmm` remove `coreboot_version` parameter [#106](https://github.com/jefvantongerloo/textfsm-aos/pull/76)
+- aos8 - `show qos port` add `.` character parsing in `physical` parameter. [#106](https://github.com/jefvantongerloo/textfsm-aos/pull/76)
 - remove hard coded speed value from templates
 
 ### Changed
