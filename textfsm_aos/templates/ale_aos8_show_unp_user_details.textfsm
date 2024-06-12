@@ -5,6 +5,7 @@ Value service_id (.+)
 Value vnid (.+)
 Value vpnid (.+)
 Value isid (.+)
+Value vplsid (.+)
 Value access_timestamp (.+)
 Value user_name (.+)
 Value ip_address (-|((?:[0-9]{1,3}\.){3}[0-9]{1,3})|([a-f0-9:]+:+)+[a-f0-9]+)
@@ -44,6 +45,7 @@ Start
   ^\s+VNID\s+= ${vnid},
   ^\s+VPNID\s+= ${vpnid},
   ^\s+ISID\s+= ${isid},
+  ^\s+VPLSID\s+= ${vplsid},
   ^\s+Access Timestamp\s+= ${access_timestamp},
   ^\s+User Name\s+= ${user_name},
   ^\s+IP-Address\s+= ${ip_address},
