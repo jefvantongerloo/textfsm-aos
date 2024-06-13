@@ -1,0 +1,8 @@
+SPB ISIS Path Table:
+ Destination                              Outbound   Next Hop                                SPB     Num
+ (Name : BMAC)                            Interface  (Name : BMAC)                           Metric  Hops
+----------------------------------------+----------+----------------------------------------+------+------
+ ABC-6900-SW01       : 2c:fa:a2:31:12:97     1/1/32  ABC-6900-SW02       : 95:24:e1:51:1a:c1     20    2
+ DEF-6450-SW02       : 2c:fa:a2:31:12:ab     1/1/32  ABC-6900-SW01       : 93:24:c1:d1:1a:c1     30    3
+ KB-6900-SW01        : 2c:fa:a2:34:1a:65     1/1/32  ABC-6900-SW01       : 53:f4:e1:b1:1a:c1     20    2
+ LOCATION-SW01     : 2c:fa:b2:4f:45:71     2/1/52  DEF-6900-SW02       : 94:24:e1:bc:a1:41     20  2
