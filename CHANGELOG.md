@@ -5,6 +5,7 @@
 ### Added CLI commands
 
 - aos8 - `show service` [#118](https://github.com/jefvantongerloo/textfsm-aos/pull/118)
+- aos8 - `show service spb` [#119](https://github.com/jefvantongerloo/textfsm-aos/pull/119)
 
 ### Added
 

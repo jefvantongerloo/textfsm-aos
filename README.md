@@ -130,6 +130,7 @@ Due to sensitive information the gathered live data for integration testing is s
 | show running-directory         |                 :x:                 |         :heavy_check_mark:        |
 | show qos log                   |                 :x:                 |         :heavy_check_mark:        |
 | show services                  |                 :x:                 |         :heavy_check_mark:        |
+| show services spb              |                 :x:                 |         :heavy_check_mark:        |
 | show snmp station              |          :heavy_check_mark:         |         :heavy_check_mark:        |
 | show snmp community map        |          :heavy_check_mark:         |  `alias: show snmp community-map` |
 | show snmp community-map        |   `alias: show snmp community map`  |         :heavy_check_mark:        |

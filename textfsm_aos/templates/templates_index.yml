@@ -83,6 +83,8 @@
   platform: ale_aos8
 - command: show service
   platform: ale_aos8
+- command: show service spb
+  platform: ale_aos8
 - command: show snmp station
   platform: ale_aos6
 - command: show snmp station

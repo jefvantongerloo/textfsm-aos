@@ -1,0 +1,27 @@
+Value Filldown system_id (\S+)
+Value Filldown src_id (\S+)
+Value Filldown system_name (.+)
+Value Required service_id (\d+)
+Value adm (Up|Down)
+Value oper (Up|Down)
+Value stats (Y|N)
+Value sap_count (\d+)
+Value bind_count (\d+)
+Value isid (\d+)
+Value bvlan (\d+)
+Value mcast_mode (Headend|Tandem|Hybrid)
+Value tr (\(\d+\/\d+\))
+
+Start
+  ^Legend:\s+\*\s+denotes\s+a\s+dynamic\s+object$$
+  ^SPB\s+Service\s+Info$$ -> System
+
+System
+  ^\s+SystemId\s+:\s+${system_id},\s+SrcId\s+:\s+${src_id},\s+SystemName\s+:\s+${system_name}$$ -> Record
+  ^ServiceId\s+Type\s+Adm\s+Oper\s+Stats\s+Count\s+Count\s+Description$$
+  ^[-+\+]+\s*$$ -> Services
+
+Services
+  ^${service_id}\s+${adm}\s+${oper}\s+${stats}\s+${sap_count}\s+${bind_count}\s+${isid}\s+${bvlan}\s+${mcast_mode}\s+${tr}$$ -> Record
+  ^Total Services: \d*$$
+  ^. -> Error
