@@ -2,9 +2,13 @@
 
 ## [1.1.4] - Unreleased
 
+### Added CLI commands
+
+- aos8 - `show service` [#118](https://github.com/jefvantongerloo/textfsm-aos/pull/118)
+
 ### Added
 
-- - integration testing and support for aos release 8.9.221.R03
+- integration testing and support for aos release 8.9.221.R03
 
 ### Fixed
 

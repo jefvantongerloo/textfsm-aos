@@ -1,0 +1,9 @@
+Legend: * denotes a dynamic object
+All Service Info
+            Svc                   SAP     Bind
+ServiceId   Type  Adm  Oper Stats Count   Count   Description
+-----------+-----+----+----+-----+-------+-------+----------------------------
+30001       SPB   Up   Up    Y    0       9       service 30001
+30020       SPB   Up   Down  N    20      9       service 30020
+
+Total Services: 2
