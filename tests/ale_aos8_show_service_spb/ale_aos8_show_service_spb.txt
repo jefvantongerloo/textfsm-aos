@@ -1,0 +1,11 @@
+Legend: * denotes a dynamic object
+SPB Service Info
+  SystemId : e8e7.32e6.c9a1,   SrcId : 0x6c9a1,    SystemName : net-swi-0001
+
+                            SAP     Bind                    MCast
+ServiceId   Adm  Oper Stats Count   Count   Isid      BVlan Mode     (T/R)
+-----------+----+----+-----+-------+-------+---------+-----+--------------
+30001       Up   Up    Y    0       9       130001    4001  Headend  (0/0)
+30020       Up   Up    Y    20      9       130020    4001  Headend  (0/0)
+
+Total Services: 2
