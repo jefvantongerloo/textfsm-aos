@@ -1,0 +1,20 @@
+Value Required service_id (\d+)
+Value svc_type (SPB|VXLAN|L2GRE|VPLS)
+Value adm (Up|Down)
+Value oper (Up|Down)
+Value stats (Y|N)
+Value sap_count (\d+)
+Value bind_count (\d+)
+Value description (((\S+\s*)+\S+)*)
+
+Start
+  ^Legend:\s+\*\s+denotes\s+a\s+dynamic\s+object$$
+  ^All\s+Service\s+Info$$
+  ^\s+Svc\s+SAP\s+Bind$$
+  ^ServiceId\s+Type\s+Adm\s+Oper\s+Stats\s+Count\s+Count\s+Description$$
+  ^[-+\+]+\s*$$ -> Services
+
+Services
+  ^${service_id}\s+${svc_type}\s+${adm}\s+${oper}\s+${stats}\s+${sap_count}\s+${bind_count}\s*${description}\s*$$ -> Record
+  ^Total Services: \d*$$
+  ^. -> Error
