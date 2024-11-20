@@ -1,0 +1,19 @@
+Value destination_name ([a-zA-Z0-9\-]+)
+Value destination_bmac (([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]){2})
+Value outbound_intf (((\d+\/\d+\/\d+(\w)?)|(\d\/\d+)|(\d+))(:\d+)?)
+Value nexthop_name ([a-zA-Z0-9\-]+)
+Value nexthop_bmac (([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]){2})
+Value metric (\d+)
+Value hops (\d+)
+
+Start
+ ^SPB ISIS Path Table:
+ ^\s+Destination\s+Outbound\s+Next Hop\s+SPB\s+Num
+ ^\s+\(Name\s+:\s+BMAC\)\s+Interface\s+\(Name\s+:\s+BMAC\)\s+\s+Hops
+ ^----------------------------------------+----------+----------------------------------------+------+------
+ ^[-+\+]+\s*$$ -> Isis
+
+Isis
+  ^\s+${destination_name}\s+:\s+${destination_bmac}\s+${outbound_intf}\s+${nexthop_name}\s+: ${nexthop_bmac}\s+${metric}\s+${hops} -> Record
+  ^SPF Path count:\s+(\d+)
+  ^. -> Error
