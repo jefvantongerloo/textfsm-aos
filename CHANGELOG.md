@@ -9,22 +9,24 @@
 
 ### Added
 
-- integration testing and support for aos release 8.9.221.R03
+- integration testing and support for aos release 8.9.221.R03 [#106](https://github.com/jefvantongerloo/textfsm-aos/pull/106)
 
 ### Fixed
 
-- aos8 - `show command log` support `console` value for `Ip Addr``parameter [#106](https://github.com/jefvantongerloo/textfsm-aos/pull/76)
-- aos8 - `show unp user details` add `vplsid` parameter [#106](https://github.com/jefvantongerloo/textfsm-aos/pull/76)
-- aos8 - `show cmm` remove `coreboot_version` parameter [#106](https://github.com/jefvantongerloo/textfsm-aos/pull/76)
-- aos8 - `show qos port` add `.` character parsing in `physical` parameter. [#106](https://github.com/jefvantongerloo/textfsm-aos/pull/76)
+- aos8 - `show command log` support `console` value for `Ip Addr``parameter [#106](https://github.com/jefvantongerloo/textfsm-aos/pull/106)
+- aos8 - `show unp user details` add `vplsid` parameter [#106](https://github.com/jefvantongerloo/textfsm-aos/pull/106)
+- aos8 - `show cmm` remove `coreboot_version` parameter [#106](https://github.com/jefvantongerloo/textfsm-aos/pull/106)
+- aos8 - `show qos port` add `.` character parsing in `physical` parameter. [#106](https://github.com/jefvantongerloo/textfsm-aos/pull/106)
 - remove hard coded speed value from templates
 
 ### Changed
 
-- dependency updated and tested:
-    - pytest (7.3.2 -> 8.3.3)
-    - pyyaml (6.0.0 -> 6.0.2)
-    - tox (4.6.2 -> 4.23.2)
+- dependencies updated and tested:
+  - pytest (7.3.2 -> 9.0.2)
+  - python (3.8 -> 3.12)
+  - pyyaml (6.0.0 -> 6.0.2)
+  - textfsm (1.1.0 -> 2.1.0)
+  - tox (4.6.2 -> 4.38.0)
 
 ## [1.1.3] - 19-06-2023
 
@@ -41,8 +43,8 @@
 ### Changed
 
 - dependency updated and tested:
-    - pytest (7.3.1 -> 7.3.2)
-    - tox (3.28.0 -> 4.6.2)
+  - pytest (7.3.1 -> 7.3.2)
+  - tox (3.28.0 -> 4.6.2)
 
 ## [1.1.2] - 20-22-2022
 
