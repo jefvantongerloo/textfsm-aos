@@ -26,11 +26,11 @@
   - python (3.8 -> 3.12)
   - pyyaml (6.0.0 -> 6.0.2)
   - textfsm (1.1.0 -> 2.1.0)
-  - tox (4.6.2 -> 4.38.0)
+  - tox (4.6.2 -> 4.46.0)
 
 ## [1.1.3] - 19-06-2023
 
-### Added CLI commands
+### Added CLI commands 
 
 - aos8 - `show ip router database` [#76](https://github.com/jefvantongerloo/textfsm-aos/pull/76)
 - aos8 - `show unp user details` [#84](https://github.com/jefvantongerloo/textfsm-aos/pull/84)
