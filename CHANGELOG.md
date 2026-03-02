@@ -13,6 +13,7 @@
 
 ### Fixed
 
+- aos8 - `show unp user details` add `vplsid` parameter [#127](https://github.com/jefvantongerloo/textfsm-aos/pull/127)
 - aos8 - `show command log` support `console` value for `Ip Addr``parameter [#106](https://github.com/jefvantongerloo/textfsm-aos/pull/106)
 - aos8 - `show unp user details` add `vplsid` parameter [#106](https://github.com/jefvantongerloo/textfsm-aos/pull/106)
 - aos8 - `show cmm` remove `coreboot_version` parameter [#106](https://github.com/jefvantongerloo/textfsm-aos/pull/106)
