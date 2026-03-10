@@ -14,6 +14,7 @@ Chassis ID 1 Module in slot CMM-A
   CPU Model Type:                 MPC 8572,
   MAC Address:                   94:24:e1:6d:e2:3b,
   Coreboot Version:              8.3.1.103.R01,
+  ONIE Version:                  2017.08.00.01
 
 Chassis ID 2 Module in slot CMM-A
   Model Name:                    OS6560-P48X4,
@@ -29,3 +30,4 @@ Chassis ID 2 Module in slot CMM-A
   Max Power:                     107,
   CPU Model Type:                Armada 385,
   MAC Address:                   94:24:e1:74:1c:99,
+  Coreboot Version:              8.3.1.103.R01
