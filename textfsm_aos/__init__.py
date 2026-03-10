@@ -1,5 +1,5 @@
 """Textfsm_aos - Parse scli output and return structured data."""
 from textfsm_aos import parser  # noqa
 
-__version__ = "1.1.3"
+__version__ = "1.1.4"
 __author__ = "Jef Vantongerloo"

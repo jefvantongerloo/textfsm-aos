@@ -1,6 +1,6 @@
 # Textfsm-aos release notes
 
-## [1.1.4] - Unreleased
+## [1.1.4] - 10-03-2026
 
 ### Added CLI commands
 
@@ -16,7 +16,7 @@
 - aos8 - `show unp user details` add `vplsid` parameter [#127](https://github.com/jefvantongerloo/textfsm-aos/pull/127)
 - aos8 - `show command log` support `console` value for `Ip Addr``parameter [#106](https://github.com/jefvantongerloo/textfsm-aos/pull/106)
 - aos8 - `show unp user details` add `vplsid` parameter [#106](https://github.com/jefvantongerloo/textfsm-aos/pull/106)
-- aos8 - `show cmm` remove `coreboot_version` parameter [#106](https://github.com/jefvantongerloo/textfsm-aos/pull/106)
+- aos8 - `show cmm` remove `coreboot_version` parameter [#133](https://github.com/jefvantongerloo/textfsm-aos/pull/133)
 - aos8 - `show qos port` add `.` character parsing in `physical` parameter. [#106](https://github.com/jefvantongerloo/textfsm-aos/pull/106)
 - remove hard coded speed value from templates
 
