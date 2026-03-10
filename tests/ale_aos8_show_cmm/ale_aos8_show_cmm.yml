@@ -15,6 +15,8 @@
   cpu_model_type: 'MPC 8572'
   mac_address: '94:24:e1:6d:e2:3b'
   coreboot_version: '8.3.1.103.R01'
+  onie_version: '2017.08.00.01'
+
 - chassis_id: '2'
   model_name: 'OS6560-P48X4'
   model_type: '0x90e220e'
@@ -30,4 +32,6 @@
   max_power: '107'
   cpu_model_type: 'Armada 385'
   mac_address: '94:24:e1:74:1c:99'
-  coreboot_version: ''
+  coreboot_version: '8.3.1.103.R01'
+  onie_version: ''
+
