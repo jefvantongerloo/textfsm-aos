@@ -1,5 +1,12 @@
 # Textfsm-aos release notes
 
+## [1.1.5] - Unreleased
+
+### Changed
+
+- dependencies updated and tested:
+  - tox (4.49.1 -> 4.50.3)
+
 ## [1.1.4] - 10-03-2026
 
 ### Added CLI commands
